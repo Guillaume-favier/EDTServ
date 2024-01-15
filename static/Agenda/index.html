@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--     
+███╗   ███╗██████╗ ██████╗ ██╗
+████╗ ████║██╔══██╗╚════██╗██║
+██╔████╔██║██████╔╝ █████╔╝██║
+██║╚██╔╝██║██╔═══╝ ██╔═══╝ ██║
+██║ ╚═╝ ██║██║     ███████╗██║
+╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝
+-->
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/general.css" rel="stylesheet" id="genestyle" />
+    <link rel="icon" type="image/x-icon" href="/logo.ico">
+    <script src="https://kit.fontawesome.com/5bd3a64755.js" crossorigin="anonymous"></script>
+    <link href="/nav/nav.css" rel="stylesheet" />
+    <title>Agenda - MP2I CIV</title>
+    <style>
+        html{
+            overflow-x: hidden;
+        }
+        #listContr{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        #listContr > div {
+            margin-right: 10px;
+            text-align: center;
+        }
+        #listContr > div > p {
+            margin: 2px 0 2px 0;
+        }
+        .wrapper {
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+
+        .marquee p {
+            display: inline-block;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(-50%, 0, 0);
+            }
+        }
+        .col1{
+            color: red;
+        }
+        .col2{
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/">Accueil</a>
+        <a href="/EDT/">EDT</a>
+        <a href="/Agenda/" class="active">Agenda</a>
+        <a href="/ressources/">Ressources</a>
+        <a href="/HOF/">Hall of fame</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <center >
+        <h1 class="beau">Agenda</h1>
+        <div class="content">
+            <h2>Voilà les devoirs qu'on a noté:</h2>
+        </div>
+    </center>
+    <div class="content">
+    </div>
+    <div class="wrapper">
+        <div class="marquee">
+            <p>
+                <span class="col1">N'oubliez pas de réviser vos cours !</span> <span class="col2">N'oubliez pas de réviser vos cours !</span> <span class="col1">N'oubliez pas de réviser vos cours !</span> <span class="col2">N'oubliez pas de réviser vos cours !</span> <span class="col1">N'oubliez pas de réviser vos cours !</span> <span class="col2">N'oubliez pas de réviser vos cours !</span>
+            </p>
+            <p>
+                <span class="col1">N'oubliez pas de réviser vos cours !</span> <span class="col2">N'oubliez pas de réviser vos cours !</span> <span class="col1">N'oubliez pas de réviser vos cours !</span> <span class="col2">N'oubliez pas de réviser vos cours !</span> <span class="col1">N'oubliez pas de réviser vos cours !</span> <span class="col2">N'oubliez pas de réviser vos cours !</span>
+            </p>
+        </div>
+    </div>
+    <div id="contrib" class="content"><h2>Les personnes incroyables qui notent les devoirs :</h2><div id="listContr"></div></div>
+    <div class="footer"><span id="url"></span> sous licence : <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html"><i class="fa-solid fa-scale-balanced"></i> GPL-3.0 </a><i class="fa-solid fa-moon" id="dark"></i> <a href="https://github.com/Guillaume-favier/mp2iciv.fr"><i class="fa-brands fa-github"></i></a></div>
+</body>
+<script src="/nav/nav.js"></script>
+<script src="/Agenda/index.js"></script>
+
+</html>

@@ -40,10 +40,26 @@ info.split("\n").forEach(lign => {
     tableauInfo.push(lign.split(" "))
 })
 
-const getNumJours = (semaine) => {
-	const base = semaineNom[semaine - 2].split("/");
+const stringToDate = (date) => {
+	l = date.split("/")
+	return new Date(2000 + Number(l[2]), Number(l[1]) - 1, Number(l[0]))
+}
 
-	let n = (new Date(Number("20" + base[2]), Number(base[1]) - 1, Number(base[0]))).getTime()
+const getCurrentWeek = (now = new Date()) => {
+	const décalage = 5 * (24 * 3600 * 1000) + 13 * 3600 * 1000
+	const nowTime = now.getTime()
+	console.log(nowTime)
+	let semaine = 0
+	semaineNom.forEach((s, i) => {
+		const d = stringToDate(s)
+		// console.log(d, d.getTime(), s, new Date(d.getTime() + décalage))
+		if ((d.getTime() + décalage) <= nowTime) semaine = i+3
+	})
+	return semaine
+}
+
+const getNumJours = (semaine) => {
+	let n = stringToDate(semaineNom[semaine - 2]).getTime()
 	const j = [];
 	const jj = [];
 	for (let i = 0; i < 5; i++) {
@@ -107,7 +123,7 @@ const getKholes = (k, s) => {
     if (c == 1 || c == 10) {
 
 		const info = db["info"][c - 1]
-		all[info[1] - 1].push(khollesToEDT(info, "anglais"))
+		all[info[1] - 1].push(khollesToEDT(info, "info"))
     }
     if ((s % 2 == 0 && (c == 2 || c == 5)) || (s % 2 == 1 && (c == 9 || c == 14))) {
 
@@ -134,17 +150,17 @@ const makeEDT = (k, semaine) => {
     let mettreSemaine = [[], [], [], [], []]
     // on ajoute sans ordre précis les cours kholles et TD à ajouter à l'EDT pour on les remmettra bien dans l'EDT plus tard
     const n1 = () => {
-		mettreSemaine[0].push(["Anglais", "33", 13, 14])
-		mettreSemaine[0].push(["TD Physique", "20", 14, 16, "Physique"])
-		mettreSemaine[4].push(["TD Maths", "20", heureToNombre("7h50"), heureToNombre("9h50"), "Maths"])
-		mettreSemaine[4].push(["TP Physique", "B214", heureToNombre("9h50"), heureToNombre("11h50"), "Physique"])
+		mettreSemaine[0].push(["Anglais", "anglais", "33", 13, 14, "Bocquillon"])
+		mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"])
+		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("7h50"), heureToNombre("9h50"), "Aufranc"])
+		mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("9h50"), heureToNombre("11h50"), "Bouchet"])
 	}
 
 	const n2 = () => {
-		mettreSemaine[0].push(["Anglais", "33", 14, 15])
-		mettreSemaine[0].push(["TD Physique", "20", 12, 14, "Physique"])
-		mettreSemaine[4].push(["TD Maths", "20", heureToNombre("9h50"), heureToNombre("11h50"), "Maths"])
-		mettreSemaine[4].push(["TP Physique", "B214", heureToNombre("7h50"), heureToNombre("9h50"), "Physique"])
+		mettreSemaine[0].push(["Anglais", "anglais", "33", 14, 15, "Bocquillon"])
+		mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"])
+		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("9h50"), heureToNombre("11h50"), "Aufranc"])
+		mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("7h50"), heureToNombre("9h50"), "Bouchet"])
 	}
 
 	for (let i = 0; i < 16; i++) {
@@ -155,47 +171,47 @@ const makeEDT = (k, semaine) => {
 	if (semaine % 2 == 1) {
 		if (k % 2 == 1) {
 			if (semaineC == 5) {
-				mettreSemaine[0].push(["TD SI", "20", 10, 11, "SI"])
+				mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
 			}
-			else mettreSemaine[0].push(["TD SI", "20", 9, 10, "SI"])
+			else mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
 				n1()
 		} else {
 			if (semaineC == 6) {
-				mettreSemaine[0].push(["TD SI", "20", 9, 10, "SI"])
+				mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
 			}
-			else mettreSemaine[0].push(["TD SI", "20", 10, 11, "SI"])
+			else mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
 			n2()
 		}
 	} else {
 		if (k % 2 == 1) {
 			if (semaineC == 6) {
-				mettreSemaine[0].push(["TD SI", "20", 9, 10, "SI"])
+				mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
 			}
-			else mettreSemaine[0].push(["TD SI", "20", 10, 11, "SI"])
+			else mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
 			n2()
 		} else {
 			if (semaineC == 5) {
-			mettreSemaine[0].push(["TD SI", "20", 10, 11, "SI"])
+			mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
 			}
-			else mettreSemaine[0].push(["TD SI", "20", 9, 10, "SI"])
+			else mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
 			n1()
 		}
 	}
 
 	// Groupes d'info 
 	if (groupeI == 1 || groupeI == "S") {
-		mettreSemaine[1].push(["TP Info", "37", 15, 17, "Info"])
+		mettreSemaine[1].push(["TP Info", "info", "37", 15, 17, "Rozsavolgyi"])
 	} if (groupeI == 2 || groupeI == "S") {
-		mettreSemaine[1].push(["TP Info", "37", 17, 19, "Info"])
+		mettreSemaine[1].push(["TP Info", "info", "37", 17, 19, "Rozsavolgyi"])
 	} if (groupeI == 3 || groupeI == "S") {
-		mettreSemaine[2].push(["TP Info", "37", 16, 18, "Info"])
+		mettreSemaine[2].push(["TP Info", "info", "37", 16, 18, "Rozsavolgyi"])
 	}
 	// if (groupeI == "S") alert("Il faut se répartir les groupes d'info !")
 
 
 	// goupes de LV2
 	if ([1, 6, 14, 15, 16].includes(k)) {
-		mettreSemaine[3].push(["LV2", "🤷‍♂️", 17, 19, "LV2"])
+		mettreSemaine[3].push(["LV2", "lv2", "🤷‍♂️", 17, 19, "LV2"])
 	}
 
 	// ajout de tout les cours dans l'EDT au bon endroit
@@ -279,12 +295,23 @@ const regroupeInfo = (k, s) => {
 		"fullDays": days[0],
 		"EDT": makeEDT(k, s),
 		"kholles": getKholes(k, s),
+		"membres": groupesPers[k - 1]
 	}
 	return res
+}
+
+const base = () => {
+	return {
+		"weeks": semaineNom,
+		"groupes": groupesPers,
+		"currentWeek": getCurrentWeek()
+	}
 }
 
 module.exports = {
 	regroupeInfo,
 	makeEDT,
-	getNumJours
+	getNumJours,
+	base,
+	getCurrentWeek
 }

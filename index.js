@@ -6,6 +6,8 @@ const app = express();
 
 
 // define a route
+
+app.use('/', express.static('static'))
 require('./routes')(app);
 
 app.get('/', (req, res) => {
@@ -14,6 +16,6 @@ app.get('/', (req, res) => {
 
 
 // listen for requests
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('Server is listening on port 3000');
 });

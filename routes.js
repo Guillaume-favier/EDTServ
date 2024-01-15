@@ -1,13 +1,22 @@
-const {regroupeInfo, makeEDT,getNumJours} = require("./edt.js")
+const {regroupeInfo, makeEDT,getNumJours, base} = require("./edt.js")
+const {allClasses, allProfs, getEDTX} = require("./altEDT.js")
+
 
 module.exports = function (app) {
+    app.get('/api/v1/base', (req, res) => {
+
+        const params = req.query;
+        console.log(params)
+        return res.status(200).json(base(Number(req.query.week)))
+        return res.status(404).json({ "ok": false, error: 'missing parameters' })
+    })
 
     app.get('/api/v1/all/', (req, res) => {
         // print parameter of request
         const params = req.query;
         console.log(params)
         if (Object.keys(params).includes("week") && Object.keys(params).includes("group")) {
-            const rs = regroupeInfo(params.group, params.week)
+            const rs = regroupeInfo(Number(params.group), Number(params.week))
             res.status(200).json(rs)
             return
         } else {
@@ -16,6 +25,15 @@ module.exports = function (app) {
         }
         res.status(500).json({"ok":false, error: 'internal error' })
     });
+
+    app.get('/api/v1/salesBases/', (req, res) => {
+
+        const params = req.query;
+        let temp = base(Number(req.query.week))
+        temp["salles"] = allClasses
+        return res.status(200).json(temp)
+        return res.status(404).json({ "ok": false, error: 'missing parameters' })
+    })
 
     //other routes..
 }

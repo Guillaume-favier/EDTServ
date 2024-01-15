@@ -1,0 +1,43 @@
+{
+    "Guillaume":{
+      "SI": "#fcba03",
+      "maths": "#d95a41",
+      "français": "#a3a3a3",
+      "physique": "#616fd4",
+      "anglais": "#b521ab",
+      "info": "#21b52a",
+      "EPS": "#21a9b5",
+      "lv2": "#A8A196"
+    },
+    "Pronote":{
+      "SI": "#dc79aa",
+      "maths": "#8886ce",
+      "français": "#ddf6f6",
+      "physique": "#cc9188",
+      "anglais": "#94bfa0",
+      "info": "#a394bf",
+      "EPS": "#b4b4b4",
+      "lv2": "#A8A196"
+    },
+    "Pastel":{
+      "SI": "#fdffb6",
+      "maths": "#ffadad",
+      "français": "#9bf6ff",
+      "physique": "#a0c4ff",
+      "anglais": "#ffc6ff",
+      "info": "#caffbf",
+      "EPS": "#ffd6a5",
+      "lv2": "#FFF3DA"
+    },
+    "Tout blanc":{
+      "SI": "#ffffff",
+      "maths": "#ffffff",
+      "français": "#ffffff",
+      "physique": "#ffffff",
+      "anglais": "#ffffff",
+      "info": "#ffffff",
+      "EPS": "#ffffff",
+      "lv2": "#ffffff"
+    }
+    
+}
