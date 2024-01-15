@@ -1,8 +1,19 @@
 const { makeEDT, getCurrentWeek } = require("./edt.js")
-const allEdt = []
-for (let i = 0; i < 16; i++) {
-    allEdt.push(makeEDT(i + 1, getCurrentWeek()))
+const allEdt = {}
+
+const getYourWeek = (week) => {
+    if (!(allEdt[week])) {
+        allEdt[week] = []
+        for (let i = 1; i <= 16; i++) {
+            allEdt[week].push(makeEDT(i, week))
+        }
+    }
+    return allEdt[week]
 }
+for (let i = 3; i <= 18; i++) {
+    getYourWeek(i)
+}
+
 
 const pushIfNotIn = (arr, el) => {
     let val = JSON.stringify(el)
@@ -13,31 +24,34 @@ const pushIfNotIn = (arr, el) => {
     arr.push(el)
 }
 
-const allX = (n) => {
+const allX = (s,n) => {
     let p = []
-    for (let i = 0; i < 16; i++) {
-        for (let j = 0; j < 5; j++) {
-            for (let h = 0; h < allEdt[i][j].length; h++) {
-                const c = allEdt[i][j][h];
-                // console.log(c,c[n])
-                if (p.includes(c[n])) continue
-                p.push(c[n])
+    for (let s = 3; s <= 18; s++) {
+        for (let i = 0; i < 16; i++) {
+            for (let j = 0; j < 5; j++) {
+                // console.log(allEdt)
+                for (let h = 0; h < allEdt[s.toString()][i][j].length; h++) {
+                    const c = allEdt[s.toString()][i][j][h];
+                    // console.log(c,c[n])
+                    if (p.includes(c[n])) continue
+                    p.push(c[n])
+                }
             }
         }
     }
     return p
 }
 
-const allProfs = allX(5)
-const allClasses = allX(2)
+const allProfs = allX(getCurrentWeek(), 5)
+const allClasses = allX(getCurrentWeek(), 2)
 
-const getEDTX = (param, X) => {
+const getEDTX = (s, param, X) => {
     let p = []
     for (let i = 0; i < 16; i++) {
         for (let j = 0; j < 5; j++) {
             if (i == 0) p.push([])
-            for (let h = 0; h < allEdt[i][j].length; h++) {
-                const c = allEdt[i][j][h];
+            for (let h = 0; h < allEdt[s.toString()][i][j].length; h++) {
+                const c = allEdt[s.toString()][i][j][h];
                 if (c[X] == param) pushIfNotIn(p[j], c)
             }
         }

@@ -219,9 +219,9 @@ const txt = document.getElementById("outTxt")
                 let done = false
                 for (let numE = 0; numE < table[jour].length; numE++) { // cherche à partir de tout les cours de la journée
                     const element = table[jour][numE];
-                    console.log("pour ", nombreToHeure(i), "et", element[3], nombreToHeure(element[2]),"pour",element)
+                    // console.log("pour ", nombreToHeure(i), "et", element[3], nombreToHeure(element[2]),"pour",element)
                     if (Math.abs(i - element[3]) < 0.125) {
-                        console.log("ajout", element)
+                        // console.log("ajout", element)
                         done = true
                         last[jour] = element[4]
                         const coursMatiere = element[1]
@@ -303,6 +303,19 @@ const txt = document.getElementById("outTxt")
 
         metNumJours(all["fullDays"])
         setPallette()
+        // affichage des kholles sous forme de liste
+        let ul = document.createElement("ul")
+        console.log(all)
+        all["kholles"].forEach((days,jour) => {
+            for (let i = 0; i < days.length; i++) {
+                const kh = days[i];
+                const li = document.createElement("li")
+                li.innerText = kh[0] + ", le " + jours[jour] + " à  " + (typeof kh[3] == typeof 2 ? (kh[3] + "h") : kh[3]) + " en " + kh[2] + " avec " + kh[5]
+                ul.appendChild(li)
+            }
+        })
+        txt.appendChild(ul)
+
         // affichage des membres du groupe en bas de la page
         let p = document.createElement("p")
         p.innerText = "Personnes du groupe :"

@@ -160,7 +160,7 @@ async function getText(url) {
 
     let tableauInfo = []
 
-    let salle = salleSelect.value == "" ? 0 : Number(salleSelect.value);
+    let salle = salleSelect.value;
     
     semaines.value = semaine
 
@@ -173,7 +173,7 @@ async function getText(url) {
     }
 
     const testparams = () => {
-        return groupeK != 0
+        return salle != 0
     }
 
     const resetEDT = () => {
@@ -277,7 +277,7 @@ async function getText(url) {
         semaines.value = semaine
         
         if (testparams() == false) return
-        const all = await getJson("/api/v1/sale/?sale=" + groupeK+"&week="+semaine)
+        const all = await getJson("/api/v1/sale/?sale=" + salle+"&week="+semaine)
         if (!all["ok"]) {
             alert("Erreur server (" + all["error"]+")")
         }
@@ -287,29 +287,12 @@ async function getText(url) {
 
         metNumJours(all["fullDays"])
         setPallette()
-        // affichage des membres du groupe en bas de la page
-        let p = document.createElement("p")
-        p.innerText = "Personnes du groupe :"
-        all["membres"].forEach(pers => {
-            p.innerText += "\t " + pers[1] + " " + pers[0] + ". ," 
-        })
-        p.innerText = p.innerText.substring(0, p.innerText.length - 2)
-        ele.appendChild(p)
     }
 
     const changementPourEdt = () => { // fons d'écran spécialisé pour mayeul et évariste
         resetEDT()
-        groupeK = Number(salleSelect.value)
+        salle = salleSelect.value
         updateSemaines()
-        if (groupeK == 6){
-            document.body.className = "manchot"
-        }
-        else if (groupeK == 4) {
-            document.body.className = "chateauuu"
-        }
-        else {
-            document.body.className = ""
-        }
 
     }
 
@@ -335,20 +318,9 @@ async function getText(url) {
 
 
     changementPourEdt()
-    // affichage des noms des membres du groupe pour la sélenction
-    for (let i = 1; i < salleSelect.children.length; i++) {
-
-        const el = salleSelect.children[i];
-        el.innerText += " :  "
-        groupesPers[el.value - 1].forEach(pers => {
-            el.innerText += pers[1] + " " + pers[0][0]+". ; "
-        })
-        el.innerText = el.innerText.substring(0, el.innerText.length - 2)
-        
-    }
 
     salleSelect.onchange = e => {
-        setCookie("GroupeKholle", e.target.value, 100)
+        setCookie("salleholle", e.target.value, 100)
         changementPourEdt()
     }
     palletteElem.onchange = e => {

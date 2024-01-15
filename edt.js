@@ -140,6 +140,7 @@ const testparams = () => {
 
 
 const makeEDT = (k, semaine) => {
+	console.log("semaine",semaine,"k",k)
     groupeI = tableauInfo[k - 1][semaine - 3]
     EDT = []
     EDT = clone(orgEDT)
@@ -204,7 +205,7 @@ const makeEDT = (k, semaine) => {
 	} if (groupeI == 2 || groupeI == "S") {
 		mettreSemaine[1].push(["TP Info", "info", "37", 17, 19, "Rozsavolgyi"])
 	} if (groupeI == 3 || groupeI == "S") {
-		mettreSemaine[2].push(["TP Info", "info", "37", 16, 18, "Rozsavolgyi"])
+		mettreSemaine[2].push(["TP Info", "info", "26", 16, 18, "Rozsavolgyi"])
 	}
 	// if (groupeI == "S") alert("Il faut se répartir les groupes d'info !")
 
@@ -258,26 +259,26 @@ const makeEDT = (k, semaine) => {
 	Object.keys(hotfix).forEach(jourId => {
 		const s = jourId.split("/")
 		if (Number(s[0]) == semaine) {
-		    console.log("Semaine de HOTFIX ! jour : " + jours[s[1]-1])
+		    // console.log("Semaine de HOTFIX ! jour : " + jours[s[1]-1])
 		    let done = false
 		    for (let i = 0; i < hotfix[jourId].length && !done; i++) {
 				const poss = hotfix[jourId][i];
 				if (poss[0] == "e") {
-			    	console.log("validée : tout le monde !")
+			    	// console.log("validée : tout le monde !")
 			    	EDT[s[1]] = poss[1]
 			    	// console.log(EDT)
 			    	done = true
 				}
 				if (poss[0] == "p" && k % 2 == 0) {
-			    	console.log("validée : groupe pair")
+			    	// console.log("validée : groupe pair")
 			    	EDT[s[1]] = poss[1]
 			    	done = true
 				} else if (poss[0] == "i" && k % 2 == 1) {
-			    	console.log("validée : groupe impair")
+			    	// console.log("validée : groupe impair")
 			    	EDT[s[1]] = poss[1]
 			    	done = true
 				} else if (Number(poss[0]) == k) {
-			    	console.log("validée : groupe " + k)
+			    	// console.log("validée : groupe " + k)
 			    	EDT[s[1]] = poss[1]
 			    	done = true
 				}
