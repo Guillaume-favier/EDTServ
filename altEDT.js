@@ -65,6 +65,41 @@ const getEDTX = (s, param, X) => {
     return p
 }
 
+const isOverlap = (a, b) => {
+    if (a[3] == b[3]) return true
+    if (a[3] < b[3]) {
+        if (a[4] <= b[3]) return false
+        else return true
+    } else {
+        if (b[4] <= a[3]) return false
+        else return true
+    }
+}
+
+const detectOverlap = (arr) => {
+    let res = []
+    for (let jour = 0; jour < 5; jour++) {
+        for (let i = 0; i < arr[jour].length; i++) {
+            const element = arr[jour][i];
+            for (let j = i + 1; j < arr[jour].length; j++) {
+                const element2 = arr[jour][j];
+                if (isOverlap(element, element2)) {
+                    pushIfNotIn(res, [element, element2])
+                }
+            }
+        }
+    }
+    return res
+}
+
+for (let i = 0; i < allProfs.length; i++) {
+    const prof = allProfs[i];
+    let temp = getEDTX(16, prof, 5)
+    console.log(prof)
+    // console.log(temp)
+    console.log(detectOverlap(temp))
+}
+
 module.exports = {
     allClasses,
     allProfs,

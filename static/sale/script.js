@@ -122,7 +122,7 @@ async function getText(url) {
 
 
 ; (async () => {
-    const pallette = await getJson("palettes.json")
+    const pallette = await getJson("/EDT/palettes.json")
     document.getElementsByClassName("loader")[0].style.display = "block"
     const base = await getJson("/api/v1/salesBases/")
     document.getElementsByClassName("loader")[0].style.display = "none"

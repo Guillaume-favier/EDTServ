@@ -57,6 +57,10 @@
             </form>
         </div>
         <div class="loader"></div>
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Attention ! Certains cours se chevauchent votre emploi du temps peut être totalement faux ! revérifiez bien les heures !
+        </div>
         <table id="tocopy">
             <tbody id="EDT">
                 <tr >
@@ -87,6 +91,7 @@
     <div class="footer"><span id="url"></span> sous licence : <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html"><i class="fa-solid fa-scale-balanced"></i> GPL-3.0 </a><i class="fa-solid fa-moon" id="dark"></i> <a href="https://github.com/Guillaume-favier/mp2iciv.fr"><i class="fa-brands fa-github"></i></a></div>
 </body>
 <script src="/nav/nav.js" type="module"></script>
+<script src="/EDT/genescripts.js"></script>
 <script src="/prof/script.js">
 </script>
 </html>
