@@ -1,18 +1,6 @@
-const { makeEDT, getCurrentWeek } = require("./edt.js")
-const allEdt = {}
+const { makeEDT, getCurrentWeek, allEdt } = require("./edt.js")
+const { log } = require("./logger.js")
 
-const getYourWeek = (week) => {
-    if (!(allEdt[week])) {
-        allEdt[week] = []
-        for (let i = 1; i <= 16; i++) {
-            allEdt[week].push(makeEDT(i, week))
-        }
-    }
-    return allEdt[week]
-}
-for (let i = 3; i <= 18; i++) {
-    getYourWeek(i)
-}
 
 
 const pushIfNotIn = (arr, el) => {
@@ -44,8 +32,18 @@ const allX = (s,n) => {
 
 const allProfs = allX(getCurrentWeek(), 5)
 const allClasses = allX(getCurrentWeek(), 2)
+log(1, "All the classes and profs were calculated, there is " + allClasses.length + " classes and " + allProfs.length + " profs");
 
 const getEDTX = (s, param, X) => {
+    if (s <3 || s > 18) {
+        return false
+    }
+    if (X == 5 && !allProfs.includes(param)) {
+        return false
+    }
+    if (X == 2 && !allClasses.includes(param)) {
+        return false
+    }
     let p = []
     for (let i = 0; i < 16; i++) {
         for (let j = 0; j < 5; j++) {
@@ -66,11 +64,6 @@ const getEDTX = (s, param, X) => {
     }
     return p
 }
-
-
-
-// console.log(getEDTProf("Rozsavolgyi"))
-// console.log(allProfs)
 
 module.exports = {
     allClasses,

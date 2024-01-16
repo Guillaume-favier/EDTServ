@@ -1,4 +1,5 @@
 const fs = require("fs")
+const { log } = require("./logger.js")
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"]
 function clone(a) {
     return JSON.parse(JSON.stringify(a));
@@ -48,7 +49,7 @@ const stringToDate = (date) => {
 const getCurrentWeek = (now = new Date()) => {
 	const décalage = 5 * (24 * 3600 * 1000) + 13 * 3600 * 1000
 	const nowTime = now.getTime()
-	console.log(nowTime)
+	//console.log(nowTime)
 	let semaine = 0
 	semaineNom.forEach((s, i) => {
 		const d = stringToDate(s)
@@ -140,7 +141,7 @@ const testparams = () => {
 
 
 const makeEDT = (k, semaine) => {
-	console.log("semaine",semaine,"k",k)
+	// console.log("semaine",semaine,"k",k)
     groupeI = tableauInfo[k - 1][semaine - 3]
     EDT = []
     EDT = clone(orgEDT)
@@ -259,26 +260,25 @@ const makeEDT = (k, semaine) => {
 	Object.keys(hotfix).forEach(jourId => {
 		const s = jourId.split("/")
 		if (Number(s[0]) == semaine) {
-		    // console.log("Semaine de HOTFIX ! jour : " + jours[s[1]-1])
+			// log(0, "Semaine de HOTFIX ! jour : " + jours[s[1]-1])
 		    let done = false
 		    for (let i = 0; i < hotfix[jourId].length && !done; i++) {
 				const poss = hotfix[jourId][i];
 				if (poss[0] == "e") {
-			    	// console.log("validée : tout le monde !")
+					// log(0, "validée : tout le monde !")
 			    	EDT[s[1]] = poss[1]
-			    	// console.log(EDT)
 			    	done = true
 				}
 				if (poss[0] == "p" && k % 2 == 0) {
-			    	// console.log("validée : groupe pair")
+					// log(0, "validée : groupe pair")
 			    	EDT[s[1]] = poss[1]
 			    	done = true
 				} else if (poss[0] == "i" && k % 2 == 1) {
-			    	// console.log("validée : groupe impair")
+					// log(0, "validée : groupe impair")
 			    	EDT[s[1]] = poss[1]
 			    	done = true
 				} else if (Number(poss[0]) == k) {
-			    	// console.log("validée : groupe " + k)
+					// log(0, "validée : groupe " + k)
 			    	EDT[s[1]] = poss[1]
 			    	done = true
 				}
@@ -287,14 +287,28 @@ const makeEDT = (k, semaine) => {
 	})
 	return EDT
 }
+const allEdt = {}
 
+const getYourWeek = (week) => {
+	if (!(allEdt[week])) {
+		allEdt[week] = []
+		for (let i = 1; i <= 16; i++) {
+			allEdt[week].push(makeEDT(i, week))
+		}
+	}
+	return allEdt[week]
+}
+for (let i = 3; i <= 18; i++) {
+	getYourWeek(i)
+}
+log(1, "All the weeks were loaded");
 const regroupeInfo = (k, s) => {
 	const days = getNumJours(s);
 	let res = {
 		"ok":true,
 		"days": days[1],
 		"fullDays": days[0],
-		"EDT": makeEDT(k, s),
+		"EDT": allEdt[s.toString()][k - 1],
 		"kholles": getKholes(k, s),
 		"membres": groupesPers[k - 1]
 	}
@@ -309,10 +323,13 @@ const base = () => {
 	}
 }
 
+
+
 module.exports = {
 	regroupeInfo,
 	makeEDT,
 	getNumJours,
 	base,
-	getCurrentWeek
+	getCurrentWeek,
+	allEdt
 }

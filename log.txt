@@ -1,0 +1,266 @@
+[DEBUG] at function toISOString() { [native code] } Starting server
+[DEBUG] at function toISOString() { [native code] } Starting server on port 80 because it's in dev mode
+[DEBUG] at function toISOString() { [native code] } Server started on port 80
+[DEBUG] at 2024-01-16T07:38:44.212Z Starting server
+[DEBUG] at 2024-01-16T07:38:44.223Z Starting server on port 80 because it's in dev mode
+[DEBUG] at 2024-01-16T07:38:44.225Z Server started on port 80
+[INFO] at 2024-01-16T08:06:23.134Z : Starting server
+[DEBUG] at 2024-01-16T08:06:23.140Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.140Z : validée : groupe impair
+[DEBUG] at 2024-01-16T08:06:23.140Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.140Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.140Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.140Z : validée : groupe pair
+[DEBUG] at 2024-01-16T08:06:23.140Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.140Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.141Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.141Z : validée : groupe impair
+[DEBUG] at 2024-01-16T08:06:23.141Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.141Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.141Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.141Z : validée : groupe pair
+[DEBUG] at 2024-01-16T08:06:23.141Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.141Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.141Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.141Z : validée : groupe impair
+[DEBUG] at 2024-01-16T08:06:23.141Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.141Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : groupe pair
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : groupe impair
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : groupe pair
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : groupe impair
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : groupe pair
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.142Z : validée : groupe impair
+[DEBUG] at 2024-01-16T08:06:23.142Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : groupe pair
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : groupe 13
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : groupe pair
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : groupe impair
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : groupe pair
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.143Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.143Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : groupe 1
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : groupe 3
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : groupe 3
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : groupe 4
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : groupe 5
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : groupe 8
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.144Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.144Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.145Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.145Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.145Z : validée : groupe 10
+[DEBUG] at 2024-01-16T08:06:23.145Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.145Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.145Z : validée : groupe 11
+[DEBUG] at 2024-01-16T08:06:23.145Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.145Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.145Z : validée : groupe 12
+[DEBUG] at 2024-01-16T08:06:23.145Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.145Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.145Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.146Z : validée : groupe 14
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.146Z : validée : tout le monde !
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : Jeudi
+[DEBUG] at 2024-01-16T08:06:23.146Z : validée : groupe 16
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.146Z : validée : groupe 1
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.146Z : validée : groupe 1
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.146Z : validée : groupe 2
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.146Z : validée : groupe 2
+[DEBUG] at 2024-01-16T08:06:23.146Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.146Z : validée : groupe 3
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 3
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 4
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 4
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 5
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 5
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 6
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 6
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 7
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 7
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 8
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.147Z : validée : groupe 8
+[DEBUG] at 2024-01-16T08:06:23.147Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 9
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 9
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 10
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 10
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 11
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 11
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 12
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 12
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 13
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.148Z : validée : groupe 13
+[DEBUG] at 2024-01-16T08:06:23.148Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.149Z : validée : groupe 14
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.149Z : validée : groupe 14
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.149Z : validée : groupe 15
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.149Z : validée : groupe 15
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : undefined
+[DEBUG] at 2024-01-16T08:06:23.149Z : validée : groupe 16
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : Lundi
+[DEBUG] at 2024-01-16T08:06:23.149Z : validée : groupe 16
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.149Z : validée : groupe 1
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.149Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.149Z : validée : groupe 5
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[DEBUG] at 2024-01-16T08:06:23.150Z : Semaine de HOTFIX ! jour : Mercredi
+[INFO] at 2024-01-16T08:06:23.153Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:06:23.155Z : Server started on port 80
+[INFO] at 2024-01-16T08:08:55.706Z : Starting server
+[INFO] at 2024-01-16T08:08:55.715Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:08:55.717Z : Server started on port 80
+[INFO] at 2024-01-16T08:09:34.180Z : Starting server
+[INFO] at 2024-01-16T08:09:34.186Z : All the weaks were loaded
+[INFO] at 2024-01-16T08:09:34.188Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:09:34.189Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:09:34.190Z : Server started on port 80
+[INFO] at 2024-01-16T08:16:28.246Z : Starting server
+[INFO] at 2024-01-16T08:16:28.255Z : All the weaks were loaded
+[INFO] at 2024-01-16T08:16:28.257Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:16:28.257Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:16:28.258Z : Server started on port 80
+[INFO] at 2024-01-16T08:21:57.284Z : GET /api/v1/salesBases/ with the ip : undefined
+[INFO] at 2024-01-16T08:22:00.101Z : GET /api/v1/prof/ with the ip : undefinedsale : Bouchard week : 16
+[INFO] at 2024-01-16T08:23:28.983Z : Starting server
+[INFO] at 2024-01-16T08:23:34.638Z : Starting server
+[INFO] at 2024-01-16T08:24:14.418Z : Starting server
+[INFO] at 2024-01-16T08:24:14.425Z : All the weeks were loaded
+[INFO] at 2024-01-16T08:24:18.220Z : Starting server
+[INFO] at 2024-01-16T08:24:18.227Z : All the weeks were loaded
+[INFO] at 2024-01-16T08:24:18.229Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:24:18.229Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:24:18.230Z : Server started on port 80
+[INFO] at 2024-01-16T08:24:22.299Z : GET /api/v1/all/ with the ip : undefinedgroup : 1 week : 16
+[INFO] at 2024-01-16T08:24:24.483Z : GET /api/v1/all/ with the ip : undefinedgroup : 3 week : 16
+[INFO] at 2024-01-16T08:24:26.142Z : GET /api/v1/all/ with the ip : undefinedgroup : 2 week : 16
+[INFO] at 2024-01-16T08:25:43.485Z : Starting server
+[INFO] at 2024-01-16T08:25:43.492Z : All the weeks were loaded
+[INFO] at 2024-01-16T08:25:43.494Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:25:43.494Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:25:43.496Z : Server started on port 80
+[INFO] at 2024-01-16T08:25:49.456Z : GET /api/v1/all/ with the ip : undefinedgroup : 2 week : 16
+[INFO] at 2024-01-16T08:27:22.652Z : Starting server
+[INFO] at 2024-01-16T08:27:22.659Z : All the weeks were loaded
+[INFO] at 2024-01-16T08:27:22.661Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:27:22.661Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:27:22.662Z : Server started on port 80
+[INFO] at 2024-01-16T08:27:24.407Z : GET /api/v1/all/ with the ip : undefinedgroup : 2 week : 16
+[INFO] at 2024-01-16T08:27:57.332Z : Starting server
+[INFO] at 2024-01-16T08:27:57.339Z : All the weeks were loaded
+[INFO] at 2024-01-16T08:27:57.340Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:27:57.341Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:27:57.342Z : Server started on port 80
+[INFO] at 2024-01-16T08:28:05.312Z : GET /api/v1/all/ with the ip : undefinedgroup : 2 week : 16
+[INFO] at 2024-01-16T08:28:46.914Z : Starting server
+[INFO] at 2024-01-16T08:28:46.922Z : All the weeks were loaded
+[INFO] at 2024-01-16T08:28:46.923Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:28:46.924Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:28:46.925Z : Server started on port 80
+[INFO] at 2024-01-16T08:28:50.587Z : GET /api/v1/all/ with the ip : undefinedgroup : 2 week : 16
+[INFO] at 2024-01-16T08:29:10.737Z : Starting server
+[INFO] at 2024-01-16T08:29:10.744Z : All the weeks were loaded
+[INFO] at 2024-01-16T08:29:10.746Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:29:10.746Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:29:10.748Z : Server started on port 80
+[INFO] at 2024-01-16T08:29:12.459Z : GET /api/v1/all/ with the ip : ::1group : 2 week : 16
+[INFO] at 2024-01-16T08:29:44.913Z : Starting server
+[INFO] at 2024-01-16T08:29:44.920Z : All the weeks were loaded
+[INFO] at 2024-01-16T08:29:44.922Z : All the classes and profs were calculated, there is 20 classes and 26 profs
+[INFO] at 2024-01-16T08:29:44.922Z : Starting server on port 80 because it's in dev mode
+[INFO] at 2024-01-16T08:29:44.923Z : Server started on port 80

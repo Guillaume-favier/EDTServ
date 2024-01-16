@@ -4,8 +4,9 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path")
 const express = require('express');
+const {log} = require("./logger.js")
 
-
+log(1,"Starting server")
 // create express app
 const app = express();
 
@@ -21,14 +22,16 @@ app.get('/', (req, res) => {
 
 if (dev) {
     // listen for requests
+    log(1,"Starting server on port 80 because it's in dev mode")
     http.createServer(app).listen(80, () => {
-        console.log("Server is listening on port 80");
+        log(1, "Server started on port 80")
     });
 }else{
+    log(1, "Starting server on port 443 because it's in production mode")
     https.createServer({
         key: fs.readFileSync(path.join(__dirname, 'ssl/server.key')),
         cert: fs.readFileSync(path.join(__dirname, 'ssl/server.cert'))
     }, app).listen(443, () => {
-        console.log("Server is listening on port 443");
+        log(1,"Server started on port 443")
     });
 }
