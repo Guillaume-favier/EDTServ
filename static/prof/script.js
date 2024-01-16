@@ -214,9 +214,9 @@ async function getText(url) {
                 let done = false
                 for (let numE = 0; numE < table[jour].length; numE++) { // cherche à partir de tout les cours de la journée
                     const element = table[jour][numE];
-                    console.log("pour ", nombreToHeure(i), "et", element[3], nombreToHeure(element[2]),"pour",element)
+                    // console.log("pour ", nombreToHeure(i), "et", element[3], nombreToHeure(element[2]),"pour",element)
                     if (Math.abs(i - element[3]) < 0.125) {
-                        console.log("ajout", element)
+                        // console.log("ajout", element)
                         done = true
                         last[jour] = element[4]
                         const coursMatiere = element[1]
