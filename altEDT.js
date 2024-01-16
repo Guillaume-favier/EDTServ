@@ -92,13 +92,13 @@ const detectOverlap = (arr) => {
     return res
 }
 
-for (let i = 0; i < allProfs.length; i++) {
-    const prof = allProfs[i];
-    let temp = getEDTX(16, prof, 5)
-    console.log(prof)
-    // console.log(temp)
-    console.log(detectOverlap(temp))
-}
+// for (let i = 0; i < allProfs.length; i++) {
+//     const prof = allProfs[i];
+//     let temp = getEDTX(16, prof, 5)
+//     console.log(prof)
+//     // console.log(temp)
+//     console.log(detectOverlap(temp))
+// }
 
 module.exports = {
     allClasses,
