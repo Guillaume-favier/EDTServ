@@ -22,9 +22,11 @@ module.exports = function (app) {
     app.get('/api/v1/all/', (req, res) => {
         // print parameter of request
         const params = req.query;
-        console.log(params)
         if (Object.keys(params).includes("week") && Object.keys(params).includes("group")) {
-            if (!checkweek(Number(params.week))) return res.status(400).json({ "ok": false, error: 'week out of range' })
+            if (!checkweek(Number(params.week))) {
+                log(2,"GET /api/v1/all/ with the ip : " + req.ip + " wrong week : " + params.week + " returning 400")
+                return res.status(400).json({ "ok": false, error: 'week out of range' })
+            }
             log(1, "GET /api/v1/all/ with the ip : " + req.ip + " group : " + params.group + " week : " + params.week);
             const rs = regroupeInfo(Number(params.group), Number(params.week))
             res.status(200).json(rs)
