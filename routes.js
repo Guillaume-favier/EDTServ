@@ -56,6 +56,37 @@ module.exports = function (app) {
         return res.status(200).json(temp)
         return res.status(404).json({ "ok": false, error: 'missing parameters' })
     })
+    app.get('/api/v1/prof/', (req, res) => {
+
+        const params = req.query;
+        console.log(params)
+        if (Object.keys(params).includes("week") && Object.keys(params).includes("prof")) {
+            const days = getNumJours(Number(params.week));
+            const rs = {
+                "ok": true,
+                "days": days[1],
+                "fullDays": days[0],
+                "EDT": getEDTX(params.week, params.prof, 5),
+                "membres": getEDTX(params.week, params.prof, 5)
+            }
+            res.status(200).json(rs)
+            return
+        } else {
+            res.status(400).json({ "ok": false, error: 'missing parameters' })
+            return;
+        }
+        temp["profs"] = allProfs
+        return res.status(200).json(temp)
+        return res.status(404).json({ "ok": false, error: 'missing parameters' })
+    })
+    app.get('/api/v1/profsBases/', (req, res) => {
+
+        const params = req.query;
+        let temp = base(Number(req.query.week))
+        temp["profs"] = allProfs
+        return res.status(200).json(temp)
+        return res.status(404).json({ "ok": false, error: 'missing parameters' })
+    })
 
     //other routes..
 }
