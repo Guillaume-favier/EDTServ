@@ -149,8 +149,10 @@ const ajusteDate = (n) => {
 const txt = document.getElementById("outTxt")
 
 ; (async () => {
+    document.getElementsByClassName("loader")[0].style.display = "block"
     const pallette = await getJson("palettes.json")
     const base = await getJson("/api/v1/base/")
+    document.getElementsByClassName("loader")[0].style.display = "none"
     console.log(base)
     let semaine = base["currentWeek"];
     const groupesPers = base["groupes"]
@@ -293,7 +295,9 @@ const txt = document.getElementById("outTxt")
         semaines.value = semaine
         
         if (testparams() == false) return
+        document.getElementsByClassName("loader")[0].style.display = "block"
         const all = await getJson("/api/v1/all/?group=" + groupeK+"&week="+semaine)
+        document.getElementsByClassName("loader")[0].style.display = "none"
         if (!all["ok"]) {
             alert("Erreur server (" + all["error"]+")")
         }

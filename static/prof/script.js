@@ -122,8 +122,10 @@ async function getText(url) {
 
 
 ; (async () => {
+    document.getElementsByClassName("loader")[0].style.display = "block"
     const pallette = await getJson("palettes.json")
     const base = await getJson("/api/v1/profsBases/")
+    document.getElementsByClassName("loader")[0].style.display = "none"
     console.log(base)
     let semaine = base["currentWeek"];
     const profs = base["profs"]
@@ -278,7 +280,9 @@ async function getText(url) {
         semaines.value = semaine
         
         if (testparams() == false) return
+        document.getElementsByClassName("loader")[0].style.display = "block"
         const all = await getJson("/api/v1/prof/?prof=" + salle+"&week="+semaine)
+        document.getElementsByClassName("loader")[0].style.display = "none"
         if (!all["ok"]) {
             alert("Erreur server (" + all["error"]+")")
         }
