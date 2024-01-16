@@ -151,6 +151,7 @@ const txt = document.getElementById("outTxt")
     }
 
     const updateSemaines = async () => {
+        document.getElementsByClassName("alert")[0].style.display = "none"
         let ele = document.getElementById("persGrp");
         ele.innerHTML = ""
         document.getElementById("DownEDT").onclick = () => {}
@@ -172,6 +173,11 @@ const txt = document.getElementById("outTxt")
         }
         console.log(all)
         afficheEDT(all["EDT"])
+        let test = detectOverlap(all["EDT"])
+        if (test.length > 0) {
+            console.log(document.getElementsByClassName("alert")[0])
+            document.getElementsByClassName("alert")[0].style.display = "block"
+        }
         const nEDT = all["EDT"]
 
         metNumJours(all["fullDays"])

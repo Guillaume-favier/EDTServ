@@ -149,6 +149,7 @@
     }
 
     const updateSemaines = async () => {
+        document.getElementsByClassName("alert")[0].style.display = "none"
         if (semaine > 18) semaine = 3
         if (semaine < 3) semaine = 18
         semaines.value = semaine
@@ -163,8 +164,9 @@
         console.log(all)
         afficheEDT(all["EDT"])
         let test = detectOverlap(all["EDT"])
-        if (test > 0) {
-            
+        if (test.length > 0) {
+            console.log(document.getElementsByClassName("alert")[0])
+            document.getElementsByClassName("alert")[0].style.display = "block"
         }
         const nEDT = all["EDT"]
 

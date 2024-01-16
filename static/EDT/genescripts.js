@@ -117,7 +117,25 @@ const afficheEDT = (table) => {
         eEDT.appendChild(tr)
     }
 }
+const pushIfNotIn = (arr, el) => {
+    let val = JSON.stringify(el)
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        if (JSON.stringify(element) == val) return
+    }
+    arr.push(el)
+}
 
+const isOverlap = (a, b) => {
+    if (a[3] == b[3]) return true
+    if (a[3] < b[3]) {
+        if (a[4] <= b[3]) return false
+        else return true
+    } else {
+        if (b[4] <= a[3]) return false
+        else return true
+    }
+}
 
 const detectOverlap = (arr) => {
     let res = []
