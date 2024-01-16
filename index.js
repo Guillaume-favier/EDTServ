@@ -34,4 +34,10 @@ if (dev) {
     }, app).listen(443, () => {
         log(1,"Server started on port 443")
     });
+    http.createServer((req,res) => {
+        res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+        res.end();
+    }).listen(80, () => {
+        log(1,"Server started on port 80")
+    });
 }
