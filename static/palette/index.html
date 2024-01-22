@@ -8,75 +8,41 @@
 ██║ ╚═╝ ██║██║     ███████╗██║
 ╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝
 -->
-
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sale emploi du temps - MP2I CIV</title>
     <link href="/general.css" rel="stylesheet" id="genestyle" />
-    <link href="/EDT/style.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/logo.ico">
     <script src="https://kit.fontawesome.com/5bd3a64755.js" crossorigin="anonymous"></script>
-
-    <script src="/nav/exceptEDT.js"></script>
     <link href="/nav/nav.css" rel="stylesheet" />
+    <link href="/EDT/style.css" rel="stylesheet" />
+    <title>Palette - MP2I CIV</title>
 </head>
+
 <body>
     <div class="topnav" id="myTopnav">
         <a href="/">Accueil</a>
         <a href="/EDT/">EDT</a>
         <a href="/Agenda/">Agenda</a>
         <a href="/ressources/">Ressources</a>
-        <a href="/HOF/">Hall of fame</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunctionEDT()">
+        <a href="/palette/" class="active">Palette</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
     <center>
-        <h1 class="beau">Emplois du temps des sales MP2I</h1>
-        <div class="content">
-            <form>
-                <label>
-                    Sale : 
-                    <select id="nomSale">
-                        <option value="">-- Choisis une sale --</option>
-                    </select>
-                </label><br/>
-                <label>
-                    Pallette
-                    <select id="pallette">
-                    </select>
-                </label>
-                <br>
-                <button id="prevWeek"> < </button>
-                <label>
-                    Semaine
-                    <select id="semaine"></select>
-                </label>
-                <button id="nextWeek"> > </button>
-            </form>
-        </div>
-        <div class="loader"></div>
-        <div class="alert" style="display:none;">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            Attention ! Certains cours se chevauchent votre emploi du temps peut être totalement faux ! revérifiez bien les
-            heures !
-        </div>
+        <h1 class="beau">Palette de couleur</h1>
+        <h2>Vous en avez mare de la couleur de votre EDT ?</h2>
+        <h3>
+            <label>
+                Essayez autre chose :
+                <select id="palette">
+                </select>
+            </label>
+        </h3>
         <table id="tocopy">
             <tbody id="EDT">
-                <tr >
-                    <th></th>
-                    <th>Lundi</th>
-                    <th>Mardi</th>
-                    <th>Mercredi</th>
-                    <th>Jeudi</th>
-                    <th>Vendredi</th>
-                </tr>
-            </tbody>
-            
-        </table>
-        <table class="hid">
-            <tbody id="EDT2">
                 <tr>
                     <th></th>
                     <th>Lundi</th>
@@ -86,13 +52,12 @@
                     <th>Vendredi</th>
                 </tr>
             </tbody>
-            
+        
         </table>
     </center>
     <div class="footer"><span id="url"></span> sous licence : <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html"><i class="fa-solid fa-scale-balanced"></i> GPL-3.0 </a><i class="fa-solid fa-moon" id="dark"></i> <a href="https://github.com/Guillaume-favier/mp2iciv.fr"><i class="fa-brands fa-github"></i></a></div>
 </body>
-<script src="/nav/nav.js" type="module"></script>
+<script src="/nav/nav.js"></script>
 <script src="/EDT/genescripts.js"></script>
-<script src="/sale/script.js">
-</script>
+<script src="/palette/script.js"></script>
 </html>

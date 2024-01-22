@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof emploi du temps - MP2I CIV</title>
+    <title>Salle emploi du temps - MP2I CIV</title>
     <link href="/general.css" rel="stylesheet" id="genestyle" />
     <link href="/EDT/style.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/logo.ico">
@@ -33,18 +33,18 @@
         </a>
     </div>
     <center>
-        <h1 class="beau">Emplois du temps des profs MP2I</h1>
+        <h1 class="beau">Emplois du temps des salles MP2I</h1>
         <div class="content">
             <form>
                 <label>
-                    Prof : 
-                    <select id="nomProf">
-                        <option value="">-- Choisis un prof --</option>
+                    Salle : 
+                    <select id="nomsalle">
+                        <option value="">-- Choisis une salle --</option>
                     </select>
                 </label><br/>
                 <label>
-                    Pallette
-                    <select id="pallette">
+                    palette
+                    <select id="palette">
                     </select>
                 </label>
                 <br>
@@ -59,7 +59,8 @@
         <div class="loader"></div>
         <div class="alert" style="display:none;">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            Attention ! Certains cours se chevauchent votre emploi du temps peut être totalement faux ! revérifiez bien les heures !
+            Attention ! Certains cours se chevauchent votre emploi du temps peut être totalement faux ! revérifiez bien les
+            heures !
         </div>
         <table id="tocopy">
             <tbody id="EDT">
@@ -92,6 +93,6 @@
 </body>
 <script src="/nav/nav.js" type="module"></script>
 <script src="/EDT/genescripts.js"></script>
-<script src="/prof/script.js">
+<script src="/salle/script.js">
 </script>
 </html>

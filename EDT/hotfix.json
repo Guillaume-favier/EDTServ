@@ -1,443 +1,617 @@
 {
-  "7/0": [
-    [
-      "13",
-      [
-        ["TD SI", "20", 10, 11],
-        ["Anglais", "33", 13, 14],
-        ["Physique", "20", 14, 16],
-        ["EPS", "dehors", 16, 18]
-      ]
+    "7/0": [
+        [
+            "13",
+            [
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["Anglais", "anglais", "33", 13, 14, ""],
+                ["Physique", "physique", "20", 14, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "p",
+            [
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["Physique", "physique", "20", 12, 14, ""],
+                ["Anglais", "anglais", "33", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "i",
+            [
+                ["TD SI", "si", "20", 11, 12, ""],
+                ["Anglais", "anglais", "33", 13, 14, ""],
+                ["Physique", "physique", "20", 14, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ]
     ],
-    [
-      "p",
-      [
-        ["TD SI", "20", 10, 11],
-        ["Physique", "20", 12, 14],
-        ["Anglais", "33", 15, 16],
-        ["EPS", "dehors", 16, 18]
-      ]
+    "7/4": [["e", []]],
+    "8/0": [
+        [
+            "3",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["TD Physique", "physique", "20", 12, 14, ""],
+                ["Anglais", "anglais", "20", 14, 15, ""],
+                ["Kholle de Maths", "kholle de maths", "K22", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ]
     ],
-    [
-      "i",
-      [
-        ["TD SI", "20", 11, 12],
-        ["Anglais", "33", 13, 14],
-        ["Physique", "20", 14, 16],
-        ["EPS", "dehors", 16, 18]
-      ]
+    "8/4": [
+        [
+            "1",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Anglais", "anglais", "K25", 17, 18, ""]
+            ]
+        ],
+        [
+            "3",
+            [
+                ["Maths", "maths", "20", 8, 12, ""],
+                ["Khôlle Français", "francais", "Greta 5", 16, 17, ""]
+            ]
+        ],
+        [
+            "4",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Maths", "maths", "K22", 15.75, 16.75, ""]
+            ]
+        ],
+        [
+            "5",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Anglais", "anglais", "K26-K27", 17, 18, ""]
+            ]
+        ],
+        [
+            "5",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Anglais", "anglais", "K26-K27", 17, 18, ""]
+            ]
+        ],
+        [
+            "8",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Physique", "physique", "20", 15, 16, ""]
+            ]
+        ],
+        [
+            "10",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Maths", "maths", "K22", 15, 16, ""]
+            ]
+        ],
+        [
+            "11",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Anglais", "anglais", "K26-K27", 16, 17, ""]
+            ]
+        ],
+        [
+            "12",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Physique", "physique", "labo chimie", 15, 16, ""]
+            ]
+        ],
+        [
+            "14",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Français", "francais", "Greta 5", 17.5, 18.5, ""]
+            ]
+        ],
+        [
+            "16",
+            [
+                ["Maths", "maths", "20", 7.833333333333334, 12, ""],
+                ["Khôlle Physique", "physique", "20", 16, 17, ""]
+            ]
+        ],
+        ["e", [["Maths", "maths", "20", 7.833333333333334, 12, ""]]]
+    ],
+    "10/0": [
+        [
+            "1",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["TD Physique", "physique", "20", 12, 13, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["Khôlle Maths", "maths", "K34", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "2",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 9, 10, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["TD Physique", "physique", "20", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "3",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["TD Physique", "physique", "20", 12, 13, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "4",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 9, 10, ""],
+                ["Khôlle Physique", "physique", "26", 10, 11, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["TD Physique", "physique", "20", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "5",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["TD Physique", "physique", "20", 12, 13, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "6",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 9, 10, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["TD Physique", "physique", "20", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "7",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["TD Physique", "physique", "20", 12, 13, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "8",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 9, 10, ""],
+                ["Khôlle Physique", "physique", "K25", 10, 11, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["TD Physique", "physique", "20", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "9",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["TD Physique", "physique", "20", 12, 13, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "10",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 9, 10, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["TD Physique", "physique", "20", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "11",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["TD Physique", "physique", "20", 12, 13, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "12",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["Khôlle Physique", "physique", "26", 9, 10, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["TD Physique", "physique", "20", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "13",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 9, 10, ""],
+                ["TD Physique", "physique", "20", 12, 13, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "14",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 9, 10, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["TD Physique", "physique", "20", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "15",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 10, 11, ""],
+                ["TD Physique", "physique", "20", 12, 13, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ],
+        [
+            "16",
+            [
+                ["SI", "si", "20", 8, 9, ""],
+                ["TD SI", "si", "20", 9, 10, ""],
+                ["Khôlle Physique", "physique", "K25", 11, 12, ""],
+                ["Physique", "physique", "33", 13, 15, ""],
+                ["TD Physique", "physique", "20", 15, 16, ""],
+                ["EPS", "eps", "dehors", 16, 18, ""]
+            ]
+        ]
+    ],
+    "10/1": [
+        [
+            "1",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 15, 17, ""]
+            ]
+        ],
+        [
+            "2",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 15, 17, ""]
+            ]
+        ],
+        [
+            "3",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""]
+            ]
+        ],
+        [
+            "4",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""]
+            ]
+        ],
+        [
+            "5",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 15, 17, ""],
+                ["TP Info", "info", "37", 17, 19, ""]
+            ]
+        ],
+        [
+            "6",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["Khôlle Physique", "physique", "21", 16, 17, ""],
+                ["TP Info", "info", "37", 17, 19, ""]
+            ]
+        ],
+        [
+            "7",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 17, 19, ""]
+            ]
+        ],
+        [
+            "8",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["Khôlle Maths", "maths", "20", 15, 16, ""]
+            ]
+        ],
+        [
+            "9",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["Khôlle Anglais", "anglais", "Greta 4", 16, 17, ""]
+            ]
+        ],
+        [
+            "10",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 15, 17, ""]
+            ]
+        ],
+        [
+            "11",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["Khôlle Maths", "maths", "24", 16, 17, ""]
+            ]
+        ],
+        [
+            "12",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 17, 19, ""]
+            ]
+        ],
+        [
+            "13",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 17, 19, ""]
+            ]
+        ],
+        [
+            "14",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 15, 17, ""]
+            ]
+        ],
+        [
+            "15",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 15, 17, ""]
+            ]
+        ],
+        [
+            "16",
+            [
+                ["Info", "info", "20", 8, 11, ""],
+                ["Maths", "maths", "20", 12, 15, ""],
+                ["TP Info", "info", "37", 17, 19, ""]
+            ]
+        ]
+    ],
+    "11/3": [
+        [
+            "1",
+            [
+                ["Français", "francais", "20", 8, 10, ""],
+                ["Maths", "maths", "20", 10, 12, ""],
+                ["Maths", "maths", "20", 13, 15, ""],
+                ["Khôlle Maths", "maths", "20", 15, 16, ""],
+                ["LV2", "lv2", "🤷‍♂️", 17, 19, ""]
+            ]
+        ],
+        [
+            "5",
+            [
+                ["Français", "francais", "20", 8, 10, ""],
+                ["Maths", "maths", "20", 10, 12, ""],
+                ["Maths", "maths", "20", 13, 15, ""],
+                [
+                    "Khôlle Maths",
+                    "maths",
+                    "20",
+                    15.916666666666668,
+                    16.916666666666668,
+                    ""
+                ]
+            ]
+        ]
+    ],
+    "18/0": [
+        [
+            "1",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "2",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "3",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "4",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["Khôlle Physique", "physique", "26", 9, 10, "Bouchet"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "5",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "6",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "7",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "8",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Khôlle Physique", "physique", "K25", 11, 12, "Sadoux"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "9",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["Khôlle Maths", "maths", "K34", 15, 16, "Ghiberti"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "10",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "11",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "12",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Khôlle Physique", "physique", "26", 10, 11, "Bouchet"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "13",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "14",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "15",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "16",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Khôlle Physique", "physique", "K25", 10, 11, "Sadoux"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ]
     ]
-  ],
-  "7/4": [["e", []]],
-  "8/0": [
-    [
-      "3",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 10, 11],
-        ["TD Physique", "20", 12, 14],
-        ["Anglais", "20", 14, 15],
-        ["Kholle de Maths", "K22", 15, 16],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ]
-  ],
-  "8/4": [
-    [
-      "1",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Anglais", "K25", 17, 18]
-      ]
-    ],
-    [
-      "3",
-      [
-        ["Maths", "20", 8, 12],
-        ["Khôlle Français", "Greta 5", 16, 17]
-      ]
-    ],
-    [
-      "4",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Maths", "K22", 15.75, 16.75]
-      ]
-    ],
-    [
-      "5",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Anglais", "K26-K27", 17, 18]
-      ]
-    ],
-    [
-      "5",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Anglais", "K26-K27", 17, 18]
-      ]
-    ],
-    [
-      "8",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Physique", "20", 15, 16]
-      ]
-    ],
-    [
-      "10",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Maths", "K22", 15, 16]
-      ]
-    ],
-    [
-      "11",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Anglais", "K26-K27", 16, 17]
-      ]
-    ],
-    [
-      "12",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Physique", "labo chimie", 15, 16]
-      ]
-    ],
-    [
-      "14",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Français", "Greta 5", 17.5, 18.5]
-      ]
-    ],
-    [
-      "16",
-      [
-        ["Maths", "20", 7.833333333333334, 12],
-        ["Khôlle Physique", "20", 16, 17]
-      ]
-    ],
-    ["e", [["Maths", "20", 7.833333333333334, 12]]]
-  ],
-  "10/0": [
-    [
-      "1",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 10, 11, "SI"],
-        ["TD Physique", "20", 12, 13, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["Khôlle Maths", "K34", 15, 16, "Maths"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "2",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 9, 10, "SI"],
-        ["Physique", "33", 13, 15],
-        ["TD Physique", "20", 15, 16, "Physique"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "3",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 10, 11, "SI"],
-        ["TD Physique", "20", 12, 13, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "4",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 9, 10, "SI"],
-        ["Khôlle Physique", "26", 10, 11, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["TD Physique", "20", 15, 16, "Physique"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "5",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 10, 11, "SI"],
-        ["TD Physique", "20", 12, 13, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "6",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 9, 10, "SI"],
-        ["Physique", "33", 13, 15],
-        ["TD Physique", "20", 15, 16, "Physique"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "7",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 10, 11, "SI"],
-        ["TD Physique", "20", 12, 13, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "8",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 9, 10, "SI"],
-        ["Khôlle Physique", "K25", 10, 11, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["TD Physique", "20", 15, 16, "Physique"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "9",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 10, 11, "SI"],
-        ["TD Physique", "20", 12, 13, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "10",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 9, 10, "SI"],
-        ["Physique", "33", 13, 15],
-        ["TD Physique", "20", 15, 16, "Physique"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "11",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 10, 11, "SI"],
-        ["TD Physique", "20", 12, 13, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "12",
-      [
-        ["SI", "20", 8, 9],
-        ["Khôlle Physique", "26", 9, 10, "Physique"],
-        ["TD SI", "20", 10, 11, "SI"],
-        ["Physique", "33", 13, 15],
-        ["TD Physique", "20", 15, 16, "Physique"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "13",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 9, 10, "SI"],
-        ["TD Physique", "20", 12, 13, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "14",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 9, 10, "SI"],
-        ["Physique", "33", 13, 15],
-        ["TD Physique", "20", 15, 16, "Physique"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "15",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 10, 11, "SI"],
-        ["TD Physique", "20", 12, 13, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ],
-    [
-      "16",
-      [
-        ["SI", "20", 8, 9],
-        ["TD SI", "20", 9, 10, "SI"],
-        ["Khôlle Physique", "K25", 11, 12, "Physique"],
-        ["Physique", "33", 13, 15],
-        ["TD Physique", "20", 15, 16, "Physique"],
-        ["EPS", "dehors", 16, 18]
-      ]
-    ]
-  ],
-  "10/1": [
-    [
-      "1",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        [" TP Info", "37", 15, 17, "Info"]
-      ]
-    ],
-    [
-      "2",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        [" TP Info", "37", 15, 17, "Info"]
-      ]
-    ],
-    [
-      "3",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15]
-      ]
-    ],
-    [
-      "4",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15]
-      ]
-    ],
-    [
-      "5",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        [" TP Info", "37", 15, 17, "Info"],
-        ["TP Info", "37", 17, 19, "Info"]
-      ]
-    ],
-    [
-      "6",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        ["Khôlle Physique", "21", 16, 17, "Physique"],
-        ["TP Info", "37", 17, 19, "Info"]
-      ]
-    ],
-    [
-      "7",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        ["TP Info", "37", 17, 19, "Info"]
-      ]
-    ],
-    [
-      "8",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        ["Khôlle Maths", "20", 15, 16, "Maths"]
-      ]
-    ],
-    [
-      "9",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        ["Khôlle Anglais", "Greta 4", 16, 17, "Anglais"]
-      ]
-    ],
-    [
-      "10",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        [" TP Info", "37", 15, 17, "Info"]
-      ]
-    ],
-    [
-      "11",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        ["Khôlle Maths", "24", 16, 17, "Maths"]
-      ]
-    ],
-    [
-      "12",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        ["TP Info", "37", 17, 19, "Info"]
-      ]
-    ],
-    [
-      "13",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        ["TP Info", "37", 17, 19, "Info"]
-      ]
-    ],
-    [
-      "14",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        [" TP Info", "37", 15, 17, "Info"]
-      ]
-    ],
-    [
-      "15",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        [" TP Info", "37", 15, 17, "Info"]
-      ]
-    ],
-    [
-      "16",
-      [
-        ["Info", "20", 8, 11],
-        ["Maths", "20", 12, 15],
-        ["TP Info", "37", 17, 19, "Info"]
-      ]
-    ]
-  ],
-  "11/3": [
-    [
-      "1",
-      [
-        ["Français", "20", 8, 10],
-        ["Maths", "20", 10, 12],
-        ["Maths", "20", 13, 15],
-        ["Khôlle Maths", "20", 15, 16, "Maths"],
-        ["LV2", "🤷‍♂️", 17, 19, "LV2"]
-      ]
-    ],
-    [
-      "5",
-      [
-        ["Français", "20", 8, 10],
-        ["Maths", "20", 10, 12],
-        ["Maths", "20", 13, 15],
-        ["Khôlle Maths", "20", 15.916666666666668, 16.916666666666668, "Maths"]
-      ]
-    ]
-  ]
 }

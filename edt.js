@@ -32,7 +32,7 @@ const info = getText("/EDT/info.txt")             // document qui répertorie la
 const orgEDT = getJson("/EDT/EDT.json")           // document qui répertorie les les cours communs
 const semaineNom = getJson("/EDT/semaine.json")   // document qui répertorie les dates des lundis de chaques semaines
 const groupesPers = getJson("/EDT/groupes.json")  // document qui répertorie le nom des memebres de chaques groupes
-const hotfix = getJson("/EDT/newHotFix.json")        // document qui répertorie les hotfixs
+const hotfix = getJson("/EDT/hotFix.json")        // document qui répertorie les hotfixs
 let EDT = clone(orgEDT) // variable qui stocke tout l'EDTA qui sera à consulter
 let tableauInfo = []
 

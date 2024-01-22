@@ -63,9 +63,9 @@
 */
 
 ; (async () => {
-    const pallette = await getJson("/EDT/palettes.json")
+    const palette = await getJson("/palette/palettes.json")
     document.getElementsByClassName("loader")[0].style.display = "block"
-    const base = await getJson("/api/v1/salesBases/")
+    const base = await getJson("/api/v1/sallesBases/")
     document.getElementsByClassName("loader")[0].style.display = "none"
     console.log(base)
     let semaine = base["currentWeek"];
@@ -73,7 +73,7 @@
     salles.sort((a, b) => a.localeCompare(b))
     const semaineNom = base["weeks"]
     // let EDT = clone(orgEDT) // variable qui stocke tout l'EDTA qui sera à consulter
-    var salleSelect = document.getElementById("nomSale")
+    var salleSelect = document.getElementById("nomsalle")
     for (let i = 0; i < salles.length; i++) { // affichage primitif pour le choix des groupes
         const opt = document.createElement("option")
         opt.value = salles[i - 1]
@@ -94,7 +94,6 @@
         opt.innerText = i
         semaines.appendChild(opt)
     }
-    var palletteElem = document.getElementById("pallette")
 
     const ajusteDate = (n) => {
         return n < 10 ? "0" + n : n
@@ -118,25 +117,17 @@
     const testparams = () => {
         return salle != 0
     }
-    // affichage pallette
-    Object.keys(pallette).forEach(name => {
-        const option = document.createElement("option")
-        option.value = name
-        option.innerText = name
-        palletteElem.appendChild(option)
-    })
 
-    const setPallette = () => {
-        const palcook = getCookie("pallette")
-        if (palcook == "" || Object.keys(pallette).indexOf(palcook) == -1) {
-            palletteElem.value = "Guillaume"
-            setCookie("pallette", "Guillaume", 100)
+    const setpalette = () => {
+        let namePal
+        const palcook = getCookie("palette")
+        if (palcook == "" || Object.keys(palette).indexOf(palcook) == -1) {
+            namePal = "Guillaume"
+            setCookie("palette", "Guillaume", 100)
         } else {
-            palletteElem.value = palcook
+            namePal = palcook
         }
-
-        const namePal = palletteElem.value
-        const pal = pallette[namePal]
+        const pal = palette[namePal]
         if (typeof pal == "undefined" || pal == null) return
         Object.keys(pal).forEach(matiere => {
             const mm = document.getElementsByClassName(matiere)
@@ -156,7 +147,7 @@
         if (testparams() == false) return
 
         document.getElementsByClassName("loader")[0].style.display = "block"
-        const all = await getJson("/api/v1/sale/?sale=" + salle+"&week="+semaine)
+        const all = await getJson("/api/v1/salle/?salle=" + salle+"&week="+semaine)
 
         document.getElementsByClassName("loader")[0].style.display = "none"
         if (!all["ok"]) {
@@ -167,11 +158,10 @@
         const nEDT = all["EDT"]
         const test = detectOverlap(nEDT)
         if (test.length > 0) {
-            console.log(document.getElementsByClassName("alert")[0])
             document.getElementsByClassName("alert")[0].style.display = "block"
         }
         metNumJours(all["fullDays"])
-        setPallette()
+        setpalette()
     }
 
     const changementPourEdt = () => { // fons d'écran spécialisé pour mayeul et évariste
@@ -207,10 +197,6 @@
     salleSelect.onchange = e => {
         setCookie("salleholle", e.target.value, 100)
         changementPourEdt()
-    }
-    palletteElem.onchange = e => {
-        setCookie("pallette", palletteElem.value, 100)
-        updateSemaines()
     }
 
     // ajout des dates semaines pour sélection.

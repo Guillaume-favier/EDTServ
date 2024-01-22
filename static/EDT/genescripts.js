@@ -61,10 +61,10 @@ const resetEDT = () => {
 
 }
 
-const afficheEDT = (table) => {
+const afficheEDT = (table, reset = true) => {
     console.log("affichage", table)
     console.log("Affichage de l'emplois du temps")
-    resetEDT()
+    if (reset) resetEDT()
 
     const joursN = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"]
 
@@ -106,7 +106,7 @@ const afficheEDT = (table) => {
                 }
             }
             if (done == false && last[jour] <= i) {
-                console.log("skip")
+                // console.log("skip")
                 last[jour] += 0.25
                 const td = document.createElement("td")
                 td.innerText = "\n"

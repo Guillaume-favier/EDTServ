@@ -1,0 +1,169 @@
+{
+    "18/0": [
+        [
+            "1",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "2",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "3",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 15, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "4",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["Khôlle Physique", "physique", "26", 9, 10, "Bouchet"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 15, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "5",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["TD Physique", "physique", "20", 12, 14, "Bouchet"],
+                ["Anglais", "anglais", "33", 14, 15, "Bocquillon"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "6",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "7",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["TD Physique", "physique", "20", 12, 14, "Bouchet"],
+                ["Anglais", "anglais", "33", 14, 15, "Bocquillon"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "8",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Khôlle Physique", "physique", "K25", 11, 12, "Sadoux"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "9",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["TD Physique", "physique", "20", 12, 14, "Bouchet"],
+                ["Anglais", "anglais", "33", 14, 15, "Bocquillon"],
+                ["Khôlle Maths", "maths", "K34", 15, 16, "Ghiberti"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "10",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "11",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["TD Physique", "physique", "20", 12, 14, "Bouchet"],
+                ["Anglais", "anglais", "33", 14, 15, "Bocquillon"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "12",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Khôlle Physique", "physique", "26", 10, 11, "Bouchet"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "13",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["TD Physique", "physique", "20", 12, 14, "Bouchet"],
+                ["Anglais", "anglais", "33", 14, 15, "Bocquillon"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "14",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "15",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 10, 11, "Cornette"],
+                ["TD Physique", "physique", "20", 12, 14, "Bouchet"],
+                ["Anglais", "anglais", "33", 14, 15, "Bocquillon"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ],
+        [
+            "16",
+            [
+                ["SI", "SI", "20", 8, 9, "Cornette"],
+                ["TD SI", "SI", "20", 9, 10, "Cornette"],
+                ["Khôlle Physique", "physique", "K25", 10, 11, "Sadoux"],
+                ["Anglais", "anglais", "33", 13, 14, "Bocquillon"],
+                ["TD Physique", "physique", "20", 14, 16, "Bouchet"],
+                ["EPS", "EPS", "dehors", 16, 18, "Sport"]
+            ]
+        ]
+    ]
+}

@@ -38,31 +38,31 @@ module.exports = function (app) {
         }
         res.status(500).json({"ok":false, error: 'internal error' })
     });
-    app.get('/api/v1/sale/', (req, res) => {
+    app.get('/api/v1/salle/', (req, res) => {
 
         const params = req.query;
-        if (Object.keys(params).includes("week") && Object.keys(params).includes("sale")) {
-            log(1, "GET /api/v1/sale/ with the ip : " + req.ip + " sale : " + params.sale + " week : " + params.week);
+        if (Object.keys(params).includes("week") && Object.keys(params).includes("salle")) {
+            log(1, "GET /api/v1/salle/ with the ip : " + req.ip + " salle : " + params.salle + " week : " + params.week);
             const days = getNumJours(Number(params.week));
             const rs = {
                 "ok": true,
                 "days": days[1],
                 "fullDays": days[0],
-                "EDT": getEDTX(params.week,params.sale, 2)
+                "EDT": getEDTX(params.week,params.salle, 2)
             }
             res.status(200).json(rs)
             return
         } else {
-            log(2, "GET /api/v1/sale/ with the ip : " + req.ip + " missing parameters, returning 400" + JSON.stringify(params));
+            log(2, "GET /api/v1/salle/ with the ip : " + req.ip + " missing parameters, returning 400" + JSON.stringify(params));
             res.status(400).json({ "ok": false, error: 'missing parameters' })
             return;
         }
         return res.status(500).json({ "ok": false, error: 'server error' })
     })
-    app.get('/api/v1/salesBases/', (req, res) => {
+    app.get('/api/v1/sallesBases/', (req, res) => {
 
         const params = req.query;
-        log(1, "GET /api/v1/salesBases/ with the ip : " + req.ip + (req.query.week ? " and for a specific week : " + req.query.week : ""));
+        log(1, "GET /api/v1/sallesBases/ with the ip : " + req.ip + (req.query.week ? " and for a specific week : " + req.query.week : ""));
         let temp = base(Number(req.query.week))
         temp["salles"] = allClasses
         return res.status(200).json(temp)
@@ -71,7 +71,7 @@ module.exports = function (app) {
     app.get('/api/v1/prof/', (req, res) => {
         const params = req.query;
         if (Object.keys(params).includes("week") && Object.keys(params).includes("prof")) {
-            log(1, "GET /api/v1/prof/ with the ip : " + req.ip + "sale : " + params.prof + " week : " + params.week);
+            log(1, "GET /api/v1/prof/ with the ip : " + req.ip + "salle : " + params.prof + " week : " + params.week);
             const days = getNumJours(Number(params.week));
             const rs = {
                 "ok": true,
