@@ -44,7 +44,6 @@ const makeIcs = ( targets ) => {
 }
 
 const fromEDTtoIcs = (edt,semaine) => {
-    // console.log(edt, semaine)
     const base = semaine.split("/");
     let jours = []
 
@@ -58,9 +57,9 @@ const fromEDTtoIcs = (edt,semaine) => {
     for (let jour = 0; jour < edt.length; jour++) {
         edt[jour].forEach(cours => {
             let date = moment(jours[jour])
-            let timeFrom = nombreToHeure2(cours[2])
-            let timeTo = nombreToHeure2(cours[3])
-            let title = cours[0] + " (" + cours[1] + ")"
+            let timeFrom = nombreToHeure2(cours[3])
+            let timeTo = nombreToHeure2(cours[4])
+            let title = cours[0] + " (" + cours[2] + ") avec " + cours[5]
             targets.push({
                 date,
                 timeFrom,
@@ -69,6 +68,7 @@ const fromEDTtoIcs = (edt,semaine) => {
             })
         })
     }
+    // console.log("res",targets)
     // console.log(targets)
 
     const res = makeIcs(targets)

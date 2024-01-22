@@ -310,7 +310,8 @@ const regroupeInfo = (k, s) => {
 		"fullDays": days[0],
 		"EDT": allEdt[s.toString()][k - 1],
 		"kholles": getKholes(k, s),
-		"membres": groupesPers[k - 1]
+		"membres": groupesPers[k - 1],
+		"DS": ds[s-2],
 	}
 	return res
 }

@@ -120,25 +120,16 @@ const txt = document.getElementById("outTxt")
     const testparams = () => {
         return groupeK != 0
     }
-    
-    // affichage pallette
-    Object.keys(pallette).forEach(name => {
-        const option = document.createElement("option")
-        option.value = name
-        option.innerText = name
-        palletteElem.appendChild(option)
-    })
 
     const setPallette = () => {
         const palcook = getCookie("pallette")
+        let namePal = ""
         if (palcook == "" || Object.keys(pallette).indexOf(palcook) == -1) {
-            palletteElem.value = "Guillaume"
+            namePal = "Guillaume"
             setCookie("pallette", "Guillaume", 100)
         } else {
-            palletteElem.value = palcook
+            namePal = palcook
         }
-
-        const namePal = palletteElem.value
         const pal = pallette[namePal]
         if (typeof pal == "undefined" || pal == null) return
         Object.keys(pal).forEach(matiere => {
@@ -167,24 +158,29 @@ const txt = document.getElementById("outTxt")
         if (testparams() == false) return
         document.getElementsByClassName("loader")[0].style.display = "block"
         const all = await getJson("/api/v1/all/?group=" + groupeK+"&week="+semaine)
+        console.log(all)
         document.getElementsByClassName("loader")[0].style.display = "none"
         if (!all["ok"]) {
             alert("Erreur server (" + all["error"]+")")
         }
-        console.log(all)
+
+        // affichage
         afficheEDT(all["EDT"])
+
+        // détection des conflits
         let test = detectOverlap(all["EDT"])
         if (test.length > 0) {
             console.log(document.getElementsByClassName("alert")[0])
             document.getElementsByClassName("alert")[0].style.display = "block"
         }
-        const nEDT = all["EDT"]
+        
+        fromEDTtoIcs(all["EDT"], semaineNom[semaine - 2])
 
         metNumJours(all["fullDays"])
         setPallette()
+
         // affichage des kholles sous forme de liste
         let ul = document.createElement("ul")
-        console.log(all)
         all["kholles"].forEach((days,jour) => {
             for (let i = 0; i < days.length; i++) {
                 const kh = days[i];
@@ -193,6 +189,7 @@ const txt = document.getElementById("outTxt")
                 ul.appendChild(li)
             }
         })
+        txt.appendChild(document.createTextNode("DS : "+(all["DS"] == null ? "Aucun" : all["DS"])))
         txt.appendChild(ul)
 
         // affichage des membres du groupe en bas de la page
@@ -259,11 +256,6 @@ const txt = document.getElementById("outTxt")
         setCookie("GroupeKholle", e.target.value, 100)
         changementPourEdt()
     }
-    palletteElem.onchange = e => {
-        setCookie("pallette", palletteElem.value, 100)
-        updateSemaines()
-    }
-
     // ajout des dates semaines pour sélection.
     semaines.childNodes.forEach(elem => {
         const base = semaineNom[elem.value - 2].split("/");
