@@ -76,14 +76,14 @@ if (cookiegrp == "" || (Number(cookiegrp) < 17 && Number(cookiegrp) > 0)) {
 } else selectGrp.value = ""
 
 var semaines = document.getElementById("semaine")
-for (let i = 3; i < 19; i++) {
+for (let i = 3; i <= 18; i++) {
 
     const opt = document.createElement("option")
     opt.value = i.toString()
     opt.innerText = i
     semaines.appendChild(opt)
 }
-var palletteElem = document.getElementById("pallette")
+var paletteElem = document.getElementById("palette")
 
 const ajusteDate = (n) => {
     return n < 10 ? "0"+ n : n
@@ -93,7 +93,7 @@ const txt = document.getElementById("outTxt")
 
 ; (async () => {
     document.getElementsByClassName("loader")[0].style.display = "block"
-    const pallette = await getJson("palettes.json")
+    const palette = await getJson("/palette/palettes.json")
     const base = await getJson("/api/v1/base/")
     document.getElementsByClassName("loader")[0].style.display = "none"
     console.log(base)
@@ -102,7 +102,7 @@ const txt = document.getElementById("outTxt")
     const semaineNom = base["weeks"]
     // let EDT = clone(orgEDT) // variable qui stocke tout l'EDTA qui sera à consulter
     txt.innerHTML = "Traitement des données ..."
-    let tableauInfo = []
+    let cache = {}
 
     let groupeK = selectGrp.value == "" ? 0 : Number(selectGrp.value);
     
@@ -121,16 +121,16 @@ const txt = document.getElementById("outTxt")
         return groupeK != 0
     }
 
-    const setPallette = () => {
-        const palcook = getCookie("pallette")
+    const setpalette = () => {
+        const palcook = getCookie("palette")
         let namePal = ""
-        if (palcook == "" || Object.keys(pallette).indexOf(palcook) == -1) {
+        if (palcook == "" || Object.keys(palette).indexOf(palcook) == -1) {
             namePal = "Guillaume"
-            setCookie("pallette", "Guillaume", 100)
+            setCookie("palette", "Guillaume", 100)
         } else {
             namePal = palcook
         }
-        const pal = pallette[namePal]
+        const pal = palette[namePal]
         if (typeof pal == "undefined" || pal == null) return
         Object.keys(pal).forEach(matiere => {
             const mm = document.getElementsByClassName(matiere)
@@ -156,10 +156,17 @@ const txt = document.getElementById("outTxt")
         semaines.value = semaine
         
         if (testparams() == false) return
-        document.getElementsByClassName("loader")[0].style.display = "block"
-        const all = await getJson("/api/v1/all/?group=" + groupeK+"&week="+semaine)
-        console.log(all)
-        document.getElementsByClassName("loader")[0].style.display = "none"
+        let cacheName = groupeK + "-" + semaine
+        let all
+        if (Object.keys(cache).includes(cacheName)) {
+            all = cache[cacheName]
+        }else{
+            document.getElementsByClassName("loader")[0].style.display = "block"
+            all = await getJson("/api/v1/all/?group=" + groupeK+"&week="+semaine)
+            console.log(all)
+            document.getElementsByClassName("loader")[0].style.display = "none"
+            cache[cacheName] = all
+        }
         if (!all["ok"]) {
             alert("Erreur server (" + all["error"]+")")
         }
@@ -177,7 +184,7 @@ const txt = document.getElementById("outTxt")
         fromEDTtoIcs(all["EDT"], semaineNom[semaine - 2])
 
         metNumJours(all["fullDays"])
-        setPallette()
+        setpalette()
 
         // affichage des kholles sous forme de liste
         let ul = document.createElement("ul")
@@ -185,7 +192,7 @@ const txt = document.getElementById("outTxt")
             for (let i = 0; i < days.length; i++) {
                 const kh = days[i];
                 const li = document.createElement("li")
-                li.innerText = kh[0] + ", le " + jours[jour] + " à  " + (typeof kh[3] == typeof 2 ? (kh[3] + "h") : kh[3]) + " en " + kh[2] + " avec " + kh[5]
+                li.innerText = kh[0] + ", le " + jours[jour] + " à  " + nombreToHeure(kh[3]) + " en " + kh[2] + " avec " + kh[5]
                 ul.appendChild(li)
             }
         })
@@ -240,9 +247,8 @@ const txt = document.getElementById("outTxt")
 
 
     changementPourEdt()
-    // affichage des noms des membres du groupe pour la sélenction
+    // affichage des noms des membres du groupe pour la sélection
     for (let i = 1; i < selectGrp.children.length; i++) {
-
         const el = selectGrp.children[i];
         el.innerText += " :  "
         groupesPers[el.value - 1].forEach(pers => {

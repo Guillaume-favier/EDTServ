@@ -42,6 +42,10 @@ module.exports = function (app) {
 
         const params = req.query;
         if (Object.keys(params).includes("week") && Object.keys(params).includes("salle")) {
+            if (!checkweek(Number(params.week))) {
+                log(2, "GET /api/v1/salle/ with the ip : " + req.ip + " wrong week : " + params.week + " returning 400")
+                return res.status(400).json({ "ok": false, error: 'week out of range' })
+            }
             log(1, "GET /api/v1/salle/ with the ip : " + req.ip + " salle : " + params.salle + " week : " + params.week);
             const days = getNumJours(Number(params.week));
             const rs = {

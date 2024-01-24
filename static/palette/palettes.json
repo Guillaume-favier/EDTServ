@@ -19,6 +19,16 @@
       "EPS": "#b4b4b4",
       "lv2": "#A8A196"
     },
+    "GH >λ=":{
+      "SI": "#e1ad01",
+      "maths": "#616fd4",
+      "français": "#77b8fb",
+      "physique": "#f30202",
+      "anglais": "#e06739",
+      "info": "#21b52a",
+      "EPS": "#ffffff",
+      "lv2": "#583747"
+    },
     "Pastel":{
       "SI": "#fdffb6",
       "maths": "#ffadad",

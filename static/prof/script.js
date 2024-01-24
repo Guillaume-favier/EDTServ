@@ -64,7 +64,7 @@
 
 ; (async () => {
     document.getElementsByClassName("loader")[0].style.display = "block"
-    const pallette = await getJson("/EDT/palettes.json")
+    const palette = await getJson("/palette/palettes.json")
     const base = await getJson("/api/v1/profsBases/")
     document.getElementsByClassName("loader")[0].style.display = "none"
     console.log(base)
@@ -95,7 +95,7 @@
         opt.innerText = i
         semaines.appendChild(opt)
     }
-    var palletteElem = document.getElementById("pallette")
+    var paletteElem = document.getElementById("palette")
 
     const ajusteDate = (n) => {
         return n < 10 ? "0" + n : n
@@ -119,25 +119,25 @@
     const testparams = () => {
         return salle != 0
     }
-    // affichage pallette
-    Object.keys(pallette).forEach(name => {
+    // affichage palette
+    Object.keys(palette).forEach(name => {
         const option = document.createElement("option")
         option.value = name
         option.innerText = name
-        palletteElem.appendChild(option)
+        paletteElem.appendChild(option)
     })
 
-    const setPallette = () => {
-        const palcook = getCookie("pallette")
-        if (palcook == "" || Object.keys(pallette).indexOf(palcook) == -1) {
-            palletteElem.value = "Guillaume"
-            setCookie("pallette", "Guillaume", 100)
+    const setpalette = () => {
+        const palcook = getCookie("palette")
+        if (palcook == "" || Object.keys(palette).indexOf(palcook) == -1) {
+            paletteElem.value = "Guillaume"
+            setCookie("palette", "Guillaume", 100)
         } else {
-            palletteElem.value = palcook
+            paletteElem.value = palcook
         }
 
-        const namePal = palletteElem.value
-        const pal = pallette[namePal]
+        const namePal = paletteElem.value
+        const pal = palette[namePal]
         if (typeof pal == "undefined" || pal == null) return
         Object.keys(pal).forEach(matiere => {
             const mm = document.getElementsByClassName(matiere)
@@ -171,7 +171,7 @@
         const nEDT = all["EDT"]
 
         metNumJours(all["fullDays"])
-        setPallette()
+        setpalette()
     }
 
     const changementPourEdt = () => { // fons d'écran spécialisé pour mayeul et évariste
@@ -208,8 +208,8 @@
         setCookie("salleholle", e.target.value, 100)
         changementPourEdt()
     }
-    palletteElem.onchange = e => {
-        setCookie("pallette", palletteElem.value, 100)
+    paletteElem.onchange = e => {
+        setCookie("palette", paletteElem.value, 100)
         updateSemaines()
     }
 
