@@ -4,7 +4,7 @@ const { "getKholes": getKholes1, "makeEDT": makeEDT1, "groupesPers": groupesPers
 const { "getKholes": getKholes2, "makeEDT": makeEDT2, "groupesPers": groupesPers2 } = require("./EDT/s2/s2.js")
 const semaineNom = (fs.readFileSync("./EDT/semaine.txt", "utf8")).split("\n")
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"]
-const ds = require("./EDT/ds.json")
+const ds = require("./EDT/DS.json")
 const ajusteDate = (n) => {
     return n < 10 ? "0" + n : n
 }
