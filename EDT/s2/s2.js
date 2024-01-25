@@ -27,10 +27,11 @@ const nombreToHeure = (n) => {
 
 const db = getJson("/EDT/s2/kholes.json")            // document qui répertorie les khôlles
 const info = getText("/EDT/s2/info.txt")             // document qui répertorie la matrice pour les groupes d'informatique
-const orgEDT = getJson("/EDT/s2/EDT.json")           // document qui répertorie les les cours communs
+const orgEDT = getJson("/EDT/s2/EDT.json")           // document qui répertorie les les cours communs pour ceux qui ne font pas SI
+const orgEDTsi = getJson("/EDT/s2/EDTsi.json")           // document qui répertorie les les cours communs pour ceux qui font SI
 const groupesPers = getJson("/EDT/s2/groupes.json")  // document qui répertorie le nom des memebres de chaques groupes
 const hotfix = getJson("/EDT/s2/hotfix.json")        // document qui répertorie les hotfixs
-let EDT = clone(orgEDT) // variable qui stocke tout l'EDTA qui sera à consulter
+let EDT = clone(orgEDT) // variable qui stocke tout l'EDT
 let tableauInfo = []
 
 // Traitement des groupes d'infos dans un tableau
@@ -97,14 +98,14 @@ const getKholes = (k, s) => {
         if (c == 2) {
             const anglais = db["anglais"][6 - 1]
             all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
-        }else{
+        }else if (c%2 == 0) {
             const anglais = db["anglais"][c - 1]
             all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
         }
         if(c == 9) {
             const physique = db["physique"][c - 1]
             all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
-        }else {
+        } else if (c % 2 == 1) {
             const physique = db["physique"][11 - 1]
             all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
         }
@@ -125,7 +126,7 @@ const getKholes = (k, s) => {
         const info = db["info"][c - 1]
         all[info[1] - 1].push(khollesToEDT(info, "info"))
     }
-    if ((s % 2 == 0 && (c == 9 || c == 14))) { // if ((s % 2 == 0 && (c == 2 || c == 5)) || (s % 2 == 1 && (c == 9 || c == 14))) {
+    if ((s % 2 == 0 && (c == 9 || c == 14))) {
 
         const francais = db["francais"][c - 1]
         all[francais[1] - 1].push(khollesToEDT(francais, "français"))
@@ -143,7 +144,7 @@ const makeEDT = (k, semaine) => {
     groupeI = tableauInfo[k - 1][semaine - 16 - 3]
     const semaineC = getC(k, semaine) // kholes[semaine - 3]
     EDT = []
-    EDT = clone(orgEDT)
+    EDT = (k == 2 || k == 3) ? clone(orgEDTsi) : clone(orgEDT)
     kholes = []
     for (let i = 0; i < 16; i++) {
         kholes.push([])
@@ -182,11 +183,11 @@ const makeEDT = (k, semaine) => {
 
     // Groupes d'info 
     if (groupeI == 1) {
-        mettreSemaine[1].push(["TP Info", "info", "37", 15, 17, "Rozsavolgyi"])
+        mettreSemaine[3].push(["TP Info", "info", "37", 11, 13, "Rozsavolgyi"])
     } if (groupeI == 2) {
-        mettreSemaine[1].push(["TP Info", "info", "37", 17, 19, "Rozsavolgyi"])
+        mettreSemaine[3].push(["TP Info", "info", "37", 14, 16, "Rozsavolgyi"])
     } if (groupeI == 3) {
-        mettreSemaine[2].push(["TP Info", "info", "26", 16, 18, "Rozsavolgyi"])
+        mettreSemaine[3].push(["TP Info", "info", "26", 16, 18, "Rozsavolgyi"])
     }
 
 
