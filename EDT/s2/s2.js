@@ -85,16 +85,41 @@ const getKholes = (k, s) => {
     for (let i = 0; i < 5; i++) {
         all.push([])
     }
-    const maths = db["maths"][c - 1]
-    all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
+    if (s<= 24 && k == 2 || k == 3) {
+        if (c == 4) {
+            const maths = db["maths"][12 - 1]
+            all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
+        }else{
+            const maths = db["maths"][c - 1]
+            all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
+        }
 
-    if (c % 2 == 1) {
-        const physique = db["physique"][c - 1]
-        all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
-    } else {
-        const anglais = db["anglais"][c - 1]
-        all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
+        if (c == 2) {
+            const anglais = db["anglais"][6 - 1]
+            all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
+        }else{
+            const anglais = db["anglais"][c - 1]
+            all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
+        }
+        if(c == 9) {
+            const physique = db["physique"][c - 1]
+            all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
+        }else {
+            const physique = db["physique"][11 - 1]
+            all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
+        }
+    }else {
+        const maths = db["maths"][c - 1]
+        all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
+        if (c % 2 == 1) {
+            const physique = db["physique"][c - 1]
+            all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
+        } else {
+            const anglais = db["anglais"][c - 1]
+            all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
+        }
     }
+    
     if (c == 1 || c == 10) {
 
         const info = db["info"][c - 1]
