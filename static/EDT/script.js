@@ -76,13 +76,15 @@ if (cookiegrp == "" || (Number(cookiegrp) < 17 && Number(cookiegrp) > 0)) {
 } else selectGrp.value = ""
 
 var semaines = document.getElementById("semaine")
-for (let i = 3; i <= 18; i++) {
+
+for (let i = 3; i <= 34; i++) {
 
     const opt = document.createElement("option")
     opt.value = i.toString()
     opt.innerText = i
     semaines.appendChild(opt)
 }
+
 var paletteElem = document.getElementById("palette")
 
 const ajusteDate = (n) => {
@@ -143,6 +145,7 @@ const txt = document.getElementById("outTxt")
 
     const updateSemaines = async () => {
         document.getElementsByClassName("alert")[0].style.display = "none"
+        document.getElementsByClassName("warning")[0].style.display = "none"
         let ele = document.getElementById("persGrp");
         ele.innerHTML = ""
         document.getElementById("DownEDT").onclick = () => {}
@@ -151,8 +154,8 @@ const txt = document.getElementById("outTxt")
             return
         }
         txt.innerText = ""
-        if (semaine > 18) semaine = 3
-        if (semaine < 3) semaine = 18
+        if (semaine > 34) semaine = 3
+        if (semaine < 3) semaine = 34
         semaines.value = semaine
         
         if (testparams() == false) return
@@ -170,7 +173,10 @@ const txt = document.getElementById("outTxt")
         if (!all["ok"]) {
             alert("Erreur server (" + all["error"]+")")
         }
-
+        if (all["message"] != "") {
+            document.getElementById("warningText").innerText = all["message"]
+            document.getElementsByClassName("warning")[0].style.display = "block"
+        }
         // affichage
         afficheEDT(all["EDT"])
 

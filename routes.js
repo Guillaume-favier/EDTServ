@@ -2,7 +2,7 @@ const {regroupeInfo, makeEDT,getNumJours, base} = require("./edt.js")
 const {allClasses, allProfs, getEDTX} = require("./altEDT.js")
 const { log } = require("./logger.js")
 
-const checkweek = (week) => week > 2 && week < 19
+const checkweek = (week) => week > 2 && week < 36
 
 module.exports = function (app) {
     app.get('/api/v1/base/', (req, res) => {

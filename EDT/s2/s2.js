@@ -25,11 +25,11 @@ const nombreToHeure = (n) => {
 
 
 
-const db = getJson("/EDT/s1/kholes.json")            // document qui répertorie les khôlles
-const info = getText("/EDT/s1/info.txt")             // document qui répertorie la matrice pour les groupes d'informatique
-const orgEDT = getJson("/EDT/s1/EDT.json")           // document qui répertorie les les cours communs
-const groupesPers = getJson("/EDT/s1/groupes.json")  // document qui répertorie le nom des memebres de chaques groupes
-const hotfix = getJson("/EDT/s1/hotfix.json")        // document qui répertorie les hotfixs
+const db = getJson("/EDT/s2/kholes.json")            // document qui répertorie les khôlles
+const info = getText("/EDT/s2/info.txt")             // document qui répertorie la matrice pour les groupes d'informatique
+const orgEDT = getJson("/EDT/s2/EDT.json")           // document qui répertorie les les cours communs
+const groupesPers = getJson("/EDT/s2/groupes.json")  // document qui répertorie le nom des memebres de chaques groupes
+const hotfix = getJson("/EDT/s2/hotfix.json")        // document qui répertorie les hotfixs
 let EDT = clone(orgEDT) // variable qui stocke tout l'EDTA qui sera à consulter
 let tableauInfo = []
 
@@ -66,16 +66,21 @@ const khollesToEDT = (kh, ma) => {
 }
 
 const getC = (k, s) => {
-    let c = (16 + Number(k) - Number(s) - 1) % 16 + 1
+    k = Number(k)
+    s = Number(s)
+    if (s > 28) { // car les semaines 28 et 29 sont unies donc on traitera la 29 et les suivant comme ayant une semaine de moins
+        s -= 1
+    }
+    s -= 3
+    let c = (32 + k - s - 1) % 16 + 1;
     return c
 }
 
 // cette fonction rassemble toute les kholles en respectant le règles spécifiques
 const getKholes = (k, s) => {
     // console.log(k,s)
-    s -= 3
     let c = getC(k, s)
-    // console.log(c)
+
     let all = []
     for (let i = 0; i < 5; i++) {
         all.push([])
@@ -95,7 +100,7 @@ const getKholes = (k, s) => {
         const info = db["info"][c - 1]
         all[info[1] - 1].push(khollesToEDT(info, "info"))
     }
-    if ((s % 2 == 0 && (c == 2 || c == 5)) || (s % 2 == 1 && (c == 9 || c == 14))) {
+    if ((s % 2 == 0 && (c == 9 || c == 14))) { // if ((s % 2 == 0 && (c == 2 || c == 5)) || (s % 2 == 1 && (c == 9 || c == 14))) {
 
         const francais = db["francais"][c - 1]
         all[francais[1] - 1].push(khollesToEDT(francais, "français"))
@@ -111,7 +116,9 @@ const testparams = () => {
 
 const makeEDT = (k, semaine) => {
     // console.log("semaine",semaine,"k",k)
-    groupeI = tableauInfo[k - 1][semaine - 3]
+    console.log(k, semaine, tableauInfo[k - 1])
+    groupeI = tableauInfo[k - 1][semaine - 16 - 3]
+    const semaineC = getC(k, semaine) // kholes[semaine - 3]
     EDT = []
     EDT = clone(orgEDT)
     kholes = []
@@ -121,63 +128,43 @@ const makeEDT = (k, semaine) => {
     let mettreSemaine = [[], [], [], [], []]
     // on ajoute sans ordre précis les cours kholles et TD à ajouter à l'EDT pour on les remmettra bien dans l'EDT plus tard
     const n1 = () => {
+        
         mettreSemaine[0].push(["Anglais", "anglais", "33", 13, 14, "Bocquillon"])
         mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"])
         mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("7h50"), heureToNombre("9h50"), "Aufranc"])
-        mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("9h50"), heureToNombre("11h50"), "Bouchet"])
+        mettreSemaine[4].push(["TP Physique", "physique", "Labo de physique", heureToNombre("9h50"), heureToNombre("11h50"), "Bouchet"])
     }
 
     const n2 = () => {
         mettreSemaine[0].push(["Anglais", "anglais", "33", 14, 15, "Bocquillon"])
         mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"])
         mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("9h50"), heureToNombre("11h50"), "Aufranc"])
-        mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("7h50"), heureToNombre("9h50"), "Bouchet"])
+        mettreSemaine[4].push(["TP Physique", "physique", "Labo de physique", heureToNombre("7h50"), heureToNombre("9h50"), "Bouchet"])
     }
-
-    for (let i = 0; i < 16; i++) {
-        kholes[i] = (16 - i + Number(k) - 1) % 16 + 1;
-    }
-
-    const semaineC = kholes[semaine - 3]
+    
+    
     if (semaine % 2 == 1) {
         if (k % 2 == 1) {
-            if (semaineC == 5) {
-                mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
-            }
-            else mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
             n1()
         } else {
-            if (semaineC == 6) {
-                mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
-            }
-            else mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
             n2()
         }
     } else {
         if (k % 2 == 1) {
-            if (semaineC == 6) {
-                mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
-            }
-            else mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
             n2()
         } else {
-            if (semaineC == 5) {
-                mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
-            }
-            else mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
             n1()
         }
     }
 
     // Groupes d'info 
-    if (groupeI == 1 || groupeI == "S") {
+    if (groupeI == 1) {
         mettreSemaine[1].push(["TP Info", "info", "37", 15, 17, "Rozsavolgyi"])
-    } if (groupeI == 2 || groupeI == "S") {
+    } if (groupeI == 2) {
         mettreSemaine[1].push(["TP Info", "info", "37", 17, 19, "Rozsavolgyi"])
-    } if (groupeI == 3 || groupeI == "S") {
+    } if (groupeI == 3) {
         mettreSemaine[2].push(["TP Info", "info", "26", 16, 18, "Rozsavolgyi"])
     }
-    // if (groupeI == "S") alert("Il faut se répartir les groupes d'info !")
 
 
     // goupes de LV2
@@ -206,14 +193,10 @@ const makeEDT = (k, semaine) => {
     const matiere = getKholes(k, semaine);
     // console.log(matiere)
     for (let jour = 0; jour < matiere.length; jour++) {
-        const element = matiere[jour];
-
         matiere[jour].forEach(kh => {
-            // console.log("kh",kh)
             let bon = false;
             EDT[jour].forEach((e, i) => {
                 if (bon) return
-                // console.log("ici",e,kh)
                 if (e[3] > Math.round(heureToNombre(kh[3]))) {
                     EDT[jour].splice(i, 0, kh);
                     bon = true

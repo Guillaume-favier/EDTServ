@@ -1,9 +1,10 @@
 const fs = require("fs")
 const { log } = require("./logger.js")
-const { getKholes, makeEDT, groupesPers, ds } = require("./EDT/s1/s1.js")
+const { "getKholes": getKholes1, "makeEDT": makeEDT1, "groupesPers": groupesPers1 } = require("./EDT/s1/s1.js")
+const { "getKholes": getKholes2, "makeEDT": makeEDT2, "groupesPers": groupesPers2 } = require("./EDT/s2/s2.js")
 const semaineNom = (fs.readFileSync("./EDT/semaine.txt", "utf8")).split("\n")
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"]
-
+const ds = require("./EDT/ds.json")
 const ajusteDate = (n) => {
     return n < 10 ? "0" + n : n
 }
@@ -42,7 +43,24 @@ const getNumJours = (semaine) => {
 const majPrem = (s) => s[0].toUpperCase() + s.substring(1)
 
 
-
+const makeEDT = (groupe, semaine) => {
+	if (semaine >= 3 && semaine <= 18) {
+		return makeEDT1(groupe, semaine)
+	}
+	if (semaine >= 19 && semaine <= 35) {
+		return makeEDT2(groupe, semaine)
+	}
+	return null
+}
+const getKholes = (groupe, semaine) => {
+	if (semaine >= 3 && semaine <= 18) {
+		return getKholes1(groupe, semaine)
+	}
+	if (semaine >= 19 && semaine <= 35) {
+		return getKholes2(groupe, semaine)
+	}
+	return null
+}
 
 
 const allEdt = {}
@@ -56,9 +74,12 @@ const getYourWeek = (week) => {
 	}
 	return allEdt[week]
 }
-for (let i = 3; i <= 18; i++) {
+
+
+for (let i = 3; i <= 34; i++) {
 	getYourWeek(i)
 }
+// console.log(allEdt)
 log(1, "All the weeks were loaded");
 const regroupeInfo = (k, s) => {
 	const days = getNumJours(s);
@@ -68,9 +89,9 @@ const regroupeInfo = (k, s) => {
 		"fullDays": days[0],
 		"EDT": allEdt[s.toString()][k - 1],
 		"kholles": getKholes(k, s),
-		"membres": groupesPers[k - 1],
+		"membres": groupesPers2[k - 1],
 		"DS": ds[s-2],
-		"message": ""
+		"message": s>=19 ? "Wow wow wow, on va se calmer ! Tout ce qui suis est uniquement à but de test pour valider l'emploi du temps final mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." : ""
 	}
 	return res
 }
@@ -78,7 +99,7 @@ const regroupeInfo = (k, s) => {
 const base = () => {
 	return {
 		"weeks": semaineNom,
-		"groupes": groupesPers,
+		"groupes": groupesPers2,
 		"currentWeek": getCurrentWeek()
 	}
 }

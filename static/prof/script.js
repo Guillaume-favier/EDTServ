@@ -88,7 +88,7 @@
     } else profSelect.value = ""
 
     var semaines = document.getElementById("semaine")
-    for (let i = 3; i < 19; i++) {
+    for (let i = 3; i < 35; i++) {
 
         const opt = document.createElement("option")
         opt.value = i.toString()
@@ -119,24 +119,16 @@
     const testparams = () => {
         return salle != 0
     }
-    // affichage palette
-    Object.keys(palette).forEach(name => {
-        const option = document.createElement("option")
-        option.value = name
-        option.innerText = name
-        paletteElem.appendChild(option)
-    })
 
     const setpalette = () => {
         const palcook = getCookie("palette")
+        let namePal;
         if (palcook == "" || Object.keys(palette).indexOf(palcook) == -1) {
-            paletteElem.value = "Guillaume"
+            namePal = "Guillaume"
             setCookie("palette", "Guillaume", 100)
         } else {
-            paletteElem.value = palcook
+            namePal = palcook
         }
-
-        const namePal = paletteElem.value
         const pal = palette[namePal]
         if (typeof pal == "undefined" || pal == null) return
         Object.keys(pal).forEach(matiere => {
@@ -150,8 +142,8 @@
 
     const updateSemaines = async () => {
         document.getElementsByClassName("alert")[0].style.display = "none"
-        if (semaine > 18) semaine = 3
-        if (semaine < 3) semaine = 18
+        if (semaine > 34) semaine = 3
+        if (semaine < 3) semaine = 34
         semaines.value = semaine
         
         if (testparams() == false) return
@@ -207,10 +199,6 @@
     profSelect.onchange = e => {
         setCookie("salleholle", e.target.value, 100)
         changementPourEdt()
-    }
-    paletteElem.onchange = e => {
-        setCookie("palette", paletteElem.value, 100)
-        updateSemaines()
     }
 
     // ajout des dates semaines pour sélection.
