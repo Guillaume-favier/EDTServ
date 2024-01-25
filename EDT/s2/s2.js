@@ -115,8 +115,6 @@ const testparams = () => {
 
 
 const makeEDT = (k, semaine) => {
-    // console.log("semaine",semaine,"k",k)
-    console.log(k, semaine, tableauInfo[k - 1])
     groupeI = tableauInfo[k - 1][semaine - 16 - 3]
     const semaineC = getC(k, semaine) // kholes[semaine - 3]
     EDT = []
