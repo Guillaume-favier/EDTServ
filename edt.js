@@ -91,7 +91,7 @@ const regroupeInfo = (k, s) => {
 		"kholles": getKholes(k, s),
 		"membres": groupesPers2[k - 1],
 		"DS": ds[s-2],
-		"message": s>=19 ? "Wow wow wow, on va se calmer ! Tout ce qui suis est uniquement à but de test pour valider l'emploi du temps final mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." : ""
+		"message": s>=19 ? "Wow wow wow, on va se calmer ! Tout ce qui suit est uniquement à but de test pour valider l'emploi du temps final, mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." : ""
 	}
 	return res
 }
