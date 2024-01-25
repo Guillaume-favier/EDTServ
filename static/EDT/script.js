@@ -182,6 +182,7 @@ const txt = document.getElementById("outTxt")
 
         // détection des conflits
         let test = detectOverlap(all["EDT"])
+        console.log(detectOverlap(all["EDT"]))
         if (test.length > 0) {
             console.log(document.getElementsByClassName("alert")[0])
             document.getElementsByClassName("alert")[0].style.display = "block"

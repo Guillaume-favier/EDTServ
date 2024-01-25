@@ -1,4 +1,4 @@
-const { makeEDT, getCurrentWeek, allEdt } = require("./edt.js")
+const { getCurrentWeek, allEdt } = require("./edt.js")
 const { log } = require("./logger.js")
 
 
@@ -18,8 +18,8 @@ const allX = (s,n) => {
         for (let i = 0; i < 16; i++) {
             for (let j = 0; j < 5; j++) {
                 // console.log(allEdt)
-                for (let h = 0; h < allEdt[s.toString()][i][j].length; h++) {
-                    const c = allEdt[s.toString()][i][j][h];
+                for (let h = 0; h < allEdt[s.toString()][i][0][j].length; h++) {
+                    const c = allEdt[s.toString()][i][0][j][h];
                     // console.log(c,c[n])
                     if (p.includes(c[n])) continue
                     p.push(c[n])
@@ -48,8 +48,8 @@ const getEDTX = (s, param, X) => {
     for (let i = 0; i < 16; i++) {
         for (let j = 0; j < 5; j++) {
             if (i == 0) p.push([])
-            for (let h = 0; h < allEdt[s.toString()][i][j].length; h++) {
-                const c = allEdt[s.toString()][i][j][h];
+            for (let h = 0; h < allEdt[s.toString()][i][0][j].length; h++) {
+                const c = allEdt[s.toString()][i][0][j][h];
                 if (c[X] == param) pushIfNotIn(p[j], c)
             }
         }

@@ -45,7 +45,7 @@ const majPrem = (s) => s[0].toUpperCase() + s.substring(1)
 
 const makeEDT = (groupe, semaine) => {
 	if (semaine >= 3 && semaine <= 18) {
-		return makeEDT1(groupe, semaine)
+		return [makeEDT1(groupe, semaine),""]
 	}
 	if (semaine >= 19 && semaine <= 35) {
 		return makeEDT2(groupe, semaine)
@@ -57,7 +57,7 @@ const getKholes = (groupe, semaine) => {
 		return getKholes1(groupe, semaine)
 	}
 	if (semaine >= 19 && semaine <= 35) {
-		return getKholes2(groupe, semaine)
+		return getKholes2(groupe, semaine)[0]
 	}
 	return null
 }
@@ -87,11 +87,11 @@ const regroupeInfo = (k, s) => {
 		"ok":true,
 		"days": days[1],
 		"fullDays": days[0],
-		"EDT": allEdt[s.toString()][k - 1],
+		"EDT": allEdt[s.toString()][k - 1][0],
 		"kholles": getKholes(k, s),
 		"membres": groupesPers2[k - 1],
 		"DS": ds[s-2],
-		"message": s>=19 ? "Wow wow wow, on va se calmer ! Tout ce qui suit est uniquement à but de test pour valider l'emploi du temps final, mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." : ""
+		"message": s >= 19 ? "Wow wow wow, on va se calmer ! Tout ce qui suit est uniquement à but de test pour valider l'emploi du temps final, mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." + (allEdt[s.toString()][k - 1][1] != "" ? "\n"+allEdt[s.toString()][k - 1][1] : "") : ""
 	}
 	return res
 }

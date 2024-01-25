@@ -79,6 +79,7 @@ const getC = (k, s) => {
 
 // cette fonction rassemble toute les kholles en respectant le règles spécifiques
 const getKholes = (k, s) => {
+    let message = ""
     // console.log(k,s)
     let c = getC(k, s)
 
@@ -88,6 +89,7 @@ const getKholes = (k, s) => {
     }
     if (s<= 24 && k == 2 || k == 3) {
         if (c == 4) {
+            message = "Permutation de la khôlle de maths avec le groupe en C12"
             const maths = db["maths"][12 - 1]
             all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
         }else{
@@ -96,17 +98,20 @@ const getKholes = (k, s) => {
         }
 
         if (c == 2) {
+            message = "Permutation de la khôlle d'anglais avec le groupe en C6"
             const anglais = db["anglais"][6 - 1]
             all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
         }else if (c%2 == 0) {
             const anglais = db["anglais"][c - 1]
             all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
         }
+
         if(c == 9) {
-            const physique = db["physique"][c - 1]
+            message = "Permutation de la khôlle de physique avec le groupe en C11"
+            const physique = db["physique"][11 - 1]
             all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
         } else if (c % 2 == 1) {
-            const physique = db["physique"][11 - 1]
+            const physique = db["physique"][c - 1]
             all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
         }
     }else {
@@ -131,7 +136,7 @@ const getKholes = (k, s) => {
         const francais = db["francais"][c - 1]
         all[francais[1] - 1].push(khollesToEDT(francais, "français"))
     }
-    return all
+    return [all,message]
 }
 
 
@@ -154,14 +159,14 @@ const makeEDT = (k, semaine) => {
     const n1 = () => {
         
         mettreSemaine[0].push(["Anglais", "anglais", "33", 13, 14, "Bocquillon"])
-        mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"])
+        mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 15, "Bouchet"])
         mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("7h50"), heureToNombre("9h50"), "Aufranc"])
         mettreSemaine[4].push(["TP Physique", "physique", "Labo de physique", heureToNombre("9h50"), heureToNombre("11h50"), "Bouchet"])
     }
 
     const n2 = () => {
         mettreSemaine[0].push(["Anglais", "anglais", "33", 14, 15, "Bocquillon"])
-        mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"])
+        mettreSemaine[0].push(["TD Physique", "physique", "20", 13, 14, "Bouchet"])
         mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("9h50"), heureToNombre("11h50"), "Aufranc"])
         mettreSemaine[4].push(["TP Physique", "physique", "Labo de physique", heureToNombre("7h50"), heureToNombre("9h50"), "Bouchet"])
     }
@@ -190,10 +195,19 @@ const makeEDT = (k, semaine) => {
         mettreSemaine[3].push(["TP Info", "info", "26", 16, 18, "Rozsavolgyi"])
     }
 
+    // Python pour si
+    if (k == 2 || k == 3) {
+        if (semaine <= 24) {
+            mettreSemaine[1].push(["Python", "info", "?", 16, 18, "Rozsavolgyi"])
+        }else {
+            mettreSemaine[2].push(["Python", "info", "?", 17, 19, "Rozsavolgyi"])
+        }
+    }
+
 
     // goupes de LV2
     if ([1, 6, 14, 15, 16].includes(k)) {
-        mettreSemaine[3].push(["LV2", "lv2", "🤷‍♂️", 17, 19, "LV2"])
+        mettreSemaine[3].push(["LV2", "lv2", "?", 17, 19, "LV2"])
     }
 
     // ajout de tout les cours dans l'EDT au bon endroit
@@ -214,7 +228,7 @@ const makeEDT = (k, semaine) => {
     }
 
     // ajout de toutes les kholles dans l'EDT
-    const matiere = getKholes(k, semaine);
+    const [matiere,mess] = getKholes(k, semaine);
     // console.log(matiere)
     for (let jour = 0; jour < matiere.length; jour++) {
         matiere[jour].forEach(kh => {
@@ -261,8 +275,9 @@ const makeEDT = (k, semaine) => {
             }
         }
     })
-    return EDT
+    return [EDT,mess]
 }
+
 module.exports = {
     getKholes,
     makeEDT,
