@@ -95,7 +95,7 @@ const getKholes = (k, s) => {
     for (let i = 0; i < 5; i++) {
         all.push([])
     }
-    if (s<= 24 && k == 2 || k == 3) {
+    if (s<= 24 && (k == 2 || k == 3)) {
         if (c == 4) {
             message = "Permutation de la khôlle de maths avec le groupe en C12 : le groupe " + getKfromC(12,s) 
             const maths = db["maths"][12 - 1]
@@ -228,7 +228,7 @@ const getKholes = (k, s) => {
     }
     return [all,message]
 }
-
+getKholes(3,30)
 
 const testparams = () => {
     return groupeK != 0
@@ -294,9 +294,10 @@ const makeEDT = (k, semaine) => {
         }
     }
 
-
     // goupes de LV2
-    if ([1, 6, 14, 15, 16].includes(k)) {
+    if (k == 1) {
+        mettreSemaine[1].push(["Espagnol", "lv2", "?", 17, 19, "LV2"])
+    }else if ([2, 6, 14, 15, 16].includes(k)) {
         mettreSemaine[3].push(["LV2", "lv2", "?", 17, 19, "LV2"])
     }
 
