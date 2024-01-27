@@ -43,12 +43,12 @@ const getNumJours = (semaine) => {
 const majPrem = (s) => s[0].toUpperCase() + s.substring(1)
 
 
-const makeEDT = (groupe, semaine) => {
+const makeEDT = (groupe, semaine, info = null) => {
 	if (semaine >= 3 && semaine <= 18) {
 		return [makeEDT1(groupe, semaine),""]
 	}
 	if (semaine >= 19 && semaine <= 35) {
-		return makeEDT2(groupe, semaine)
+		return makeEDT2(groupe, semaine, info)
 	}
 	return null
 }
@@ -76,7 +76,7 @@ const getYourWeek = (week) => {
 }
 
 
-for (let i = 3; i <= 34; i++) {
+for (let i = 3; i <= 35; i++) {
 	getYourWeek(i)
 }
 // console.log(allEdt)

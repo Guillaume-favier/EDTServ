@@ -145,7 +145,7 @@ const detectOverlap = (arr) => {
             for (let j = i + 1; j < arr[jour].length; j++) {
                 const element2 = arr[jour][j];
                 if (isOverlap(element, element2)) {
-                    pushIfNotIn(res, [element, element2])
+                    pushIfNotIn(res, [element, element2, jour])
                 }
             }
         }

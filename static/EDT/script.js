@@ -61,7 +61,7 @@
            2023 - 2024
 
 */
-
+const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
 var selectGrp = document.getElementById("grpKhole")
 for (let i = 1; i <= 16; i++) { // affichage primitif pour le choix des groupes
     const opt = document.createElement("option")
@@ -77,8 +77,7 @@ if (cookiegrp == "" || (Number(cookiegrp) < 17 && Number(cookiegrp) > 0)) {
 
 var semaines = document.getElementById("semaine")
 
-for (let i = 3; i <= 34; i++) {
-
+for (let i = 3; i <= 35; i++) {
     const opt = document.createElement("option")
     opt.value = i.toString()
     opt.innerText = i
@@ -154,8 +153,8 @@ const txt = document.getElementById("outTxt")
             return
         }
         txt.innerText = ""
-        if (semaine > 34) semaine = 3
-        if (semaine < 3) semaine = 34
+        if (semaine > 35) semaine = 3
+        if (semaine < 3) semaine = 35
         semaines.value = semaine
         
         if (testparams() == false) return
@@ -181,10 +180,16 @@ const txt = document.getElementById("outTxt")
         afficheEDT(all["EDT"])
 
         // détection des conflits
-        let test = detectOverlap(all["EDT"])
+        let de = detectOverlap(all["EDT"])
         console.log(detectOverlap(all["EDT"]))
-        if (test.length > 0) {
+        if (de.length > 0) {
+            let p = "Nottament du à : \n"
+            for (let n = 0; n < de.length; n++) {
+                p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) + "]\n"
+            }
+            document.getElementById("colisionText").innerText = p
             console.log(document.getElementsByClassName("alert")[0])
+
             document.getElementsByClassName("alert")[0].style.display = "block"
         }
         

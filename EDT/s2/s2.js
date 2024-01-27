@@ -87,6 +87,7 @@ const getKfromC = (c, s) => {
 
 // cette fonction rassemble toute les kholles en respectant le règles spécifiques
 const getKholes = (k, s) => {
+    if (s > 33) return [[],""]
     let message = ""
     // console.log(k,s)
     let c = getC(k, s)
@@ -235,8 +236,11 @@ const testparams = () => {
 }
 
 
-const makeEDT = (k, semaine) => {
-    groupeI = tableauInfo[k - 1][semaine - 16 - 3]
+const makeEDT = (k, semaine, info = null) => {
+    if (info == null) groupeI = tableauInfo[k - 1][semaine - 16 - 3]
+    else {
+        groupeI = info
+    }
     const semaineC = getC(k, semaine) // kholes[semaine - 3]
     EDT = []
     EDT = (k == 2 || k == 3) ? clone(orgEDTsi) : clone(orgEDT)
