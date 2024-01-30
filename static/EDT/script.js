@@ -238,6 +238,9 @@ const txt = document.getElementById("outTxt")
         else if (currNom == "Mayeul A.") {
             document.body.className = "chateauuu"
         }
+        else if (currNom == "Jules F.") {
+            document.body.className = "KCWIN"
+        }
         else {
             document.body.className = ""
         }
