@@ -83,7 +83,7 @@ for (let i = 3; i <= 35; i++) {
 // console.log(allEdt)
 log(1, "All the weeks were loaded");
 const regroupeInfo = (nom, s) => {
-	const k = groupes[nom][s <=19 ? 0 : 1]
+	const k = groupes[nom][s < 19 ? 0 : 1]
 	const days = getNumJours(s);
 	let res = {
 		"ok":true,
@@ -91,7 +91,7 @@ const regroupeInfo = (nom, s) => {
 		"fullDays": days[0],
 		"EDT": allEdt[s.toString()][k - 1][0],
 		"kholles": getKholes(k, s),
-		"membres": s <= 19 ? groupesPers1[k - 1] : groupesPers2[k - 1],
+		"membres": s < 19 ? groupesPers1[k - 1] : groupesPers2[k - 1],
 		"DS": ds[s-2],
 		"message": s >= 19 ? "Wow wow wow, on va se calmer ! Tout ce qui suit est uniquement à but de test pour valider l'emploi du temps final, mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." + (allEdt[s.toString()][k - 1][1] != "" ? "\n"+allEdt[s.toString()][k - 1][1] : "") : ""
 	}
