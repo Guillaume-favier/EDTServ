@@ -64,7 +64,7 @@
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
 var selectNom = document.getElementById("nom")
 
-const nom = getCookie("nom")
+let nom = getCookie("nom")
 
 
 var semaines = document.getElementById("semaine")
