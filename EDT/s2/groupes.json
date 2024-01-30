@@ -1,6 +1,40 @@
 [
   [
     [
+      "B",
+      "Dimitri"
+    ],
+    [
+      "D",
+      "Leo"
+    ]
+  ],
+  [
+    [
+      "L",
+      "Marianne"
+    ],
+    [
+      "M",
+      "Sacha"
+    ],
+    [
+      "S",
+      "Lucas"
+    ]
+  ],
+  [
+    [
+      "B",
+      "Florian"
+    ],
+    [
+      "H",
+      "Hamza"
+    ]
+  ],
+  [
+    [
       "C",
       "Thomas"
     ],
@@ -11,48 +45,6 @@
     [
       "T",
       "Xavier"
-    ]
-  ],
-  [
-    [
-      "F",
-      "Guillaume"
-    ],
-    [
-      "M",
-      "Sacha"
-    ],
-    [
-      "T",
-      "Baptiste"
-    ]
-  ],
-  [
-    [
-      "F",
-      "Jules"
-    ],
-    [
-      "R",
-      "Jeremy"
-    ],
-    [
-      "S",
-      "Ethan"
-    ]
-  ],
-  [
-    [
-      "A",
-      "Mayeul"
-    ],
-    [
-      "B",
-      "Victor"
-    ],
-    [
-      "C",
-      "Alexandre"
     ]
   ],
   [
@@ -100,15 +92,15 @@
   [
     [
       "A",
-      "Artyom"
+      "Mayeul"
     ],
     [
       "B",
-      "Yanis"
+      "Victor"
     ],
     [
-      "B",
-      "Dimitri"
+      "C",
+      "Alexandre"
     ]
   ],
   [
@@ -121,8 +113,8 @@
       "Yoann"
     ],
     [
-      "B",
-      "Florian"
+      "F",
+      "Guillaume"
     ]
   ],
   [
@@ -145,33 +137,25 @@
       "Clement"
     ],
     [
-      "D",
-      "Leo"
-    ],
-    [
       "M",
       "Noah"
     ]
   ],
   [
     [
+      "A",
+      "Artyom"
+    ],
+    [
       "B",
       "Yohan"
     ],
     [
-      "H",
-      "Hamza"
-    ],
-    [
-      "L",
-      "Marianne"
+      "F",
+      "Jules"
     ]
   ],
   [
-    [
-      "G",
-      "Malcolm"
-    ],
     [
       "L",
       "Gauthier"
@@ -179,6 +163,10 @@
     [
       "M",
       "Enzo"
+    ],
+    [
+      "R",
+      "Jeremy"
     ]
   ],
   [
@@ -192,7 +180,7 @@
     ],
     [
       "S",
-      "Lucas"
+      "Ethan"
     ]
   ],
   [
@@ -211,12 +199,12 @@
   ],
   [
     [
-      "C",
-      "Pablo"
+      "B",
+      "Yanis"
     ],
     [
-      "D",
-      "Clement"
+      "C",
+      "Pablo"
     ],
     [
       "D",

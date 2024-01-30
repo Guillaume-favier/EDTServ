@@ -1,8 +1,9 @@
-const {regroupeInfo, makeEDT,getNumJours, base} = require("./edt.js")
+const {regroupeInfo, makeEDT,getNumJours, base, noms} = require("./edt.js")
 const {allClasses, allProfs, getEDTX} = require("./altEDT.js")
 const { log } = require("./logger.js")
 
 const checkweek = (week) => week > 2 && week < 36
+const checkNom = (nom) => noms.includes(nom)
 
 module.exports = function (app) {
     app.get('/api/v1/base/', (req, res) => {
@@ -22,13 +23,17 @@ module.exports = function (app) {
     app.get('/api/v1/all/', (req, res) => {
         // print parameter of request
         const params = req.query;
-        if (Object.keys(params).includes("week") && Object.keys(params).includes("group")) {
+        if (Object.keys(params).includes("week") && Object.keys(params).includes("name")) {
             if (!checkweek(Number(params.week))) {
                 log(2,"GET /api/v1/all/ with the ip : " + req.ip + " wrong week : " + params.week + " returning 400")
                 return res.status(400).json({ "ok": false, error: 'week out of range' })
             }
+            if (!checkNom(params.name)) {
+                log(2, "GET /api/v1/all/ with the ip : " + req.ip + " wrong name : " + params.name + " returning 400")
+                return res.status(400).json({ "ok": false, error: 'week out of range' })
+            }
             log(1, "GET /api/v1/all/ with the ip : " + req.ip + " group : " + params.group + " week : " + params.week);
-            const rs = regroupeInfo(Number(params.group), Number(params.week))
+            const rs = regroupeInfo(params.name, Number(params.week))
             res.status(200).json(rs)
             return
         } else {

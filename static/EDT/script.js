@@ -62,18 +62,10 @@
 
 */
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
-var selectGrp = document.getElementById("grpKhole")
-for (let i = 1; i <= 16; i++) { // affichage primitif pour le choix des groupes
-    const opt = document.createElement("option")
-    opt.value = i.toString()
-    opt.innerText = "G" + i 
-    selectGrp.appendChild(opt)
-}
+var selectNom = document.getElementById("nom")
 
-const cookiegrp = getCookie("GroupeKholle")
-if (cookiegrp == "" || (Number(cookiegrp) < 17 && Number(cookiegrp) > 0)) {
-    selectGrp.value = cookiegrp
-} else selectGrp.value = ""
+const nom = getCookie("nom")
+
 
 var semaines = document.getElementById("semaine")
 
@@ -99,13 +91,28 @@ const txt = document.getElementById("outTxt")
     document.getElementsByClassName("loader")[0].style.display = "none"
     console.log(base)
     let semaine = base["currentWeek"];
-    const groupesPers = base["groupes"]
+    const noms = base["noms"]
+    let ok = true
+    if (!noms.includes(nom)) {
+        ok = false
+        nom = ""
+    }
+    for (let i = 0; i < noms.length; i++) {
+        const element = noms[i];
+        const option = document.createElement("option")
+        option.value = element
+        option.innerText = element
+        selectNom.appendChild(option)
+        if (ok && nom == element) {
+            selectNom.value = nom
+        }
+    }
     const semaineNom = base["weeks"]
     // let EDT = clone(orgEDT) // variable qui stocke tout l'EDTA qui sera à consulter
     txt.innerHTML = "Traitement des données ..."
     let cache = {}
 
-    let groupeK = selectGrp.value == "" ? 0 : Number(selectGrp.value);
+    let currNom = selectNom.value == "" ? 0 : Number(selectNom.value);
     
     semaines.value = semaine
 
@@ -119,7 +126,7 @@ const txt = document.getElementById("outTxt")
 
     txt.innerHTML = "Veuillez choisir un groupe"
     const testparams = () => {
-        return groupeK != 0
+        return currNom != 0
     }
 
     const setpalette = () => {
@@ -148,7 +155,7 @@ const txt = document.getElementById("outTxt")
         let ele = document.getElementById("persGrp");
         ele.innerHTML = ""
         document.getElementById("DownEDT").onclick = () => {}
-        if (groupeK == "") {
+        if (currNom == "") {
             txt.innerText = "Veuillez choisir un groupe de kholle"
             return
         }
@@ -158,13 +165,13 @@ const txt = document.getElementById("outTxt")
         semaines.value = semaine
         
         if (testparams() == false) return
-        let cacheName = groupeK + "-" + semaine
+        let cacheName = currNom + "-" + semaine
         let all
         if (Object.keys(cache).includes(cacheName)) {
             all = cache[cacheName]
         }else{
             document.getElementsByClassName("loader")[0].style.display = "block"
-            all = await getJson("/api/v1/all/?group=" + groupeK+"&week="+semaine)
+            all = await getJson("/api/v1/all/?name=" + currNom+"&week="+semaine)
             console.log(all)
             document.getElementsByClassName("loader")[0].style.display = "none"
             cache[cacheName] = all
@@ -223,12 +230,12 @@ const txt = document.getElementById("outTxt")
 
     const changementPourEdt = () => { // fons d'écran spécialisé pour mayeul et évariste
         resetEDT()
-        groupeK = Number(selectGrp.value)
+        currNom = selectNom.value
         updateSemaines()
-        if (groupeK == 6){
+        if (currNom == "Evariste C."){
             document.body.className = "manchot"
         }
-        else if (groupeK == 4) {
+        else if (currNom == "Mayeul A.") {
             document.body.className = "chateauuu"
         }
         else {
@@ -259,19 +266,10 @@ const txt = document.getElementById("outTxt")
 
 
     changementPourEdt()
-    // affichage des noms des membres du groupe pour la sélection
-    for (let i = 1; i < selectGrp.children.length; i++) {
-        const el = selectGrp.children[i];
-        el.innerText += " :  "
-        groupesPers[el.value - 1].forEach(pers => {
-            el.innerText += pers[1] + " " + pers[0][0]+". ; "
-        })
-        el.innerText = el.innerText.substring(0, el.innerText.length - 2)
-        
-    }
 
-    selectGrp.onchange = e => {
-        setCookie("GroupeKholle", e.target.value, 100)
+
+    selectNom.onchange = e => {
+        setCookie("nom", e.target.value, 100)
         changementPourEdt()
     }
     // ajout des dates semaines pour sélection.

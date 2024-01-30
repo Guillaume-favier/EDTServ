@@ -1,7 +1,8 @@
 const fs = require("fs")
 const { log } = require("./logger.js")
-const { "getKholes": getKholes1, "makeEDT": makeEDT1, "groupesPers": groupesPers1 } = require("./EDT/s1/s1.js")
-const { "getKholes": getKholes2, "makeEDT": makeEDT2, "groupesPers": groupesPers2 } = require("./EDT/s2/s2.js")
+const { "getKholes": getKholes1, "makeEDT": makeEDT1, "groupesPers": groupesPers1} = require("./EDT/s1/s1.js")
+const { "getKholes": getKholes2, "makeEDT": makeEDT2, "groupesPers": groupesPers2} = require("./EDT/s2/s2.js")
+const groupes = JSON.parse(fs.readFileSync("./EDT/groupes.json"))
 const semaineNom = (fs.readFileSync("./EDT/semaine.txt", "utf8")).split("\n")
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"]
 const ds = require("./EDT/DS.json")
@@ -81,7 +82,8 @@ for (let i = 3; i <= 35; i++) {
 }
 // console.log(allEdt)
 log(1, "All the weeks were loaded");
-const regroupeInfo = (k, s) => {
+const regroupeInfo = (nom, s) => {
+	const k = groupes[nom][s <=19 ? 0 : 1]
 	const days = getNumJours(s);
 	let res = {
 		"ok":true,
@@ -89,17 +91,17 @@ const regroupeInfo = (k, s) => {
 		"fullDays": days[0],
 		"EDT": allEdt[s.toString()][k - 1][0],
 		"kholles": getKholes(k, s),
-		"membres": groupesPers2[k - 1],
+		"membres": s <= 19 ? groupesPers1[k - 1] : groupesPers2[k - 1],
 		"DS": ds[s-2],
 		"message": s >= 19 ? "Wow wow wow, on va se calmer ! Tout ce qui suit est uniquement à but de test pour valider l'emploi du temps final, mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." + (allEdt[s.toString()][k - 1][1] != "" ? "\n"+allEdt[s.toString()][k - 1][1] : "") : ""
 	}
 	return res
 }
-
+const noms = Object.keys(groupes)
 const base = () => {
 	return {
 		"weeks": semaineNom,
-		"groupes": groupesPers2,
+		"noms": noms,
 		"currentWeek": getCurrentWeek()
 	}
 }
@@ -112,5 +114,6 @@ module.exports = {
 	getNumJours,
 	base,
 	getCurrentWeek,
-	allEdt
+	allEdt,
+	noms
 }
