@@ -146,10 +146,15 @@ const getKfromC = (c, s) => {
 let p = ""
 for (let s = 19; s <= 35; s++) {
     for (let i = 0; i < 16; i++) {
-        const de = detectOverlap(allEdt[s.toString()][i][0])
+        const aaah = allEdt[s.toString()][i]
+        const de = detectOverlap(aaah[0])
+        console.log(aaah[1])
         if (de.length > 0) {
             
             p+="Semaine "+s+" Groupe "+(i+1)+" groupe C "+getC(i+1,s)+" : "+de.length+" conflits\n"
+            if (aaah[1] != "") {
+                p+="Sachant que : "+aaah[1]+"\n"
+            }
             for (let n = 0; n < de.length; n++) {
                 p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) +"]\n"
             }

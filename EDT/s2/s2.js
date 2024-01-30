@@ -96,7 +96,7 @@ const getKholes = (k, s) => {
     for (let i = 0; i < 5; i++) {
         all.push([])
     }
-    if (s<= 24 && (k == 2 || k == 3)) {
+    if (s<= 24 && k <= 3) {
         if (c == 4) {
             message = "Permutation de la khôlle de maths avec le groupe en C12 : le groupe " + getKfromC(12,s) 
             const maths = db["maths"][12 - 1]
@@ -116,19 +116,19 @@ const getKholes = (k, s) => {
         }
 
         if(c == 9) {
-            message = "Permutation de la khôlle de physique avec le groupe en C11 : le groupe " + getKfromC(11, s)
-            const physique = db["physique"][11 - 1]
+            message = "Permutation de la khôlle de physique avec le groupe en C13 : le groupe " + getKfromC(13, s)
+            const physique = db["physique"][13 - 1]
             all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
         } else if (c % 2 == 1) {
             const physique = db["physique"][c - 1]
             all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
         }
-    }else if (k == 2 || k == 3) { //semaines 25 à 35 ou 34 jsp
-        if (c == 2 || c == 8 || c == 13) {
+    } else if (k <= 3) { //semaines 25 à 35 ou 34 jsp
+        if (c == 2 || c == 8 || c == 13 || c == 16) {
             message = "Permutation de la khôlle de maths avec le groupe en C5 : le groupe " + getKfromC(5, s)
             const maths = db["maths"][5 - 1]
             all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
-        } else if (c == 7 || c == 11 || c == 14 || c == 16) {
+        } else if (c == 7 || c == 11 || c == 14) {
             message = "Permutation de la khôlle de maths avec le groupe en C3 : le groupe " + getKfromC(3, s)
             const maths = db["maths"][3 - 1]
             all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
@@ -137,9 +137,13 @@ const getKholes = (k, s) => {
             all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
         }
 
-        if (c == 1 || c == 15) {
+        if (c == 1) {
             message = "Permutation de la khôlle de physique avec le groupe en C9 : le groupe " + getKfromC(9, s)
             const physique = db["physique"][9 - 1]
+            all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
+        } else if (c == 15) {
+            message = "Permutation de la khôlle de physique avec le groupe en C5 : le groupe " + getKfromC(5, s)
+            const physique = db["physique"][5 - 1]
             all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
         } else if (c % 2 == 1) {
             const physique = db["physique"][c - 1]
@@ -148,7 +152,7 @@ const getKholes = (k, s) => {
     }
     else {
         if (s <= 24) {
-            if (c == 12 && (getKfromC(4, s) == 2 || getKfromC(4, s) == 3)) {
+            if (c == 12 && (getKfromC(4, s) <= 3)) {
                 message = "Permutation de la khôlle de maths avec le groupe en C4 : le groupe " + getKfromC(4, s)
                 const maths = db["maths"][4 - 1]
                 all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
@@ -157,7 +161,7 @@ const getKholes = (k, s) => {
                 all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
             }
 
-            if (c == 11 && (getKfromC(9, s) == 2 || getKfromC(9, s) == 3)) {
+            if (c == 13 && (getKfromC(9, s) <= 3)) {
                 message = "Permutation de la khôlle de physique avec le groupe en C9 : le groupe " + getKfromC(9, s)
                 const physique = db["physique"][9 - 1]
                 all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
@@ -166,7 +170,7 @@ const getKholes = (k, s) => {
                 all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
             }
 
-            if (c == 6 && (getKfromC(2, s) == 2 || getKfromC(2, s) == 3)) {
+            if (c == 6 && (getKfromC(2, s) <= 3)) {
                 message = "Permutation de la khôlle d'anglais avec le groupe en C2 : le groupe " + getKfromC(2, s)
                 const anglais = db["anglais"][2 - 1]
                 all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
@@ -176,16 +180,16 @@ const getKholes = (k, s) => {
             }
             
         }else {
-            let testMathsC5 = [getKfromC(2, s), getKfromC(8, s), getKfromC(13, s)]
-            let testMathsC3 = [getKfromC(7, s), getKfromC(11, s), getKfromC(14, s), getKfromC(16, s)]
-            if (c == 5 && (testMathsC5.includes(2) || testMathsC5.includes(3))) {
-                let toRep = testMathsC5.filter(e => e == 2 || e == 3)[0]
+            let testMathsC5 = [getKfromC(2, s), getKfromC(8, s), getKfromC(13, s), getKfromC(16, s)]
+            let testMathsC3 = [getKfromC(7, s), getKfromC(11, s), getKfromC(14, s)]
+            if (c == 5 && (testMathsC5.includes(1) || testMathsC5.includes(2) || testMathsC5.includes(3))) {
+                let toRep = testMathsC5.filter(e => e <= 3)[0]
                 let CtoRep = getC(toRep, s)
                 message = "Permutation de la khôlle de maths avec le groupe en C" + CtoRep + " : le groupe " + toRep
                 const maths = db["maths"][CtoRep - 1]
                 all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
-            } else if ((c == 3 && (testMathsC3.includes(2) || testMathsC3.includes(3)))) {
-                let toRep = testMathsC3.filter(e => e == 2 || e == 3)[0]
+            } else if ((c == 3 && (testMathsC3.includes(1) || testMathsC3.includes(2) || testMathsC3.includes(3)))) {
+                let toRep = testMathsC3.filter(e => e <= 3)[0]
                 let CtoRep = getC(toRep, s)
                 message = "Permutation de la khôlle de maths avec le groupe en C" + CtoRep + " : le groupe " + toRep
                 const maths = db["maths"][CtoRep - 1]
@@ -196,8 +200,8 @@ const getKholes = (k, s) => {
             }
 
             let testPhysiqueC9 = [getKfromC(1, s), getKfromC(15, s)]
-            if ((c == 9 && (testPhysiqueC9.includes(2) || testPhysiqueC9.includes(3)))) {
-                let toRep = testPhysiqueC9.filter(e => e == 2 || e == 3)[0]
+            if ((c == 9 && (testPhysiqueC9.includes(1) || testPhysiqueC9.includes(2) || testPhysiqueC9.includes(3)))) {
+                let toRep = testPhysiqueC9.filter(e => e <= 3)[0]
                 let CtoRep = getC(toRep, s)
                 message = "Permutation de la khôlle de physique avec le groupe en C" + CtoRep + " : le groupe " + toRep
                 const physique = db["physique"][CtoRep - 1]
@@ -217,7 +221,7 @@ const getKholes = (k, s) => {
         }
     }
     
-    if (k != 2 && k != 3 && (c == 1 || c == 10)) {
+    if (k > 3 && (c == 1 || c == 10)) {
 
         const info = db["info"][c - 1]
         all[info[1] - 1].push(khollesToEDT(info, "info"))
@@ -229,12 +233,6 @@ const getKholes = (k, s) => {
     }
     return [all,message]
 }
-getKholes(3,30)
-
-const testparams = () => {
-    return groupeK != 0
-}
-
 
 const makeEDT = (k, semaine, info = null) => {
     if (info == null) groupeI = tableauInfo[k - 1][semaine - 16 - 3]
@@ -290,7 +288,7 @@ const makeEDT = (k, semaine, info = null) => {
     }
 
     // Python pour si
-    if (k == 2 || k == 3) {
+    if (k <= 3) {
         if (semaine <= 24) {
             mettreSemaine[1].push(["Python", "info", "?", 16, 18, "Rozsavolgyi"])
         }else {
