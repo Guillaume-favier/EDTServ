@@ -1,5 +1,6 @@
 const {regroupeInfo, makeEDT,getNumJours, base, noms} = require("./edt.js")
 const {allClasses, allProfs, getEDTX} = require("./altEDT.js")
+const textColisions = require("./testCOllisions.js")
 const { log } = require("./logger.js")
 
 const checkweek = (week) => week > 2 && week < 36
@@ -105,6 +106,9 @@ module.exports = function (app) {
         temp["profs"] = allProfs
         return res.status(200).json(temp)
         return res.status(500).json({ "ok": false, error: 'server error' })
+    })
+    app.get('/api/v1/colisions/', (req, res) => {
+        return res.status(200).send(textColisions)
     })
 
     //other routes..

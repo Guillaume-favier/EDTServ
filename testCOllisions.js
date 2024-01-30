@@ -148,10 +148,9 @@ for (let s = 19; s <= 35; s++) {
     for (let i = 0; i < 16; i++) {
         const aaah = allEdt[s.toString()][i]
         const de = detectOverlap(aaah[0])
-        console.log(aaah[1])
         if (de.length > 0) {
             
-            p+="Semaine "+s+" Groupe "+(i+1)+" groupe C "+getC(i+1,s)+" : "+de.length+" conflits\n"
+            p+="Semaine "+s+" Groupe "+(i+1)+" en C"+getC(i+1,s)+" : "+de.length+" conflits\n"
             if (aaah[1] != "") {
                 p+="Sachant que : "+aaah[1]+"\n"
             }
@@ -161,4 +160,5 @@ for (let s = 19; s <= 35; s++) {
         }
     }
 }
-console.log(p)
+
+module.exports = p

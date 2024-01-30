@@ -39,10 +39,26 @@
         Ce site est plus une version de pronote alternative créée et maintenue par les étudiants, pour les étudiants.<br/>
         Vous y trouverez des outils comme : <a href="/EDT/">le calculateur d'emplois du temps</a> ou un <a href="/Agenda/">Agenda</a> ou encore des <a href="ressources/">ressources.</a><br/>
         S'il vous vient à l'esprit de nouvelles fonctionnalités, pages où des corrections de bug vous pouvez me contacter par mail <a href="mailto:favier.guillaume02@gmail.com">ici</a>.<br>
-        Sinon vous pouvez consulter le code source du site sur <a href="https://github.com/Guillaume-favier/mp2iciv.fr">github</a> à vos risques et périls...
+        Sinon vous pouvez consulter le code source du site sur <a href="https://github.com/Guillaume-favier/EDTserv/">github</a> à vos risques et périls...<br>
+        D'après le colloscope affiché sur le site, les colisions du 2nd Semestre sont:<br>
+        <blockquote id="colText">
+
+        </blockquote>
+        Ces collisions peuvent être duent à plusieurs facteurs comme le fait que mon code soit horrible ou que Mr. Aufranc ai décidé de les garder puis de les traiter au cas par cas.
         </p>
     </div>
     <div class="footer"><span id="url"></span> sous licence : <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html"><i class="fa-solid fa-scale-balanced"></i> GPL-3.0</a><i class="fa-solid fa-moon" id="dark"></i> sur <a href="https://github.com/Guillaume-favier/mp2iciv.fr"><i class="fa-brands fa-github"></i></a></div>
 </body>
+<script>
+    async function getText(url) {
+        const response = await fetch(url);
+        const txt = await response.text();
+        return txt
+    }
+    ;(async()=>{
+        const p = await getText("/api/v1/colisions/");
+        document.getElementById("colText").innerText = p;
+    })()
+</script>
 <script src="/nav/nav.js"></script>
 </html>
