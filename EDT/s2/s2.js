@@ -23,6 +23,16 @@ const nombreToHeure = (n) => {
     return Math.floor(n).toString() + "h"
 }
 
+const presGroupes = (ng) => {
+    let pers = groupesPers[ng-1]
+    let res = pers[0][1]+" "+pers[0][0]+"."
+    for (let i = 1; i < pers.length; i++) {
+        const element = pers[i];
+        res+=" ; "+element[1]+" "+element[0]+"."
+    }
+    return res
+}
+
 
 
 const db = getJson("/EDT/s2/kholes.json")            // document qui répertorie les khôlles
@@ -99,7 +109,7 @@ const getKholes = (k, s) => {
     }
     if (s<= 24 && k <= 3) {
         if (c == 4) {
-            message = "Permutation de la khôlle de maths avec le groupe en C12 : le groupe " + getKfromC(12,s) 
+            message = "Permutation de la khôlle de maths avec le groupe en C12 : le groupe " + getKfromC(12, s) + " ("+presGroupes(getKfromC(12, s))+")"
             const maths = db["maths"][12 - 1]
             all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
         }else{
@@ -108,7 +118,7 @@ const getKholes = (k, s) => {
         }
 
         if (c == 2) {
-            message = "Permutation de la khôlle d'anglais avec le groupe en C6 : le groupe " + getKfromC(6, s) 
+            message = "Permutation de la khôlle d'anglais avec le groupe en C6 : le groupe " + getKfromC(6, s) + " (" + presGroupes(getKfromC(6, s)) + ")"
             const anglais = db["anglais"][6 - 1]
             all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
         }else if (c%2 == 0) {
@@ -117,7 +127,7 @@ const getKholes = (k, s) => {
         }
 
         if(c == 9) {
-            message = "Permutation de la khôlle de physique avec le groupe en C13 : le groupe " + getKfromC(13, s)
+            message = "Permutation de la khôlle de physique avec le groupe en C13 : le groupe " + getKfromC(13, s) + " (" + presGroupes(getKfromC(13, s)) + ")"
             const physique = db["physique"][13 - 1]
             all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
         } else if (c % 2 == 1) {
@@ -129,7 +139,7 @@ const getKholes = (k, s) => {
         const getInvMaths = [5,5,6,3 ,5 ,3 ,5 ]
         if (toInvMaths.includes(c)) {
             let final = getInvMaths[toInvMaths.indexOf(c)]
-            message = "Permutation de la khôlle de maths avec le groupe en C"+final+" : le groupe " + getKfromC(final, s)
+            message = "Permutation de la khôlle de maths avec le groupe en C" + final + " : le groupe " + getKfromC(final, s) + " (" + presGroupes(getKfromC(final, s)) + ")"
             const maths = db["maths"][final - 1]
             all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
         }else{
@@ -140,7 +150,7 @@ const getKholes = (k, s) => {
         const getInvPhys = [9, 5]
         if (toInvPhys.includes(c)) {
             let final = getInvPhys[toInvPhys.indexOf(c)]
-            message = "Permutation de la khôlle de physique avec le groupe en C"+final+" : le groupe " + getKfromC(final, s)
+            message = "Permutation de la khôlle de physique avec le groupe en C" + final + " : le groupe " + getKfromC(final, s) + " (" + presGroupes(getKfromC(final, s)) + ")"
             const maths = db["maths"][final - 1]
             all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
         } else if(c % 2 == 1) {
@@ -155,7 +165,7 @@ const getKholes = (k, s) => {
     else {
         if (s <= 24) {
             if (c == 12 && (getKfromC(4, s) <= 3)) {
-                message = "Permutation de la khôlle de maths avec le groupe en C4 : le groupe " + getKfromC(4, s)
+                message = "Permutation de la khôlle de maths avec le groupe en C4 : le groupe " + getKfromC(4, s) + " (" + presGroupes(getKfromC(4, s)) + ")"
                 const maths = db["maths"][4 - 1]
                 all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
             } else {
@@ -164,7 +174,7 @@ const getKholes = (k, s) => {
             }
 
             if (c == 13 && (getKfromC(9, s) <= 3)) {
-                message = "Permutation de la khôlle de physique avec le groupe en C9 : le groupe " + getKfromC(9, s)
+                message = "Permutation de la khôlle de physique avec le groupe en C9 : le groupe " + getKfromC(9, s) + " (" + presGroupes(getKfromC(9, s)) + ")"
                 const physique = db["physique"][9 - 1]
                 all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
             }else if (c % 2 == 1) {
@@ -173,7 +183,7 @@ const getKholes = (k, s) => {
             }
 
             if (c == 6 && (getKfromC(2, s) <= 3)) {
-                message = "Permutation de la khôlle d'anglais avec le groupe en C2 : le groupe " + getKfromC(2, s)
+                message = "Permutation de la khôlle d'anglais avec le groupe en C2 : le groupe " + getKfromC(2, s) + " (" + presGroupes(getKfromC(2, s)) + ")"
                 const anglais = db["anglais"][2 - 1]
                 all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"))
             }else if (c % 2 == 0) {
@@ -191,7 +201,7 @@ const getKholes = (k, s) => {
                 if (c == getInvMaths[i] && (getKfromC(toInvMaths[i], s) <= 3)) {
                     isInvMaths = true
                     let siGroup = getKfromC(toInvMaths[i], s)
-                    message = "Permutation de la khôlle de maths avec le groupe en C"+toInvMaths[i]+" : le groupe " + siGroup
+                    message = "Permutation de la khôlle de maths avec le groupe en C" + toInvMaths[i] + " : le groupe " + siGroup + " (" + presGroupes(siGroup) + ")"
                     const maths = db["maths"][toInvMaths[i] - 1]
                     all[maths[1] - 1].push(khollesToEDT(maths, "maths"))
                 }
@@ -210,7 +220,7 @@ const getKholes = (k, s) => {
                 if (c == getInvPhys[i] && (getKfromC(toInvPhys[i], s) <= 3)) {
                     isInvPhys = true
                     let siGroup = getKfromC(toInvPhys[i], s)
-                    message = "Permutation de la khôlle de physique avec le groupe en C"+toInvPhys[i]+" : le groupe " + siGroup
+                    message = "Permutation de la khôlle de physique avec le groupe en C" + toInvPhys[i] + " : le groupe " + siGroup + " (" + presGroupes(siGroup) + ")"
                     const physique = db["physique"][toInvPhys[i] - 1]
                     all[physique[1] - 1].push(khollesToEDT(physique, "physique"))
                 }
