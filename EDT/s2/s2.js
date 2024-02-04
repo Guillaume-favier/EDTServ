@@ -92,7 +92,6 @@ const getKholes = (k, s) => {
     let message = ""
     // console.log(k,s)
     let c = getC(k, s)
-    console.log(c,k,s)
 
     let all = []
     for (let i = 0; i < 5; i++) {

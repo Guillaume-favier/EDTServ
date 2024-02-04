@@ -33,7 +33,7 @@ module.exports = function (app) {
                 log(2, "GET /api/v1/all/ with the ip : " + req.ip + " wrong name : " + params.name + " returning 400")
                 return res.status(400).json({ "ok": false, error: 'week out of range' })
             }
-            log(1, "GET /api/v1/all/ with the ip : " + req.ip + " group : " + params.group + " week : " + params.week);
+            log(1, "GET /api/v1/all/ with the ip : " + req.ip + " name : " + params.name + " week : " + params.week);
             const rs = regroupeInfo(params.name, Number(params.week))
             res.status(200).json(rs)
             return

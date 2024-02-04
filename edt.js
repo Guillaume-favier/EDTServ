@@ -89,7 +89,7 @@ const regroupeInfo = (nom, s) => {
 		"ok":true,
 		"days": days[1],
 		"fullDays": days[0],
-		"EDT": makeEDT2(k,s)[0], //allEdt[s.toString()][k - 1][0],
+		"EDT": allEdt[s.toString()][k - 1][0],
 		"kholles": getKholes(k, s),
 		"membres": s < 19 ? groupesPers1[k - 1] : groupesPers2[k - 1],
 		"DS": ds[s-2],

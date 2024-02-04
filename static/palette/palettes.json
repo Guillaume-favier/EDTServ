@@ -7,7 +7,9 @@
       "anglais": "#b521ab",
       "info": "#21b52a",
       "EPS": "#21a9b5",
-      "lv2": "#A8A196"
+      "lv2": "#A8A196",
+      "chimie": "#fe48aa",
+      "tipe": "#B5DDD1"
     },
     "Pronote":{
       "SI": "#dc79aa",
@@ -17,7 +19,9 @@
       "anglais": "#94bfa0",
       "info": "#a394bf",
       "EPS": "#b4b4b4",
-      "lv2": "#A8A196"
+      "lv2": "#A8A196",
+      "chimie": "#f1ee8e",
+      "tipe": "#F99A9C"
     },
     "GH >λ=":{
       "SI": "#e1ad01",
@@ -27,7 +31,9 @@
       "anglais": "#e06739",
       "info": "#21b52a",
       "EPS": "#ffffff",
-      "lv2": "#583747"
+      "lv2": "#583747",
+      "chimie": "#f1ee8e",
+      "tipe": "#9400D3"
     },
     "Pastel":{
       "SI": "#fdffb6",
@@ -37,7 +43,9 @@
       "anglais": "#ffc6ff",
       "info": "#caffbf",
       "EPS": "#ffd6a5",
-      "lv2": "#FFF3DA"
+      "lv2": "#FFF3DA",
+      "chimie": "#B57EDC",
+      "tipe": "#B5DDD1"
     },
     "Tout blanc":{
       "SI": "#ffffff",
@@ -47,7 +55,9 @@
       "anglais": "#ffffff",
       "info": "#ffffff",
       "EPS": "#ffffff",
-      "lv2": "#ffffff"
+      "lv2": "#ffffff",
+      "chimie": "#ffffff",
+      "tipe": "#ffffff"
     }
     
 }
