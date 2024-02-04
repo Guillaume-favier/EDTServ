@@ -1,6 +1,8 @@
 const { getCurrentWeek, allEdt, makeEDT } = require("./edt.js")
+const { groupesPers } = require("./EDT/s2/s2.js")
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
 
+console.log(groupesPers)
 const info = require("fs").readFileSync("./EDT/s2/info.txt", "utf8").toString()
 const tableauInfo = []
 
@@ -150,7 +152,7 @@ for (let s = 19; s <= 35; s++) {
         const de = detectOverlap(aaah[0])
         if (de.length > 0) {
             
-            p+="Semaine "+s+" Groupe "+(i+1)+" en C"+getC(i+1,s)+" : "+de.length+" conflits\n"
+            p+="Semaine "+s+" Groupe "+(i+1)+" en C"+getC(i+1,s)+" ("+groupesPers[i].join(";")+") : "+de.length+" conflits\n"
             if (aaah[1] != "") {
                 p+="Sachant que : "+aaah[1]+"\n"
             }
@@ -160,5 +162,5 @@ for (let s = 19; s <= 35; s++) {
         }
     }
 }
-
+console.log(p)
 module.exports = p

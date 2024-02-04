@@ -89,11 +89,11 @@ const regroupeInfo = (nom, s) => {
 		"ok":true,
 		"days": days[1],
 		"fullDays": days[0],
-		"EDT": allEdt[s.toString()][k - 1][0],
+		"EDT": makeEDT2(k,s)[0], //allEdt[s.toString()][k - 1][0],
 		"kholles": getKholes(k, s),
 		"membres": s < 19 ? groupesPers1[k - 1] : groupesPers2[k - 1],
 		"DS": ds[s-2],
-		"message": s >= 19 ? "Wow wow wow, on va se calmer ! Tout ce qui suit est uniquement à but de test pour valider l'emploi du temps final, mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." + (allEdt[s.toString()][k - 1][1] != "" ? "\n"+allEdt[s.toString()][k - 1][1] : "") : ""
+		"message": s >= 26 ? "Wow wow wow, on va se calmer ! Tout ce qui suit est uniquement à but de test pour valider l'emploi du temps final, mais n'est en aucun cas une représentation de la réalité, seul les DS sont véritable." + (allEdt[s.toString()][k - 1][1] != "" ? "\n"+allEdt[s.toString()][k - 1][1] : "") : ""
 	}
 	return res
 }
