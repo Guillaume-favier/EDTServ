@@ -2,7 +2,6 @@ const { getCurrentWeek, allEdt, makeEDT } = require("./edt.js")
 const { groupesPers } = require("./EDT/s2/s2.js")
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
 
-console.log(groupesPers)
 const info = require("fs").readFileSync("./EDT/s2/info.txt", "utf8").toString()
 const tableauInfo = []
 
