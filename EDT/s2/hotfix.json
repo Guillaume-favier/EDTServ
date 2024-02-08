@@ -1,27 +1,38 @@
 {
-  "19/4": [
-    [
-      "10",
-      [
+    "19/4": [
         [
-          "TP Physique",
-          "physique",
-          "Labo de physique",
-          7.833333333333333,
-          9.833333333333334,
-          "Bouchet"
-        ],
+            "10",
+            [
+                [
+                    "TP Physique",
+                    "physique",
+                    "Labo de physique",
+                    7.833333333333333,
+                    9.833333333333334,
+                    "Bouchet"
+                ],
+                [
+                    "TD Maths",
+                    "maths",
+                    "20",
+                    9.833333333333334,
+                    11.833333333333334,
+                    "Aufranc"
+                ],
+                ["Physique", "physique", "20", 13, 15, "Bouchet"]
+            ],
+            "Exceptionnellement, pas de Khôlle d'info cette semaine"
+        ]
+    ],
+    "23/3": [
         [
-          "TD Maths",
-          "maths",
-          "20",
-          9.833333333333334,
-          11.833333333333334,
-          "Aufranc"
-        ],
-        ["Physique", "physique", "20", 13, 15, "Bouchet"]
-      ],
-      "Exceptionnellement, pas de Khôlle d'info cette semaine"
+            "4",
+            [
+                ["Maths", "maths", "20", 8, 11, "Aufranc"],
+                ["TP Info", "info", "37", 16, 18, "Rozsavolgyi"],
+                ["Khôlle d'anglais", "anglais", "?", 18, 19, "?"]
+            ],
+            "Khôlle d'anglais rajoutée à la demande de Emma D."
+        ]
     ]
-  ]
 }

@@ -1,28 +1,13 @@
 {
-    "19/4": [
+    "21/3": [
         [
-            "10",
+            "4",
             [
-                [
-                    "TP Physique",
-                    "physique",
-                    "Labo de physique",
-                    7.833333333333333,
-                    9.833333333333334,
-                    "Bouchet"
-                ],
-                [
-                    "TD Maths",
-                    "maths",
-                    "20",
-                    9.833333333333334,
-                    11.833333333333334,
-                    "Aufranc"
-                ],
-                ["Physique", "physique", "20", 13, 15, "Bouchet"],
-                ["Khôlle Info", "info", "K26-K27", 17, 18, "Meroue"]
+                ["Maths", "maths", "20", 8, 11, "Aufranc"],
+                ["TP Info", "info", "37", 14, 16, "Rozsavolgyi"],
+                ["Khôlle d'anglais", "anglais", "?", 18, 19, "?"]
             ],
-            ""
+            "Khôlle d'anglais rajouté à la demande de Emma D."
         ]
     ]
 }
