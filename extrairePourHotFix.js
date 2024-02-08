@@ -1,11 +1,12 @@
 const {allEdt} = require("./edt.js")
 const stringify = require("json-stringify-pretty-compact")
-s = 18
-j = 0
+s = 19
+j = 4
 res = allEdt[s]
 let term = []
 res.forEach((element,index) => {
-    term.push([(index+1).toString(),element[j]])
+    if (index+1 != 10)  return
+    term.push([(index + 1).toString(), element[0][j], element[1]])
 });
 let temp = {}
 temp[s+"/"+j] = term
