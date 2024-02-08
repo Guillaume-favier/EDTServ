@@ -1,6 +1,6 @@
 [
 	[
-		["TPSI", "SI", "?", 8, 10, "Cornette"],
+		["TPSI", "SI", "31", 8, 10, "Cornette"],
 		["TIPE", "tipe", "20", 10, 12, "?"],
 		["EPS", "EPS", "dehors", 16, 18, "Sport"]
 	],
@@ -12,7 +12,7 @@
 	],
 	[
 		["Physique", "physique", "20", 8, 10, "Bouchet"],
-		["Chimie", "chimie", "20", 10, 12, "Bouchet"],
+		["Chimie", "chimie", "36", 10, 12, "Bouchet"],
 		["Maths", "maths", "20", 13, 16, "Aufranc"]
 	],
 	[
