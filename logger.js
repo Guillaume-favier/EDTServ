@@ -1,3 +1,4 @@
+
 const fs = require("fs");
 const path = require("path");
 const logPath = path.join(__dirname, "logs", "log.txt");

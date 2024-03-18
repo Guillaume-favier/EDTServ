@@ -88,9 +88,7 @@ const afficheEDT = (table, reset = true) => {
             let done = false
             for (let numE = 0; numE < table[jour].length; numE++) { // cherche à partir de tout les cours de la journée
                 const element = table[jour][numE];
-                // console.log("pour ", nombreToHeure(i), "et", element[3], nombreToHeure(element[2]),"pour",element)
                 if (Math.abs(i - element[3]) < 0.125) {
-                    // console.log("ajout", element)
                     done = true
                     last[jour] = element[4]
                     const coursMatiere = element[1]
@@ -101,12 +99,9 @@ const afficheEDT = (table, reset = true) => {
                     if (n != 1) td.rowSpan = n
                     tr.appendChild(td)
                     break
-
-
                 }
             }
             if (done == false && last[jour] <= i) {
-                // console.log("skip")
                 last[jour] += 0.25
                 const td = document.createElement("td")
                 td.innerText = "\n"
@@ -117,6 +112,8 @@ const afficheEDT = (table, reset = true) => {
         eEDT.appendChild(tr)
     }
 }
+
+
 const pushIfNotIn = (arr, el) => {
     let val = JSON.stringify(el)
     for (let i = 0; i < arr.length; i++) {

@@ -146,8 +146,9 @@ const getKfromC = (c, s) => {
 
 let p = ""
 for (let s = 19; s <= 35; s++) {
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 15; i++) {
         const aaah = allEdt[s.toString()][i]
+        console.log(aaah)
         const de = detectOverlap(aaah[0])
         if (de.length > 0) {
             

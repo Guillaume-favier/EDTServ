@@ -24,7 +24,9 @@ const nombreToHeure = (n) => {
 };
 
 const presGroupes = (ng) => {
+    console.log(ng)
     let pers = groupesPers[ng - 1];
+    console.log(pers)
     let res = pers[0][1] + " " + pers[0][0] + ".";
     for (let i = 1; i < pers.length; i++) {
         const element = pers[i];
@@ -337,7 +339,7 @@ const makeEDT = (k, semaine, info = null) => {
     EDT = [];
     EDT = k == 2 || k == 3 ? clone(orgEDTsi) : clone(orgEDT);
     kholes = [];
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 15; i++) {
         kholes.push([]);
     }
     let mettreSemaine = [[], [], [], [], []];

@@ -3,8 +3,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const express = require("express");
-const { log } = require("./logger.js");
-
+const {log,connection} = require("./logger");
 log(1, "Starting server");
 // create express app
 const app = express();

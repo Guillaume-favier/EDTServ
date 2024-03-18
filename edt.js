@@ -81,7 +81,7 @@ const allEdt = {};
 const getYourWeek = (week) => {
     if (!allEdt[week]) {
         allEdt[week] = [];
-        for (let i = 1; i <= 16; i++) {
+        for (let i = 1; i <= 15; i++) {
             allEdt[week].push(makeEDT(i, week));
         }
     }
