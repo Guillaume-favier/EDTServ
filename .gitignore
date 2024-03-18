@@ -4,3 +4,4 @@
 /logs/*
 /ssl/*
 /logs/connections.json
+logs/connections.json
