@@ -3,3 +3,4 @@
 /test.json
 /logs/*
 /ssl/*
+/logs/connections.json

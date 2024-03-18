@@ -61,9 +61,7 @@ const connection = (page, req, sucess) => {
             log(3, "Error reading connection file : " + err);
             return;
         }
-        console.log(data)
         const arr = JSON.parse(data);
-        console.log(arr)
         arr.push(obj);
         fs.writeFile(
             connectionFilePath,
