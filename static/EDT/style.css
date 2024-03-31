@@ -13,7 +13,7 @@ td {
     height: min-content;
     /* height: 9px; */
     font-size: 0.36vh;
-    min-width: 18%;
+    /* min-width: 18%; */
 }
 /* .trHeure{
 
@@ -25,6 +25,7 @@ td {
     vertical-align: top;
     height: 7px;
     font-size: 1vh;
+    width: min-content;
 }
 
 .heure {
