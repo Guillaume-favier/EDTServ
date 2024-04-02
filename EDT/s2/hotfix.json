@@ -1,41 +1,212 @@
 {
-    "19/4": [
+  "19/4": [
+    [
+      "10",
+      [
         [
-            "10",
-            [
-                [
-                    "TP Physique",
-                    "physique",
-                    "Labo de physique",
-                    7.833333333333333,
-                    9.833333333333334,
-                    "Bouchet"
-                ],
-                [
-                    "TD Maths",
-                    "maths",
-                    "20",
-                    9.833333333333334,
-                    11.833333333333334,
-                    "Aufranc"
-                ],
-                ["Physique", "physique", "20", 13, 15, "Bouchet"]
-            ],
-            "Exceptionnellement, pas de Khôlle d'info cette semaine"
-        ]
+          "TP Physique",
+          "physique",
+          "Labo de physique",
+          7.833333333333333,
+          9.833333333333334,
+          "Bouchet"
+        ],
+        [
+          "TD Maths",
+          "maths",
+          "20",
+          9.833333333333334,
+          11.833333333333334,
+          "Aufranc"
+        ],
+        ["Physique", "physique", "20", 13, 15, "Bouchet"]
+      ],
+      "Exceptionnellement, pas de Khôlle d'info cette semaine"
+    ]
+  ],
+  "23/3": [
+    [
+      "4",
+      [
+        ["Maths", "maths", "20", 8, 11, "Aufranc"],
+        ["TP Info", "info", "37", 16, 18, "Rozsavolgyi"],
+        ["Khôlle d'anglais", "anglais", "?", 18, 19, "?"]
+      ],
+      "Khôlle d'anglais rajoutée à la demande de Emma D."
+    ]
+  ],
+  "25/0": [["e", [], ""]],
+  "29/0": [
+    [
+      "2",
+      [
+        ["CCB Physique", "physique", "amphi prépa", 8, 12, ""],
+        ["CCB SI", "SI", "amphi prépa", 13, 16, ""],
+        ["CCB Python", "info", "amphi prépa", 16, 17, ""]
+      ],
+      ""
     ],
-    "23/3": [
+    [
+      "3",
+      [
+        ["CCB Physique", "physique", "amphi prépa", 8, 12, ""],
+        ["CCB SI", "SI", "amphi prépa", 13, 16, ""],
+        ["CCB Python", "info", "amphi prépa", 16, 17, ""]
+      ],
+      ""
+    ],
+    [
+      "e",
+      [
+        ["CCB Physique", "physique", "amphi prépa", 8, 12, ""],
+        ["CCB Info", "info", "amphi prépa", 13, 17, ""]
+      ],
+      ""
+    ]
+  ],
+  "29/1": [
+    [
+      "2",
+      [
+        ["CCB Français", "français", "amphi prépa", 8, 12, ""],
+        ["CCB Anglais", "anglais", "amphi prépa", 13, 16, ""],
+        ["CCB Chimie", "chimie", "amphi prépa", 16, 17, ""]
+      ],
+      ""
+    ],
+    [
+      "3",
+      [
+        ["CCB Français", "français", "amphi prépa", 8, 12, ""],
+        ["CCB Anglais", "anglais", "amphi prépa", 13, 16, ""],
+        ["CCB Chimie", "chimie", "amphi prépa", 16, 17, ""]
+      ],
+      ""
+    ],
+    [
+      "e",
+      [
+        ["CCB Français", "français", "amphi prépa", 8, 12, ""],
+        ["CCB Anglais", "anglais", "amphi prépa", 13, 16, ""]
+      ],
+      ""
+    ]
+  ],
+  "29/2": [
+        [
+            "1",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Maths", "maths", "20", 16, 17, "Aufranc"]
+            ],
+            ""
+        ],
+        [
+            "3",
+            [
+              ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+              ["Khôlle Anglais", "anglais", "K25", 16, 17, "Cecarelli"]
+            ],
+            ""
+        ],
         [
             "4",
             [
-                ["Maths", "maths", "20", 8, 11, "Aufranc"],
-                ["TP Info", "info", "37", 16, 18, "Rozsavolgyi"],
-                ["Khôlle d'anglais", "anglais", "?", 18, 19, "?"]
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Maths", "maths", "K33", 17.5, 18.5, "Dubau"]
             ],
-            "Khôlle d'anglais rajoutée à la demande de Emma D."
+            ""
+        ],
+        [
+            "6",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Maths", "maths", "20", 17, 18, "Aufranc"]
+            ],
+            ""
+        ],
+        [
+            "7",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                [
+                    "Khôlle Maths",
+                    "maths",
+                    "K32",
+                    17.833333333333332,
+                    18.833333333333332,
+                    "Charvet"
+                ]
+            ],
+            ""
+        ],
+        [
+            "8",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                [
+                    "Khôlle Physique",
+                    "physique",
+                    "Labo physique",
+                    18,
+                    19,
+                    "Sudre"
+                ]
+            ],
+            ""
+        ],
+        [
+            "9",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Maths", "maths", "K33", 18.25, 19.25, "Dubau"]
+            ],
+            ""
+        ],
+        [
+            "10",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Physique", "physique", "26", 17, 18, "Sudre"]
+            ],
+            ""
+        ],
+        [
+            "11",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Maths", "maths", "34", 17, 18, "Broizat"]
+            ],
+            ""
+        ],
+        [
+            "12",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Maths", "maths", "K33", 16, 17, "Dubau"]
+            ],
+            ""
+        ],
+        [
+            "13",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Anglais", "anglais", "K25", 18, 19, "Cecarelli"]
+            ],
+            ""
+        ],
+        [
+            "14",
+            [
+                ["CCB Maths", "maths", "amphi prépa", 8, 12, ""],
+                ["Khôlle Maths", "maths", "K32", 17, 18, "Charvet"]
+            ],
+            ""
+        ],
+        [
+            "e",
+            [["CCB Maths", "maths", "amphi prépa", 8, 12, ""]],
+            ""
         ]
-    ],
-    "25/0": [
-        ["e",[],""]
     ]
 }
