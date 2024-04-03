@@ -45,11 +45,16 @@ const getEDTX = (s, param, X) => {
         return false
     }
     let p = []
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 15; i++) {
         for (let j = 0; j < 5; j++) {
             if (i == 0) p.push([])
-            for (let h = 0; h < allEdt[s.toString()][i][0][j].length; h++) {
-                const c = allEdt[s.toString()][i][0][j][h];
+            console.log(i,j)
+            const pre = allEdt[s.toString()][i]
+            console.log(pre)
+            const jours = pre[0]
+            for (let h = 0; h < jours[j].length; h++) {
+                
+                const c = jours[j][h];
                 if (c[X] == param) pushIfNotIn(p[j], c)
             }
         }

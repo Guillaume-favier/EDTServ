@@ -148,7 +148,7 @@ let p = ""
 for (let s = 19; s <= 35; s++) {
     for (let i = 0; i < 15; i++) {
         const aaah = allEdt[s.toString()][i]
-        console.log(aaah)
+        // console.log(aaah)
         const de = detectOverlap(aaah[0])
         if (de.length > 0) {
             
@@ -162,5 +162,5 @@ for (let s = 19; s <= 35; s++) {
         }
     }
 }
-console.log(p)
+// console.log(p)
 module.exports = p

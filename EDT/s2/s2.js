@@ -24,9 +24,9 @@ const nombreToHeure = (n) => {
 };
 
 const presGroupes = (ng) => {
-    console.log(ng)
+    // console.log(ng)
     let pers = groupesPers[ng - 1];
-    console.log(pers)
+    // console.log(pers)
     let res = pers[0][1] + " " + pers[0][0] + ".";
     for (let i = 1; i < pers.length; i++) {
         const element = pers[i];
