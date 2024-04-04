@@ -2,6 +2,7 @@ const { regroupeInfo, makeEDT, getNumJours, base, noms } = require("./edt.js");
 const { allClasses, allProfs, getEDTX } = require("./altEDT.js");
 const textColisions = require("./testCOllisions.js");
 const { log, connection } = require("./logger.js");
+const path = require("path")
 
 const checkweek = (week) => week > 2 && week < 36;
 const checkNom = (nom) => noms.includes(nom);
@@ -161,6 +162,10 @@ module.exports = function (app) {
     app.get("/api/v1/colisions/", (req, res) => {
         connection("/api/v1/colisions/", req, 200);
         return res.status(200).send(textColisions);
+    });
+    app.get("/api/v1/gitVers/", (req, res) => {
+        connection("/api/v1/gitVers/", req, 200);
+        return res.status(200).sendFile(path.join(__dirname, ".git", "refs", "heads","main"));
     });
 
     //other routes..

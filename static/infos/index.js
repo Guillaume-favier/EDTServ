@@ -6,7 +6,7 @@
     
     console.log(text)
     if(!isPages){
-        const here = await fetch("/.git/refs/heads/main")
+        const here = await fetch("/api/v1/gitVers/")
         const hereJ = await here.text()
         console.log(hereJ)
         text += "\n\n Comme on est sur un vrai server : \nLast operation : " + hereJ
