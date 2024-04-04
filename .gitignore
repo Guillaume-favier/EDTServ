@@ -6,3 +6,5 @@
 /logs/connections.json
 logs/connections.json
 logs/connections.json
+logs/connections*
+out.json

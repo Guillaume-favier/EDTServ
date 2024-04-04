@@ -162,5 +162,5 @@ for (let s = 19; s <= 35; s++) {
         }
     }
 }
-// console.log(p)
+console.log("colisions :",p)
 module.exports = p
