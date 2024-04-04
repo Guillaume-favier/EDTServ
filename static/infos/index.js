@@ -12,11 +12,12 @@
         text += "\n\n Comme on est sur un vrai server : \nLast operation : " + hereJ
     }
     document.getElementById("res").innerText = text
+
     const stats = await fetch("/api/v1/stats/")
     const jstats = (await stats.json())
 
     const select = document.getElementById("jour-select")
-    const ctx = document.getElementById('myChart');
+    const ctx = document.getElementById('temps');
 
     let hours = []
     const dataNulle = []
@@ -55,16 +56,30 @@
             borderWidth: 1
         }]
         else {
+            let deb = -1
+            let last = 0
+            for (let h = 0; h < 24; h++) {
+                if (jstats[e.target.value]["everyone"][h] == 0) continue
+                console.log(h)
+                if (deb == -1) deb = h
+                last = h
+            }
+            deb--
+            last+=2
+            if (deb < 0) deb = 0
+            if (last > 23) last = 23
+            console.log(deb, last)
+            testchart.data.labels = hours.slice(deb, last)
             testchart.data.datasets = [{
                 label: '# of connections',
-                data: jstats[e.target.value]["everyone"],
+                data: jstats[e.target.value]["everyone"].slice(deb, last),
                 borderWidth: 1
             }]
             Object.keys(jstats[e.target.value]).forEach((element, index) => {
                 if (element == "everyone") return
                 testchart.data.datasets.push({
                     label: element,
-                    data: jstats[e.target.value][element],
+                    data: jstats[e.target.value][element].slice(deb, last),
                     borderWidth: 1
                 })
             })

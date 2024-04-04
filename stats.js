@@ -36,6 +36,6 @@ const getLogs = () => {
     })
     return all
 }
-console.log(getLogs())
+// console.log(getLogs())
 
 module.exports = getLogs
