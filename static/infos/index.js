@@ -92,7 +92,7 @@
             deb--
             last+=2
             if (deb < 0) deb = 0
-            if (last > 23) last = 23
+            if (last > 24) last = 24
             console.log(deb, last)
             temporalChart.data.labels = hours.slice(deb, last)
             temporalChart.data.datasets = [{
