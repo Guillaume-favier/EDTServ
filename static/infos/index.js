@@ -56,6 +56,7 @@
         console.log(testchart.data.datasets[0])
         console.log(testchart)
     }
-
-    console.log(jstats)
+    
+    select.value = Object.keys(jstats)[Object.keys(jstats).length-1]
+    select.dispatchEvent(new Event("change"))
 })()
