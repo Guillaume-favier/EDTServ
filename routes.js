@@ -2,6 +2,7 @@ const { regroupeInfo, makeEDT, getNumJours, base, noms } = require("./edt.js");
 const { allClasses, allProfs, getEDTX } = require("./altEDT.js");
 const textColisions = require("./testCOllisions.js");
 const { log, connection } = require("./logger.js");
+const getLogs = require("./stats.js")
 const path = require("path")
 
 const checkweek = (week) => week > 2 && week < 36;
@@ -163,10 +164,19 @@ module.exports = function (app) {
         connection("/api/v1/colisions/", req, 200);
         return res.status(200).send(textColisions);
     });
+
+    // Statistiques :
+
     app.get("/api/v1/gitVers/", (req, res) => {
         connection("/api/v1/gitVers/", req, 200);
         return res.status(200).sendFile(path.join(__dirname, ".git", "refs", "heads","main"));
     });
+
+    app.get("/api/v1/stats/", (req, res) => {
+        connection("/api/v1/stats/", req, 200);
+        return res.status(200).json(getLogs());
+    });
+
 
     //other routes..
 };
