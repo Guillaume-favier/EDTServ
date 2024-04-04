@@ -17,19 +17,37 @@
     const jstats = (await stats.json())
 
     const select = document.getElementById("jour-select")
-    const ctx = document.getElementById('temps');
+    const tempo = document.getElementById('temps');
+    const perso = document.getElementById('personnes');
 
     let hours = []
     const dataNulle = []
     for (let i = 0; i < 24; i++) hours.push(i+"h")
     for (let i = 0; i < 24; i++) dataNulle.push(0)
-    let testchart = new Chart(ctx, {
+    let temporalChart = new Chart(tempo, {
         type: 'line',
         data: {
             labels: hours,
             datasets: [{
                 label: '# of connections',
                 data: dataNulle,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    let personnalChart = new Chart(perso, {
+        type: 'bar',
+        data: {
+            datasets: [{
+                label: '# of connections',
+                data: [],
                 borderWidth: 1
             }]
         },
@@ -50,11 +68,18 @@
     });
 
     select.onchange = (e) => {
-        if (e.target.value == "") testchart.data.datasets = [{
-            label: '# of connections',
-            data: dataNulle,
-            borderWidth: 1
-        }]
+        if (e.target.value == "") {
+            temporalChart.data.datasets = [{
+                label: '# of connections',
+                data: dataNulle,
+                borderWidth: 1
+            }]
+            personnalChart.data.datasets = [{
+                label: '# of connections',
+                data: [],
+                borderWidth: 1
+            }]
+        }
         else {
             let deb = -1
             let last = 0
@@ -69,24 +94,28 @@
             if (deb < 0) deb = 0
             if (last > 23) last = 23
             console.log(deb, last)
-            testchart.data.labels = hours.slice(deb, last)
-            testchart.data.datasets = [{
+            temporalChart.data.labels = hours.slice(deb, last)
+            temporalChart.data.datasets = [{
                 label: '# of connections',
                 data: jstats[e.target.value]["everyone"].slice(deb, last),
                 borderWidth: 1
             }]
             Object.keys(jstats[e.target.value]).forEach((element, index) => {
                 if (element == "everyone") return
-                testchart.data.datasets.push({
+                temporalChart.data.datasets.push({
                     label: element,
                     data: jstats[e.target.value][element].slice(deb, last),
                     borderWidth: 1
                 })
+
+                personnalChart.data.datasets[0].data.push({"x": element, "y": jstats[e.target.value][element].reduce((a, b) => a + b, 0)})
             })
         }
 
-        testchart.update()
+        temporalChart.update()
+        personnalChart.update()
     }
+
     
     select.value = Object.keys(jstats)[Object.keys(jstats).length-1]
     select.dispatchEvent(new Event("change"))
