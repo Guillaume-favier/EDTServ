@@ -15,6 +15,7 @@
 
     const stats = await fetch("/api/v1/stats/")
     const jstats = (await stats.json())
+    console.log(jstats)
 
     const select = document.getElementById("jour-select")
     const tempo = document.getElementById('temps');
@@ -69,6 +70,7 @@
 
     select.onchange = (e) => {
         if (e.target.value == "") {
+            document.getElementById("textRes").style.display = "none"
             temporalChart.data.datasets = [{
                 label: '# of connections',
                 data: dataNulle,
@@ -81,6 +83,9 @@
             }]
         }
         else {
+            document.getElementById("textRes").style.display = "block"
+            document.getElementById("nbPersConnection").innerText = Object.keys(jstats[e.target.value]).length-1
+            document.getElementById("nbConnection").innerText = jstats[e.target.value]["everyone"].reduce((a, b) => a + b, 0)
             let deb = -1
             let last = 0
             for (let h = 0; h < 24; h++) {
@@ -100,6 +105,7 @@
                 data: jstats[e.target.value]["everyone"].slice(deb, last),
                 borderWidth: 1
             }]
+            personnalChart.data.datasets[0].data = []
             Object.keys(jstats[e.target.value]).forEach((element, index) => {
                 if (element == "everyone") return
                 temporalChart.data.datasets.push({
