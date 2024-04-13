@@ -316,7 +316,7 @@ const getKholes = (k, s) => {
         }
     }
 
-    if (k > 3 && (c == 2 || c == 10)) {
+    if (k > 3 && (c == 2 || c == 10) && s<27) {
         const info = db["info"][c - 1];
         all[info[1] - 1].push(khollesToEDT(info, "info"));
     }
