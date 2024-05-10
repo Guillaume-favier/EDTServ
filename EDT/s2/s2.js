@@ -35,7 +35,7 @@ const presGroupes = (ng) => {
     return res;
 };
 
-const db = getJson("/EDT/s2/kholes.json"); // document qui répertorie les khôlles
+const db = getJson("/EDT/s2/kholles.json"); // document qui répertorie les khôlles
 const info = getText("/EDT/s2/info.txt"); // document qui répertorie la matrice pour les groupes d'informatique
 const orgEDT = getJson("/EDT/s2/EDT.json"); // document qui répertorie les les cours communs pour ceux qui ne font pas SI
 const orgEDTsi = getJson("/EDT/s2/EDTsi.json"); // document qui répertorie les les cours communs pour ceux qui font SI
