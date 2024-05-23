@@ -171,7 +171,7 @@ const getKholes = (k, s) => {
         }
         const toInvPhys = [1, 15];
         const getInvPhys = [9, 5];
-        if (toInvPhys.includes(c)) {
+        if (toInvPhys.includes(c) && s <= 30) {
             let final = getInvPhys[toInvPhys.indexOf(c)];
             message =
                 "Permutation de la khôlle de physique avec le groupe en C" +
@@ -218,7 +218,7 @@ const getKholes = (k, s) => {
                 all[maths[1] - 1].push(khollesToEDT(maths, "maths"));
             }
 
-            if (c == 13 && getKfromC(9, s) <= 3) {
+            if (c == 13 && getKfromC(9, s) <= 3 && s <= 30) {
                 message =
                     "Permutation de la khôlle de physique avec le groupe en C9 : le groupe " +
                     getKfromC(9, s) +
@@ -277,7 +277,7 @@ const getKholes = (k, s) => {
             const toInvPhys = [1, 15];
             const getInvPhys = [9, 5];
             for (let i = 0; i < getInvPhys.length; i++) {
-                if (c == getInvPhys[i] && getKfromC(toInvPhys[i], s) <= 3) {
+                if (c == getInvPhys[i] && getKfromC(toInvPhys[i], s) <= 3 && s<=30) {
                     isInvPhys = true;
                     let siGroup = getKfromC(toInvPhys[i], s);
                     message =
@@ -294,7 +294,7 @@ const getKholes = (k, s) => {
                     );
                 }
             }
-            if (!isInvPhys && c % 2 == 1) {
+            if (!isInvPhys && c % 2 == 1 && s <= 30) {
                 const physique = db["physique"][c - 1];
                 all[physique[1] - 1].push(khollesToEDT(physique, "physique"));
             }
