@@ -17,10 +17,8 @@ const allX = (s,n) => {
     for (let s = 3; s <= 34; s++) {
         for (let i = 0; i < 15; i++) {
             for (let j = 0; j < 5; j++) {
-                // console.log(allEdt)
                 for (let h = 0; h < allEdt[s.toString()][i][0][j].length; h++) {
                     const c = allEdt[s.toString()][i][0][j][h];
-                    // console.log(c,c[n])
                     if (p.includes(c[n])) continue
                     p.push(c[n])
                 }

@@ -1,5 +1,6 @@
 const { getCurrentWeek, allEdt, makeEDT } = require("./edt.js")
 const { groupesPers } = require("./EDT/s2/s2.js")
+const { log } = require("./logger.js");
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
 
 const info = require("fs").readFileSync("./EDT/s2/info.txt", "utf8").toString()
@@ -53,73 +54,11 @@ const resume_prob = (edt) => {
     const res = detectOverlap(edt)
     for (let i = 0; i < res.length; i++) {
         const element = res[i];
-        console.log(" - Le " + jours[element[2]] + " entre " + element[0][0] + " [" + nombreToHeure(element[0][3]) + "-" + nombreToHeure(element[0][4]) + "] et " + element[1][0] + " [" + nombreToHeure(element[1][3]) + "-" + nombreToHeure(element[1][4]) +"]")
+
+
+        log(2," - Le " + jours[element[2]] + " entre " + element[0][0] + " [" + nombreToHeure(element[0][3]) + "-" + nombreToHeure(element[0][4]) + "] et " + element[1][0] + " [" + nombreToHeure(element[1][3]) + "-" + nombreToHeure(element[1][4]) +"]")
     }
 }
-
-
-// info.split("\n").forEach(lign => {
-//     tableauInfo.push(lign.split(" "))
-// })
-// console.table(tableauInfo)
-// for (let s = 0; s < tableauInfo[0].length; s++) {
-    
-// }
-
-// let finfo = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-
-// const recurcif = (n) => {
-//     const tn = n==0 ? 1 : n+3
-//     if (n == 0) {
-//         for (let gi = 1; gi <= 3; gi++) {
-//             finfo[tn-1] = gi
-//             let edt = makeEDT(tn, 35, gi)[0]
-//             if (detectOverlap(edt).length == 0) {
-//                 // console.log(finfo)
-//                 let res = [0, 0, 0, 0]
-//                 for (let g = 0; g < finfo.length; g++) {
-//                     const element = finfo[g];
-//                     res[element]++
-//                 }
-//                 if (res.includes(4)) {
-//                     let t = res.includes(4)
-//                     if (t == 1 && res[2] == 5 && res[3] == 5) {
-//                         console.log("groupe info "+gi)
-//                         console.log(finfo)
-//                     }
-//                     if (t == 2 && res[1] == 5 && res[3] == 5) {
-//                         console.log("groupe info "+gi+" groupe "+tn)
-//                         console.log(finfo)
-//                     }
-//                     if (t == 3 && res[1] == 5 && res[2] == 5) {
-//                         console.log("groupe info "+gi+" groupe "+tn)
-//                         console.log(finfo)
-//                     }
-//                 }
-//             }
-//         }
-//     }else if ([6, 14, 15, 16].includes(tn)) {
-//         finfo[tn - 1] = 1
-//         recurcif(n - 1)
-//         let edt = makeEDT(tn, 35, 1)[0]
-//         if (detectOverlap(edt).length != 0) {
-//             console.log("HEINNN ????")
-//         }
-//     }else{
-//         for (let gi = 1; gi <= 3; gi++) {
-//             finfo[tn-1] = gi
-//             let edt = makeEDT(tn, 35, gi)[0]
-//             if (detectOverlap(edt).length != 0) {
-//                 // console.log("groupe info "+gi+" groupe "+tn)
-//                 // resume_prob(edt)
-//                 continue
-//             }
-//             recurcif(n-1)
-//         }
-//     }
-// }
-// recurcif(13)
-
 
 
 
@@ -162,5 +101,8 @@ for (let s = 19; s <= 35; s++) {
         }
     }
 }
-console.log("colisions :",p)
+if (p!="") {
+
+    log(2,"colisions :"+p)
+}
 module.exports = p

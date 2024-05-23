@@ -12,7 +12,6 @@ const getInteractionsForDay = (data) => {
         const log = data[i];
         if (log[1] != "/api/v1/all/") continue
         let d = new Date(log[0])
-        // console.log(log[5]["name"]);
         if (Object.keys(hours).includes(log[5]["name"])) {
             hours[log[5]["name"]][d.getHours()]++
         }else{
@@ -20,22 +19,18 @@ const getInteractionsForDay = (data) => {
             hours[log[5]["name"]][d.getHours()]++
         }
         hours["everyone"][d.getHours()]++
-        // console.log(log)
     }
     return hours
 }
-
 const getLogs = () => {
     let s = fs.readdirSync(pathToFolder)
     let all = {}
     s.forEach(e => {
         if (!e.startsWith("connections ")) return
         const data = JSON.parse(fs.readFileSync(path.join(pathToFolder,e)))
-        // console.log(data)
         all[e.split(" ")[1].split(".")[0]] = getInteractionsForDay(data)
     })
     return all
 }
-// console.log(getLogs())
 
 module.exports = getLogs

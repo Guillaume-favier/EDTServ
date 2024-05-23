@@ -26,11 +26,9 @@ const stringToDate = (date) => {
 const getCurrentWeek = (now = new Date()) => {
     const décalage = 5 * (24 * 3600 * 1000) + 13 * 3600 * 1000;
     const nowTime = now.getTime();
-    //console.log(nowTime)
     let semaine = 0;
     semaineNom.forEach((s, i) => {
         const d = stringToDate(s);
-        // console.log(d, d.getTime(), s, new Date(d.getTime() + décalage))
         if (d.getTime() + décalage <= nowTime) semaine = i + 3;
     });
     return semaine;
@@ -91,7 +89,6 @@ const getYourWeek = (week) => {
 for (let i = 3; i <= 35; i++) {
     getYourWeek(i);
 }
-// console.log(allEdt)
 log(1, "All the weeks were loaded");
 const regroupeInfo = (nom, s) => {
     const k = groupes[nom][s < 19 ? 0 : 1];
