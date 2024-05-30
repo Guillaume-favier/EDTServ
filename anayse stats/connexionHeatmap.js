@@ -5,16 +5,15 @@ const graphToHeatmap = (tograph) => {
         jour = (new Date(element.time)).setHours(0, 0, 0, 0)
         if (s2 || heatmap[heatmap.length - 1].jour != jour) {
             s2 = false
-            let tempdata = []
-            for (let i = 0; i < 24; i++) {
-                tempdata.push(0)
-            }
-            heatmap.push({
+            let temp = {
                 jour: jour,
-                data: tempdata
-            })
+            }
+            for (let i = 0; i < 24; i++) {
+                temp[i+"h"] = 0
+            }
+            heatmap.push(temp)
         }
-        heatmap[heatmap.length - 1].data[(new Date(element.time)).getHours()] += element.conn
+        heatmap[heatmap.length - 1][(new Date(element.time)).getHours()+"h"] += element.conn
     });
     return heatmap
 }
