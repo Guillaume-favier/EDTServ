@@ -11,7 +11,7 @@ const graphToHeatmap = (tograph) => {
                 temp[i+"h"] = 0
             }
 
-            temp["jour"] = jour
+            temp["jour"] = (new Date(jour)).toISOString().split("T")[0]
             heatmap.push(temp)
         }
         heatmap[heatmap.length - 1][(new Date(element.time)).getHours()+"h"] += element.conn
