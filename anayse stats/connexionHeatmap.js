@@ -6,11 +6,12 @@ const graphToHeatmap = (tograph) => {
         if (s2 || heatmap[heatmap.length - 1].jour != jour) {
             s2 = false
             let temp = {
-                jour: jour,
             }
             for (let i = 0; i < 24; i++) {
                 temp[i+"h"] = 0
             }
+
+            temp["jour"] = jour
             heatmap.push(temp)
         }
         heatmap[heatmap.length - 1][(new Date(element.time)).getHours()+"h"] += element.conn
