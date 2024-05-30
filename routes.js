@@ -3,6 +3,7 @@ const { allClasses, allProfs, getEDTX } = require("./altEDT.js");
 const textColisions = require("./testCOllisions.js");
 const { log, connection } = require("./logger.js");
 const getLogs = require("./stats.js")
+const { update, graph, heatmap } = require("./anayse stats/analyse.js")
 const path = require("path")
 
 const checkweek = (week) => week > 2 && week < 36;
@@ -177,6 +178,17 @@ module.exports = function (app) {
         return res.status(200).json(getLogs());
     });
 
+    app.get("/api/v1/connGraph/", (req, res) => {
+        connection("/api/v1/connGraph/", req, 200);
+        update();
+        return res.status(200).json(graph());
+    });
+
+    app.get("/api/v1/connHeatmap/", (req, res) => {
+        connection("/api/v1/connHeatmap/", req, 200);
+        update();
+        return res.status(200).json(heatmap());
+    });
 
     //other routes..
 };
