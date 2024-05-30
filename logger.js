@@ -65,7 +65,7 @@ const connection = (page, req, sucess) => {
     ];
     console.log(obj)
 
-    fs.readFileSync(connectionFilePath, "utf8")
+    const data = fs.readFileSync(connectionFilePath, "utf8")
     const arr = JSON.parse(data);
     arr.push(obj);
     fs.writeFileSync(connectionFilePath, JSON.stringify(arr), "utf8")
