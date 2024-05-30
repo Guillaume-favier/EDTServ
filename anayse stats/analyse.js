@@ -20,9 +20,9 @@ let merged = []
 
 let lastUpdate = new Date()
 const update = () => {
-    if (new Date() - lastUpdate < 1000 * 10){
-        return
-    }
+    // if (new Date() - lastUpdate < 1000 * 10){
+    //     return
+    // }
     dir.forEach(element => {
         if (element.startsWith("connections ")) {
             names.push(element.split(" ")[1].split(".")[0])

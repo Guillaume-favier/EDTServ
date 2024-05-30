@@ -1,7 +1,7 @@
 const graphToHeatmap = (tograph) => {
     let heatmap = []
     let s2 = true
-    tograph.forEach(element => { // chaqye élément de la liste représente un jour composé d'une liste avec toutes les heures
+    tograph.forEach(element => { // chaque élément de la liste représente un jour composé d'une liste avec toutes les heures
         jour = (new Date(element.time)).setHours(0, 0, 0, 0)
         if (s2 || heatmap[heatmap.length - 1].jour != jour) {
             s2 = false
