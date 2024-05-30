@@ -18,11 +18,7 @@ let names = []
 let filtered = []
 let merged = []
 
-let lastUpdate = new Date()
 const update = () => {
-    // if (new Date() - lastUpdate < 1000 * 10){
-    //     return
-    // }
     dir.forEach(element => {
         if (element.startsWith("connections ")) {
             names.push(element.split(" ")[1].split(".")[0])
@@ -54,21 +50,9 @@ const update = () => {
     }
 }
 
-
-
 update()
 
-
-
-
-
-// console.log(merged)
 const graph = () => mergedToGraph(merged)
-// console.log(tograph)
-// fs.writeFileSync(path.join(__dirname, "graph.json"), JSON.stringify(tograph))
-
 const heatmap = () => graphToHeatmap(graph())
-
-// fs.writeFileSync(path.join(__dirname, "heatmap.json"), JSON.stringify(heatmap()))
 
 module.exports = { update, graph, heatmap }

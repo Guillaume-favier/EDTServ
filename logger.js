@@ -63,16 +63,18 @@ const connection = (page, req, sucess) => {
         req.headers["user-agent"],
         req.query,
     ];
+
     fs.readFile(connectionFilePath, "utf8", (err, data) => {
         if (err) {
             log(3, "Error reading connection file : " + err);
             return;
         }
+        console.log(connectionFilePath)
         const arr = JSON.parse(data);
         arr.push(obj);
         fs.writeFile(
             connectionFilePath,
-            JSON.stringify(arr, null, 2),
+            JSON.stringify(arr),
             "utf8",
             (err) => {
                 if (err) {
