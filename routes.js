@@ -180,13 +180,11 @@ module.exports = function (app) {
 
     app.get("/api/v1/connGraph/", (req, res) => {
         connection("/api/v1/connGraph/", req, 200);
-        update();
         return res.status(200).json(graph());
     });
 
     app.get("/api/v1/connHeatmap/", (req, res) => {
         connection("/api/v1/connHeatmap/", req, 200);
-        update();
         return res.status(200).json(heatmap());
     });
 

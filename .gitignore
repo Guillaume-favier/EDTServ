@@ -5,5 +5,8 @@
 /test.json
 /logs/*
 /ssl/*
+/static/music
+/static/music/*
 out.json
 .prettierrc
+log.txt

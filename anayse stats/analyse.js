@@ -32,7 +32,6 @@ const update = () => {
     })
 
     merged = filtered.flat() // on merge tout les tableaux
-
     let nb = 0
     let moyHeures = []
     for (let i = 0; i < 24; i++) moyHeures.push(0)
@@ -52,7 +51,14 @@ const update = () => {
 
 update()
 
-const graph = () => mergedToGraph(merged)
-const heatmap = () => graphToHeatmap(graph())
+const graph = () => {
+    update()
+    return mergedToGraph(merged)
+}
+const heatmap = () => {
+    update()
+    return graphToHeatmap(graph())
+}
 
+fs.writeFileSync("heatmap.json", JSON.stringify(heatmap()))
 module.exports = { update, graph, heatmap }

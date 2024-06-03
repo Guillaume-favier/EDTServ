@@ -63,7 +63,6 @@ const connection = (page, req, sucess) => {
         req.headers["user-agent"],
         req.query,
     ];
-    console.log(obj)
 
     const data = fs.readFileSync(connectionFilePath, "utf8")
     const arr = JSON.parse(data);
