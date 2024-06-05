@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const root = path.join(__dirname, "..", "logs")
 const dir = fs.readdirSync(root);
-const pers = JSON.parse(fs.readFileSync(path.join(__dirname, "all.json")))
+let pers = JSON.parse(fs.readFileSync(path.join(__dirname, "all.json")))
 
 
 // import of the tools
@@ -16,9 +16,10 @@ const graphToHeatmap = require(path.join(__dirname, "connexionHeatmap.js"))
 let data = []
 let names = []
 let filtered = []
-let merged = []
+// let merged = []
 
-const update = () => {
+const getMerged = () => {
+    pers = JSON.parse(fs.readFileSync(path.join(__dirname, "all.json")))
     dir.forEach(element => {
         if (element.startsWith("connections ")) {
             names.push(element.split(" ")[1].split(".")[0])
@@ -31,32 +32,37 @@ const update = () => {
         })
     })
 
-    merged = filtered.flat() // on merge tout les tableaux
-    let nb = 0
-    let moyHeures = []
-    for (let i = 0; i < 24; i++) moyHeures.push(0)
-    for (let i = 0; i < merged.length; i++) moyHeures[new Date(merged[i][0]).getHours()]++;
-
-
-    let personnesFull = {}
-    pers.forEach((p) => {
-        personnesFull[p] = []
-    })
-
-    for (let i = 0; i < merged.length; i++) {
-        const conn = merged[i];
-        personnesFull[conn[5]["name"]].push(conn[0])
-    }
+    return filtered.flat() // on merge tout les tableaux
 }
 
-update()
+// const update = () => {
+
+    
+//     let nb = 0
+//     let moyHeures = []
+//     for (let i = 0; i < 24; i++) moyHeures.push(0)
+//     for (let i = 0; i < merged.length; i++) moyHeures[new Date(merged[i][0]).getHours()]++;
+
+
+//     let personnesFull = {}
+//     pers.forEach((p) => {
+//         personnesFull[p] = []
+//     })
+
+//     for (let i = 0; i < merged.length; i++) {
+//         const conn = merged[i];
+//         personnesFull[conn[5]["name"]].push(conn[0])
+//     }
+// }
+
+// update()
 
 const graph = () => {
-    update()
-    return mergedToGraph(merged)
+    // update()
+    return mergedToGraph(getMerged())
 }
 const heatmap = () => {
-    update()
+    // update()
     return graphToHeatmap(graph())
 }
 
