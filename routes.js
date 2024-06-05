@@ -3,7 +3,7 @@ const { allClasses, allProfs, getEDTX } = require("./altEDT.js");
 const textColisions = require("./testCOllisions.js");
 const { log, connection } = require("./logger.js");
 const getLogs = require("./stats.js")
-const { update, graph, heatmap } = require("./anayse stats/analyse.js")
+const { graph, heatmap } = require("./anayse stats/analyse.js")
 const path = require("path")
 
 const checkweek = (week) => week > 2 && week < 36;

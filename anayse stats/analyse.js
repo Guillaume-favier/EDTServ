@@ -67,4 +67,4 @@ const heatmap = () => {
 }
 
 fs.writeFileSync("heatmap.json", JSON.stringify(heatmap()))
-module.exports = { update, graph, heatmap }
+module.exports = { graph, heatmap }
