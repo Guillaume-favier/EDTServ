@@ -3,7 +3,7 @@ const { allClasses, allProfs, getEDTX } = require("./altEDT.js");
 const textColisions = require("./testCOllisions.js");
 const { log, connection } = require("./logger.js");
 const getLogs = require("./stats.js")
-const { graph, heatmap } = require("./anayse stats/analyse.js")
+const { graph, heatmap, minute } = require("./anayse stats/analyse.js")
 const path = require("path")
 
 const checkweek = (week) => week > 2 && week < 36;
@@ -186,6 +186,13 @@ module.exports = function (app) {
     app.get("/api/v1/connHeatmap/", (req, res) => {
         connection("/api/v1/connHeatmap/", req, 200);
         return res.status(200).json(heatmap());
+    });
+
+    app.get("/api/v1/connMin/", (req, res) => {
+        if (req.id.start && Number(req.id.start) > 0) {
+            connection("/api/v1/connMin/", req, 200);
+            return res.status(200).json(minute(Number(req.id.start)));
+        }
     });
 
     //other routes..

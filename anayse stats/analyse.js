@@ -9,7 +9,7 @@ let pers = JSON.parse(fs.readFileSync(path.join(__dirname, "all.json")))
 const { listDateToHours, moyenne, medianne, floatHours, dispfloatHours, ApproxHour } = require(path.join(__dirname, "tools.js"))
 const mergedToGraph = require(path.join(__dirname, "connexionGraph.js"))
 const graphToHeatmap = require(path.join(__dirname, "connexionHeatmap.js"))
-
+const mergedToMinutesGraph = require(path.join(__dirname, "minute.js"))
 
 
 
@@ -66,5 +66,7 @@ const heatmap = () => {
     return graphToHeatmap(graph())
 }
 
+const minute = (start) => mergedToMinutesGraph(getMerged(), start)
+
 fs.writeFileSync("heatmap.json", JSON.stringify(heatmap()))
-module.exports = { graph, heatmap }
+module.exports = { graph, heatmap, minute }
