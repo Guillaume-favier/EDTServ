@@ -95,7 +95,7 @@ const regroupeInfo = (classe, nom, s) => {
         fullDays: days[0],
         EDT: CallEdt[classe][s.toString()][k - 1][0],
         kholles: CgetKholles[classe](k, s),
-        membres: CpersFromGroup[classe][0][k - 1],
+        membres: CpersFromGroup[classe][0][k],
         DS: Cds[classe][s - 2],
         message: CallEdt[classe][s.toString()][k - 1][1],
     };

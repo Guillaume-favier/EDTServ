@@ -240,7 +240,7 @@ const txt = document.getElementById("outTxt")
         let p = document.createElement("p")
         p.innerText = "Personnes du groupe :"
         all["membres"].forEach(pers => {
-            p.innerText += "\t " + pers[1] + " " + pers[0] + ". ," 
+            p.innerText += "\t "+pers+" ;"
         })
         p.innerText = p.innerText.substring(0, p.innerText.length - 2)
         ele.appendChild(p)

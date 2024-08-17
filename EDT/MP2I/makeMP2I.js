@@ -2,9 +2,9 @@ const fs = require("fs")
 const path = require("path")
 
 // récup donnée semestre 1
-const { getKholles: getKholles1, makeEDT: makeEDT1, groupesPers: groupesPers1 } = require("./s1/s1.js");
+const { getKholles: getKholles1, makeEDT: makeEDT1 } = require("./s1/s1.js");
 // récup donnée semestre 2
-const { getKholles: getKholles2, makeEDT: makeEDT2, groupesPers: groupesPers2 } = require("./s2/s2.js");
+const { getKholles: getKholles2, makeEDT: makeEDT2 } = require("./s2/s2.js");
 
 
 const getText = (p) => fs.readFileSync(path.join(__dirname,p), "utf8");

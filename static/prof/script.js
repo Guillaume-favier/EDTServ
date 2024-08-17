@@ -65,21 +65,25 @@
 ; (async () => {
     document.getElementsByClassName("loader")[0].style.display = "block"
     const palette = await getJson("/palette/palettes.json")
-    const base = await getJson("/api/v1/profsBases/")
+    const base = await getJson("/api/v2/profsBases/")
     document.getElementsByClassName("loader")[0].style.display = "none"
-    console.log(base)
-    let semaine = base["currentWeek"];
+    let semaine = base["currentWeek"]+1;
     const profs = base["profs"]
     profs.sort((a, b) => a.localeCompare(b))
+    console.log(profs)
     const semaineNom = base["weeks"]
     // let EDT = clone(orgEDT) // variable qui stocke tout l'EDTA qui sera à consulter
     var profSelect = document.getElementById("nomProf")
     console.log("hein ?")
     for (let i = 0; i < profs.length; i++) { // affichage primitif pour le choix des groupes
         const opt = document.createElement("option")
-        opt.value = profs[i - 1]
-        opt.innerText = profs[i - 1]
+        opt.value = profs[i]
+        opt.innerText = profs[i]
         profSelect.appendChild(opt)
+    }
+
+    const ajusteDate = (n) => {
+        return n < 10 ? "0" + n : n
     }
 
     const cookiegrp = getCookie("salle")
@@ -88,18 +92,22 @@
     } else profSelect.value = ""
 
     var semaines = document.getElementById("semaine")
-    for (let i = 3; i < 35; i++) {
+    const minSemaine = 1
+    const maxSemaine = semaineNom.length
 
+    // ajout des dates semaines pour sélection.
+    semaineNom.forEach((elem, i) => {
+        const base = elem.split("/");
+        let init = (new Date(Number("20" + base[2]), Number(base[1]) - 1, Number(base[0]))).getTime()
+        let start = new Date(init)
+        let end = new Date(init + 4 * 24 * 3600 * 1000)
         const opt = document.createElement("option")
-        opt.value = i.toString()
-        opt.innerText = i
+        opt.value = (i + 1).toString()
+        opt.innerText = "n°" + (i + 1) + " : " + ajusteDate(start.getDate()) + "/" + ajusteDate(start.getMonth() + 1) + " - " + ajusteDate(end.getDate()) + "/" + ajusteDate(end.getMonth() + 1)
         semaines.appendChild(opt)
-    }
+    })
     var paletteElem = document.getElementById("palette")
 
-    const ajusteDate = (n) => {
-        return n < 10 ? "0" + n : n
-    }
     // --------------------------------------------------------
 
     let tableauInfo = []
@@ -142,13 +150,13 @@
 
     const updateSemaines = async () => {
         document.getElementsByClassName("alert")[0].style.display = "none"
-        if (semaine > 34) semaine = 3
-        if (semaine < 3) semaine = 34
+        if (semaine > maxSemaine) semaine = minSemaine
+        if (semaine < minSemaine) semaine = maxSemaine
         semaines.value = semaine
         
         if (testparams() == false) return
         document.getElementsByClassName("loader")[0].style.display = "block"
-        const all = await getJson("/api/v1/prof/?prof=" + salle+"&week="+semaine)
+        const all = await getJson("/api/v2/prof/?prof=" + salle+"&week="+semaine)
         document.getElementsByClassName("loader")[0].style.display = "none"
         if (!all["ok"]) {
             alert("Erreur server (" + all["error"]+")")
@@ -200,13 +208,4 @@
         setCookie("salleholle", e.target.value, 100)
         changementPourEdt()
     }
-
-    // ajout des dates semaines pour sélection.
-    semaines.childNodes.forEach(elem => {
-        const base = semaineNom[elem.value - 2].split("/");
-        let init = (new Date(Number("20" + base[2]), Number(base[1]) - 1, Number(base[0]))).getTime()
-        let start = new Date(init)
-        let end = new Date(init + 4 * 24 * 3600 * 1000)
-        elem.innerText = "n°"+elem.value + " : " +ajusteDate(start.getDate()) + "/" + ajusteDate(start.getMonth() + 1) + " - " + ajusteDate(end.getDate()) + "/" + ajusteDate(end.getMonth() + 1)
-    })
 })()

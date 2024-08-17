@@ -25,7 +25,6 @@ const nombreToHeure = (n) => {
 const db = getJson("/EDT/MP2I/s1/kholles.json"); // document qui répertorie les khôlles
 const info = getText("/EDT/MP2I/s1/info.txt"); // document qui répertorie la matrice pour les groupes d'informatique
 const orgEDT = getJson("/EDT/MP2I/s1/EDT.json"); // document qui répertorie les les cours communs
-const groupesPers = getJson("/EDT/MP2I/s1/groupes.json"); // document qui répertorie le nom des memebres de chaques groupes
 const hotfix = getJson("/EDT/MP2I/s1/hotfix.json"); // document qui répertorie les hotfixs
 let EDT = clone(orgEDT); // variable qui stocke tout l'EDTA qui sera à consulter
 let tableauInfo = [];
@@ -278,6 +277,5 @@ const makeEDT = (k, semaine) => {
 };
 module.exports = {
   getKholles,
-  makeEDT,
-  groupesPers,
+  makeEDT
 };

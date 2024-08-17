@@ -21,6 +21,10 @@ const allX = (n) => { // récupère toutes les possibilités de 1 paramètre (n)
                     // console.log(CallEdt[classe][s.toString()],classe, s)
                     for (let h = 0; h < CallEdt[classe][s.toString()][i][0][j].length; h++) { // pour tout les cours de la journée
                         const c = CallEdt[classe][s.toString()][i][0][j][h];
+                        console.log(c[n])
+                        if (c[n] == "undefined") {
+                            console.log(c)
+                        }
                         if (p.includes(c[n])) continue
                         p.push(c[n])
                     }
@@ -33,20 +37,20 @@ const allX = (n) => { // récupère toutes les possibilités de 1 paramètre (n)
 
 const allProfs = allX(5) // récupère tout les profs possible
 const allSalles = allX(2) // récupère toutes les salles possible
+console.log(allProfs, allSalles)
 log(1, "All the classes and profs were calculated, there is " + allSalles.length + " classes and " + allProfs.length + " profs");
 
-const getEDTX = (s, param, X) => { 
+const getEDTX = (s, param, X) => {
     /* 
         Récupère tout les cours pour une semaine donnée (s) et un paramètre de condition (n), 
         Par exemple chercher tout les cours de la semaine 12 et en salle 20 donne : getEDTX(12, 20, 2) car 2 est la paramètre de la salle
         Un autre exemple : chercher tout les cours de la semaine 16 donné par Aufranc donne : getEDTX(12, "Aufranc", 5) car 5 est la paramètre du prof
     */
 
-    if (s < 3 || s > 34) return false // L'EDT n'est défini que des semaines 3 à 34
     if (X == 5 && !allProfs.includes(param)) return false // si on cherche pour un prof donné, on vérifie que ce prof existe
     if (X == 2 && !allSalles.includes(param)) return false // idem pour les salles
     let out = []
-    CallEdt.forEach(classe => {
+    Object.keys(CallEdt).forEach(classe => {
         for (let i = 0; i < 15; i++) { // pour tout les groupes
             for (let j = 0; j < 5; j++) { //pour tout les jours de la semaine scolaire
                 if (i == 0) out.push([]) // on ignore le groupe 0 car il n'existe pas mais on le rajoute à la liste pour que les indices soit cohérents

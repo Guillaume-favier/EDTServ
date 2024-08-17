@@ -65,10 +65,10 @@
 (async () => {
     const palette = await getJson("/palette/palettes.json");
     document.getElementsByClassName("loader")[0].style.display = "block";
-    const base = await getJson("/api/v1/sallesBases/");
+    const base = await getJson("/api/v2/sallesBases/");
     document.getElementsByClassName("loader")[0].style.display = "none";
     console.log(base);
-    let semaine = base["currentWeek"];
+    let semaine = base["currentWeek"]+1;
     const salles = base["salles"];
     salles.sort((a, b) => a.localeCompare(b));
     const semaineNom = base["weeks"];
@@ -81,6 +81,9 @@
         opt.innerText = salles[i - 1];
         salleSelect.appendChild(opt);
     }
+    const ajusteDate = (n) => {
+        return n < 10 ? "0" + n : n;
+    };
 
     const cookiegrp = getCookie("salle");
     if (salles.includes(cookiegrp)) {
@@ -88,16 +91,22 @@
     } else salleSelect.value = "";
 
     var semaines = document.getElementById("semaine");
-    for (let i = 3; i < 36; i++) {
-        const opt = document.createElement("option");
-        opt.value = i.toString();
-        opt.innerText = i;
-        semaines.appendChild(opt);
-    }
+    const minSemaine = 1
+    const maxSemaine = semaineNom.length
 
-    const ajusteDate = (n) => {
-        return n < 10 ? "0" + n : n;
-    };
+    // ajout des dates semaines pour sélection.
+    semaineNom.forEach((elem, i) => {
+        const base = elem.split("/");
+        let init = (new Date(Number("20" + base[2]), Number(base[1]) - 1, Number(base[0]))).getTime()
+        let start = new Date(init)
+        let end = new Date(init + 4 * 24 * 3600 * 1000)
+        const opt = document.createElement("option")
+        opt.value = (i + 1).toString()
+        opt.innerText = "n°" + (i + 1) + " : " + ajusteDate(start.getDate()) + "/" + ajusteDate(start.getMonth() + 1) + " - " + ajusteDate(end.getDate()) + "/" + ajusteDate(end.getMonth() + 1)
+        semaines.appendChild(opt)
+    })
+
+    
     // --------------------------------------------------------
 
     let tableauInfo = [];
@@ -140,15 +149,15 @@
 
     const updateSemaines = async () => {
         document.getElementsByClassName("alert")[0].style.display = "none";
-        if (semaine > 35) semaine = 3;
-        if (semaine < 3) semaine = 35;
+        if (semaine > maxSemaine) semaine = minSemaine;
+        if (semaine < minSemaine) semaine = maxSemaine;
         semaines.value = semaine;
 
         if (testparams() == false) return;
 
         document.getElementsByClassName("loader")[0].style.display = "block";
         const all = await getJson(
-            "/api/v1/salle/?salle=" + salle + "&week=" + semaine,
+            "/api/v2/salle/?salle=" + salle + "&week=" + semaine,
         );
 
         document.getElementsByClassName("loader")[0].style.display = "none";
@@ -199,27 +208,4 @@
         setCookie("salleholle", e.target.value, 100);
         changementPourEdt();
     };
-
-    // ajout des dates semaines pour sélection.
-    semaines.childNodes.forEach((elem) => {
-        const base = semaineNom[elem.value - 2].split("/");
-        let init = new Date(
-            Number("20" + base[2]),
-            Number(base[1]) - 1,
-            Number(base[0]),
-        ).getTime();
-        let start = new Date(init);
-        let end = new Date(init + 4 * 24 * 3600 * 1000);
-        elem.innerText =
-            "n°" +
-            elem.value +
-            " : " +
-            ajusteDate(start.getDate()) +
-            "/" +
-            ajusteDate(start.getMonth() + 1) +
-            " - " +
-            ajusteDate(end.getDate()) +
-            "/" +
-            ajusteDate(end.getMonth() + 1);
-    });
 })();

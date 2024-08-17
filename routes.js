@@ -1,4 +1,4 @@
-const { regroupeInfo, makeEDT, getNumJours, base, Cnoms, Classes, CsemaineNom, CgetCurrentWeek, CallEdt, CGroupe } = require("./edt.js");
+const { regroupeInfo, makeEDT, CgetNumJours, base, Cnoms, Classes, CsemaineNom, CgetCurrentWeek, CallEdt, CGroupe } = require("./edt.js");
 const { allSalles, allProfs, getEDTX } = require("./altEDT.js");
 const textColisions = require("./script test/testCollisions");
 const { log, connection } = require("./logger.js");
@@ -47,15 +47,15 @@ const checkNom = (addr, req, res) => {
 
 const checkSalle = (addr, req, res) => {
     const params = req.query;
-    if (Object.keys(params).includes("pers")) {
-        const pers = params.pers
-        if (noms.includes(pers)) {
+    if (Object.keys(params).includes("salle")) {
+        const salle = params.salle
+        if (allSalles.includes(salle)) {
             connection(addr, req, 200);
             return true
         }
         else {
             connection(addr, req, 400);
-            return res.status(400).json({ ok: false, error: "unknown pers : \"" + pers.toString() + "\"" });
+            return res.status(400).json({ ok: false, error: "unknown salle : \"" + salle.toString() + "\"" });
         }
     } else {
         connection(addr, req, 400);
@@ -125,7 +125,7 @@ module.exports = function (app) {
         const testSalle = checkSalle("/api/v2/salle/", req, res)
         if (testSalle !== true) return testSalle
         
-        const days = getNumJours(Number(params.week));
+        const days = CgetNumJours[Object.keys(CgetNumJours)[0]](Number(params.week));
         const rs = {
             ok: true,
             days: days[1],
@@ -168,14 +168,15 @@ module.exports = function (app) {
         if (testProf !== true) return testProf
 
 
-        const days = getNumJours(Number(params.week));
+        const days = CgetNumJours[Object.keys(CgetNumJours)[0]](Number(params.week));
+        const important = getEDTX(params.week, params.prof, 5)
         const rs = {
             ok: true,
             days: days[1],
             fullDays: days[0],
-            EDT: getEDTX(params.week, params.prof, 5),
+            EDT: important,
         };
-        if (rs && days) {
+        if (rs && days && important) {
             connection("/api/v2/prof/", req, 200);
             return res.status(200).json(rs);
         } else {
