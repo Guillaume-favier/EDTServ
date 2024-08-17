@@ -21,10 +21,6 @@ const allX = (n) => { // récupère toutes les possibilités de 1 paramètre (n)
                     // console.log(CallEdt[classe][s.toString()],classe, s)
                     for (let h = 0; h < CallEdt[classe][s.toString()][i][0][j].length; h++) { // pour tout les cours de la journée
                         const c = CallEdt[classe][s.toString()][i][0][j][h];
-                        console.log(c[n])
-                        if (c[n] == "undefined") {
-                            console.log(c)
-                        }
                         if (p.includes(c[n])) continue
                         p.push(c[n])
                     }
