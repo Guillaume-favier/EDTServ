@@ -44,6 +44,7 @@
         S'il vous vient à l'esprit de nouvelles fonctionnalités, pages où des corrections de bug vous pouvez me contacter par mail <a href="mailto:favier.guillaume02@gmail.com">ici</a>.<br>
         Sinon vous pouvez consulter le code source du site sur <a href="https://github.com/Guillaume-favier/EDTserv/">github</a> à vos risques et périls...<br>
         </p>
+        <p id="colText"></p>
     </div>
     <div class="footer"><span id="url"></span> sous licence : <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html"><i class="fa-solid fa-scale-balanced"></i> GPL-3.0</a><i class="fa-solid fa-moon" id="dark"></i> sur <a href="https://github.com/Guillaume-favier/mp2iciv.fr"><i class="fa-brands fa-github"></i></a></div>
 </body>
@@ -54,8 +55,8 @@
         return txt
     }
     ;(async()=>{
-        const p = await getText("/api/v1/colisions/");
-        document.getElementById("colText").innerText = p;
+        const p = await getText("/api/v2/colisions/");
+        document.getElementById("colText").innerText = "Voici les problèmes de collision de l'emplois du temps actuellement : \n"+p;
     })()
 </script>
 <script src="/nav/nav.js"></script>
