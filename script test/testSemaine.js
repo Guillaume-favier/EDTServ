@@ -1,6 +1,6 @@
 const fs = require("fs")
-
-const semaines = JSON.parse(fs.readFileSync("EDT/semaine.json", "utf8"))
+const path = require("path")
+const semaines = JSON.parse(fs.readFileSync(path.join(__dirname,"EDT/semaine.json"), "utf8"))
 
 const stringToDate = (date) => {
     l = date.split("/")

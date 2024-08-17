@@ -44,6 +44,7 @@ const makeIcs = ( targets ) => {
 }
 
 const fromEDTtoIcs = (edt,semaine) => {
+    console.log(semaine)
     const base = semaine.split("/");
     let jours = []
 

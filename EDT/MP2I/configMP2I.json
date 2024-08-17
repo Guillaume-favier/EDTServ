@@ -1,0 +1,7 @@
+{
+    "main":"makeMP2I.js",
+    "DS":"DS.json",
+    "groupes":"groupes.json",
+    "semaines":"../semaineQuePremierSemestre.json",
+    "path":"MP2I"
+}

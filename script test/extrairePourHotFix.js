@@ -1,4 +1,4 @@
-const { allEdt } = require("./edt.js");
+const { allEdt } = require("../edt.js");
 const stringify = require("json-stringify-pretty-compact");
 s = 29;
 j = 2;

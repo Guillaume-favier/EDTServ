@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { log } = require("../../logger.js");
+const { log } = require("../../../logger.js");
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
 
 const getText = (path) =>
@@ -22,11 +22,11 @@ const nombreToHeure = (n) => {
   return Math.floor(n).toString() + "h";
 };
 
-const db = getJson("/EDT/s1/kholes.json"); // document qui répertorie les khôlles
-const info = getText("/EDT/s1/info.txt"); // document qui répertorie la matrice pour les groupes d'informatique
-const orgEDT = getJson("/EDT/s1/EDT.json"); // document qui répertorie les les cours communs
-const groupesPers = getJson("/EDT/s1/groupes.json"); // document qui répertorie le nom des memebres de chaques groupes
-const hotfix = getJson("/EDT/s1/hotfix.json"); // document qui répertorie les hotfixs
+const db = getJson("/EDT/MP2I/s1/kholles.json"); // document qui répertorie les khôlles
+const info = getText("/EDT/MP2I/s1/info.txt"); // document qui répertorie la matrice pour les groupes d'informatique
+const orgEDT = getJson("/EDT/MP2I/s1/EDT.json"); // document qui répertorie les les cours communs
+const groupesPers = getJson("/EDT/MP2I/s1/groupes.json"); // document qui répertorie le nom des memebres de chaques groupes
+const hotfix = getJson("/EDT/MP2I/s1/hotfix.json"); // document qui répertorie les hotfixs
 let EDT = clone(orgEDT); // variable qui stocke tout l'EDTA qui sera à consulter
 let tableauInfo = [];
 
@@ -67,7 +67,7 @@ const getC = (k, s) => {
 };
 
 // cette fonction rassemble toute les kholles en respectant le règles spécifiques
-const getKholes = (k, s) => {
+const getKholles = (k, s) => {
   // console.log(k,s)
   s -= 3;
   let c = getC(k, s);
@@ -109,9 +109,9 @@ const makeEDT = (k, semaine) => {
   groupeI = tableauInfo[k - 1][semaine - 3];
   EDT = [];
   EDT = clone(orgEDT);
-  kholes = [];
+  kholles = [];
   for (let i = 0; i < 16; i++) {
-    kholes.push([]);
+    kholles.push([]);
   }
   let mettreSemaine = [[], [], [], [], []];
   // on ajoute sans ordre précis les cours kholles et TD à ajouter à l'EDT pour on les remmettra bien dans l'EDT plus tard
@@ -158,10 +158,10 @@ const makeEDT = (k, semaine) => {
   };
 
   for (let i = 0; i < 16; i++) {
-    kholes[i] = ((16 - i + Number(k) - 1) % 16) + 1;
+    kholles[i] = ((16 - i + Number(k) - 1) % 16) + 1;
   }
 
-  const semaineC = kholes[semaine - 3];
+  const semaineC = kholles[semaine - 3];
   if (semaine % 2 == 1) {
     if (k % 2 == 1) {
       if (semaineC == 5) {
@@ -223,7 +223,7 @@ const makeEDT = (k, semaine) => {
   }
 
   // ajout de toutes les kholles dans l'EDT
-  const matiere = getKholes(k, semaine);
+  const matiere = getKholles(k, semaine);
   // console.log(matiere)
   for (let jour = 0; jour < matiere.length; jour++) {
     const element = matiere[jour];
@@ -277,7 +277,7 @@ const makeEDT = (k, semaine) => {
   return EDT;
 };
 module.exports = {
-  getKholes,
+  getKholles,
   makeEDT,
   groupesPers,
 };

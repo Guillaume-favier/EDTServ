@@ -1,10 +1,6 @@
-const { getCurrentWeek, allEdt, makeEDT } = require("./edt.js")
-const { groupesPers } = require("./EDT/s2/s2.js")
-const { log } = require("./logger.js");
+const { allEdt, CpersFromGroup, CallEdt, CsemaineNom } = require("../edt.js")
+const { log } = require("../logger.js");
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
-
-const info = require("fs").readFileSync("./EDT/s2/info.txt", "utf8").toString()
-const tableauInfo = []
 
 const nombreToHeure = (n) => {
     if (typeof n != typeof 2) return n
@@ -84,23 +80,23 @@ const getKfromC = (c, s) => {
 
 
 let p = ""
-for (let s = 19; s <= 35; s++) {
-    for (let i = 0; i < 15; i++) {
-        const aaah = allEdt[s.toString()][i]
-        // console.log(aaah)
-        const de = detectOverlap(aaah[0])
-        if (de.length > 0) {
-            
-            p+="Semaine "+s+" Groupe "+(i+1)+" en C"+getC(i+1,s)+" ("+groupesPers[i].join(";")+") : "+de.length+" conflits\n"
-            if (aaah[1] != "") {
-                p+="Sachant que : "+aaah[1]+"\n"
-            }
-            for (let n = 0; n < de.length; n++) {
-                p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) +"]\n"
+Object.keys(CallEdt).forEach(classe => {
+    for (let s = 1; s <= CsemaineNom[Object.keys(CsemaineNom)[0]].length; s++) {
+        for (let i = 0; i < 15; i++) {
+            const edtSemaine = CallEdt[classe][s.toString()][i]
+            const de = detectOverlap(edtSemaine[0])
+            if (de.length > 0) {
+                p += "Semaine " + s + " Groupe " + (i + 1) + " en C" + getC(i + 1, s) + " (" + CpersFromGroup[classe][s<19 ? 0 : 1][i].join(";")+") : "+de.length+" conflits\n"
+                if (edtSemaine[1] != "") {
+                    p+="Sachant que : "+edtSemaine[1]+"\n"
+                }
+                for (let n = 0; n < de.length; n++) {
+                    p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) +"]\n"
+                }
             }
         }
     }
-}
+});
 if (p!="") {
 
     log(2,"colisions :"+p)

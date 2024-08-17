@@ -61,6 +61,10 @@
            2023 - 2024
 
 */
+let url = new URL(window.location.href)
+let params = new URLSearchParams(url.search);
+let classeNom = params.get('classe')
+console.log("Classe : "+classeNom)
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
 var selectNom = document.getElementById("nom")
 
@@ -69,12 +73,12 @@ let nom = getCookie("nom")
 
 var semaines = document.getElementById("semaine")
 
-for (let i = 3; i <= 35; i++) {
-    const opt = document.createElement("option")
-    opt.value = i.toString()
-    opt.innerText = i
-    semaines.appendChild(opt)
-}
+// for (let i = 3; i <= 35; i++) {
+//     const opt = document.createElement("option")
+//     opt.value = i.toString()
+//     opt.innerText = i
+//     semaines.appendChild(opt)
+// }
 
 var paletteElem = document.getElementById("palette")
 
@@ -87,10 +91,10 @@ const txt = document.getElementById("outTxt")
 ; (async () => {
     document.getElementsByClassName("loader")[0].style.display = "block"
     const palette = await getJson("/palette/palettes.json")
-    const base = await getJson("/api/v1/base/")
+    const base = await getJson("/api/v2/classe/"+classeNom)
     document.getElementsByClassName("loader")[0].style.display = "none"
-    console.log(base)
-    let semaine = base["currentWeek"];
+    // console.log(base)
+    let semaine = base["currentWeek"]+1;
     const noms = base["noms"]
     let ok = true
     if (!noms.includes(nom)) {
@@ -108,15 +112,29 @@ const txt = document.getElementById("outTxt")
         }
     }
     const semaineNom = base["weeks"]
+    const minSemaine = 1
+    const maxSemaine = semaineNom.length
+
+    // ajout des dates semaines pour sélection.
+    semaineNom.forEach((elem, i) => {
+        const base = elem.split("/");
+        let init = (new Date(Number("20" + base[2]), Number(base[1]) - 1, Number(base[0]))).getTime()
+        let start = new Date(init)
+        let end = new Date(init + 4 * 24 * 3600 * 1000)
+        const opt = document.createElement("option")
+        opt.value = (i + 1).toString()
+        opt.innerText = "n°" + (i + 1) + " : " + ajusteDate(start.getDate()) + "/" + ajusteDate(start.getMonth() + 1) + " - " + ajusteDate(end.getDate()) + "/" + ajusteDate(end.getMonth() + 1)
+        semaines.appendChild(opt)
+    })
+
     // let EDT = clone(orgEDT) // variable qui stocke tout l'EDTA qui sera à consulter
     txt.innerHTML = "Traitement des données ..."
     let cache = {}
 
     let currNom = selectNom.value == "" ? 0 : Number(selectNom.value);
-    
-    semaines.value = semaine
+    document.getElementById("semaine").value = semaine.toString()
 
-    const metNumJours = (fullDays) => {
+    const metNumJours = (fullDays) => { // affiche le jour en haut de l'EDT
         const ElemEDT = document.getElementById("EDT").children[0].children
         for (let i = 1; i < ElemEDT.length; i++) {
             const element = ElemEDT[i];
@@ -124,7 +142,7 @@ const txt = document.getElementById("outTxt")
         }
     }
 
-    txt.innerHTML = "Veuillez choisir un groupe"
+    txt.innerHTML = "Veuillez choisir quelqu'un"
     const testparams = () => {
         return currNom != 0
     }
@@ -160,8 +178,8 @@ const txt = document.getElementById("outTxt")
             return
         }
         txt.innerText = ""
-        if (semaine > 35) semaine = 3
-        if (semaine < 3) semaine = 35
+        if (semaine > maxSemaine) semaine = minSemaine
+        if (semaine < minSemaine) semaine = maxSemaine
         semaines.value = semaine
         
         if (testparams() == false) return
@@ -171,8 +189,8 @@ const txt = document.getElementById("outTxt")
             all = cache[cacheName]
         }else{
             document.getElementsByClassName("loader")[0].style.display = "block"
-            all = await getJson("/api/v1/all/?name=" + currNom+"&week="+semaine)
-            console.log(all)
+            all = await getJson("/api/v2/classe/"+classeNom+"/EDT?pers=" + currNom+"&week="+semaine)
+            // console.log(all)
             document.getElementsByClassName("loader")[0].style.display = "none"
             cache[cacheName] = all
         }
@@ -188,8 +206,8 @@ const txt = document.getElementById("outTxt")
 
         // détection des conflits
         let de = detectOverlap(all["EDT"])
-        console.log(detectOverlap(all["EDT"]))
         if (de.length > 0) {
+            console.log(de)
             let p = "Nottament du à : \n"
             for (let n = 0; n < de.length; n++) {
                 p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) + "]\n"
@@ -200,7 +218,7 @@ const txt = document.getElementById("outTxt")
             document.getElementsByClassName("alert")[0].style.display = "block"
         }
         
-        fromEDTtoIcs(all["EDT"], semaineNom[semaine - 2])
+        fromEDTtoIcs(all["EDT"], semaineNom[semaine - 1])
 
         metNumJours(all["fullDays"])
         setpalette()
@@ -275,12 +293,5 @@ const txt = document.getElementById("outTxt")
         setCookie("nom", e.target.value, 100)
         changementPourEdt()
     }
-    // ajout des dates semaines pour sélection.
-    semaines.childNodes.forEach(elem => {
-        const base = semaineNom[elem.value - 2].split("/");
-        let init = (new Date(Number("20" + base[2]), Number(base[1]) - 1, Number(base[0]))).getTime()
-        let start = new Date(init)
-        let end = new Date(init + 4 * 24 * 3600 * 1000)
-        elem.innerText = "n°"+elem.value + " : " +ajusteDate(start.getDate()) + "/" + ajusteDate(start.getMonth() + 1) + " - " + ajusteDate(end.getDate()) + "/" + ajusteDate(end.getMonth() + 1)
-    })
+    
 })()

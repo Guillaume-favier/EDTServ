@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { log } = require("../../logger.js");
+const { log } = require("../../../logger.js");
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
 
 const getText = (path) =>
@@ -35,12 +35,12 @@ const presGroupes = (ng) => {
     return res;
 };
 
-const db = getJson("/EDT/s2/kholles.json"); // document qui répertorie les khôlles
-const info = getText("/EDT/s2/info.txt"); // document qui répertorie la matrice pour les groupes d'informatique
-const orgEDT = getJson("/EDT/s2/EDT.json"); // document qui répertorie les les cours communs pour ceux qui ne font pas SI
-const orgEDTsi = getJson("/EDT/s2/EDTsi.json"); // document qui répertorie les les cours communs pour ceux qui font SI
-const groupesPers = getJson("/EDT/s2/groupes.json"); // document qui répertorie le nom des memebres de chaques groupes
-const hotfix = getJson("/EDT/s2/hotfix.json"); // document qui répertorie les hotfixs
+const db = getJson("/EDT/MP2I/s2/kholles.json"); // document qui répertorie les khôlles
+const info = getText("/EDT/MP2I/s2/info.txt"); // document qui répertorie la matrice pour les groupes d'informatique
+const orgEDT = getJson("/EDT/MP2I/s2/EDT.json"); // document qui répertorie les les cours communs pour ceux qui ne font pas SI
+const orgEDTsi = getJson("/EDT/MP2I/s2/EDTsi.json"); // document qui répertorie les les cours communs pour ceux qui font SI
+const groupesPers = getJson("/EDT/MP2I/s2/groupes.json"); // document qui répertorie le nom des memebres de chaques groupes
+const hotfix = getJson("/EDT/MP2I/s2/hotfix.json"); // document qui répertorie les hotfixs
 let EDT = clone(orgEDT); // variable qui stocke tout l'EDT
 let tableauInfo = [];
 

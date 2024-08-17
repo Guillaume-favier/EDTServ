@@ -1,0 +1,25 @@
+[
+	[
+		["Maths", "maths", "34", 9, 11, "Broizat"],
+		["Physique", "physique", "34", 11, 12, "Boqueho"],
+		["Physique", "physique", "34", 13, 15, "Boqueho"]
+	],
+	[
+		["Info", "info", "34", 8, 10, "Camponovo"],
+		["Maths", "maths", "34", 10, 12, "Broizat"],
+
+		["Maths", "maths", "34", 13, 15, "Broizat"],
+		["EPS", "EPS", "dehors", 16, 18, "Sport"]
+	],
+	[
+		["Français", "français", "34", 10, 12, "Capitani"]
+	],
+	[
+		["Anglais", "anglais", "34", 8, 9, "Calvin"],
+		["Maths", "maths", "34", 9, 12, "Broizat"]
+	],
+	[
+		["Physique", "physique", "34", 8, 10, "Boqueho"],
+		["Info", "info", "34", 13, 15, "Camponovo"]
+	]
+]

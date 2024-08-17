@@ -3,15 +3,14 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const express = require("express");
-const {log,connection} = require("./logger");
+const { log } = require("./logger");
 log(1, "Starting server");
-// create express app
+
+
 const app = express();
 
-// define a route
-
-app.use("/", express.static("static"));
-require("./routes")(app);
+app.use("/", express.static("static")); // fichiers statics
+require("./routes")(app); // utilise le fichiers routes.js pour définir les appels api
 
 log(1, "Starting server on port 443");
 https
@@ -26,6 +25,8 @@ https
   .listen(443, () => {
     log(1, "Server started on port 443");
   });
+
+// redirecte les requêtes http vers la version https
 http
   .createServer((req, res) => {
     res.writeHead(301, {

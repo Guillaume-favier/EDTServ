@@ -1,125 +1,125 @@
 const fs = require("fs");
+const path = require("path")
 const { log } = require("./logger.js");
-const {
-    getKholes: getKholes1,
-    makeEDT: makeEDT1,
-    groupesPers: groupesPers1,
-} = require("./EDT/s1/s1.js");
-const {
-    getKholes: getKholes2,
-    makeEDT: makeEDT2,
-    groupesPers: groupesPers2,
-} = require("./EDT/s2/s2.js");
-const groupes = JSON.parse(fs.readFileSync("./EDT/groupes.json"));
-const semaineNom = fs.readFileSync("./EDT/semaine.txt", "utf8").split("\n");
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
-const ds = require("./EDT/DS.json");
-const ajusteDate = (n) => {
-    return n < 10 ? "0" + n : n;
-};
 
-const stringToDate = (date) => {
-    l = date.split("/");
-    return new Date(2000 + Number(l[2]), Number(l[1]) - 1, Number(l[0]));
-};
+const getText = (p) => fs.readFileSync(path.join(__dirname, p), "utf8");
+const getJson = (p) => JSON.parse(getText(p));
 
-const getCurrentWeek = (now = new Date()) => {
-    const décalage = 5 * (24 * 3600 * 1000) + 13 * 3600 * 1000;
-    const nowTime = now.getTime();
-    let semaine = 0;
-    semaineNom.forEach((s, i) => {
-        const d = stringToDate(s);
-        if (d.getTime() + décalage <= nowTime) semaine = i + 3;
-    });
-    return semaine;
-};
+const NomEtGoupeToGoupeEtNom = (groupes) => {
+    let res = []
 
-const getNumJours = (semaine) => {
-    let n = stringToDate(semaineNom[semaine - 2]).getTime();
-    const j = [];
-    const jj = [];
-    for (let i = 0; i < 5; i++) {
-        const now = new Date(n);
-        jj.push([now.getDate(), now.getMonth() + 1]);
-        j.push(
-            jours[i] +
-                " " +
-                ajusteDate(now.getDate()) +
-                "/" +
-                ajusteDate(now.getMonth() + 1),
-        );
-        n += 24 * 3600 * 1000;
+    const firstPers = Object.keys(groupes)[0] // personne lambda de la liste permettant d'évaluer le nombre de classifications
+
+    // i représente la classification, le numéro du système de groupe ex 0 : 1semèstre ; 1 : 2ème etc ... car une même personne peut changer de groupe durant l'année 
+    for (let i = 0; i < groupes[firstPers].length; i++) {
+        res.push([])
+
+        let locmax = 0;
+        Object.keys(groupes).forEach(nom => {
+            if (groupes[nom][i] > locmax) locmax = groupes[nom][i]
+        });
+
+        // g représente un numéro de groupe
+        // ici on cherche à regrouper les personnes d'un même groupe
+        for (let g = 0; g <= locmax; g++) res[i].push([])
+        Object.keys(groupes).forEach(nom => {
+            res[i][ groupes[nom][i] ].push(nom)
+        });
     }
-    return [j, jj];
-};
-
-const majPrem = (s) => s[0].toUpperCase() + s.substring(1);
-
-const makeEDT = (groupe, semaine, info = null) => {
-    if (semaine >= 3 && semaine <= 18) {
-        return [makeEDT1(groupe, semaine), ""];
-    }
-    if (semaine >= 19 && semaine <= 35) {
-        return makeEDT2(groupe, semaine, info);
-    }
-    return null;
-};
-const getKholes = (groupe, semaine) => {
-    if (semaine >= 3 && semaine <= 18) {
-        return getKholes1(groupe, semaine);
-    }
-    if (semaine >= 19 && semaine <= 35) {
-        return getKholes2(groupe, semaine)[0];
-    }
-    return null;
-};
-
-const allEdt = {};
-
-const getYourWeek = (week) => {
-    if (!allEdt[week]) {
-        allEdt[week] = [];
-        for (let i = 1; i <= 15; i++) {
-            allEdt[week].push(makeEDT(i, week));
-        }
-    }
-    return allEdt[week];
-};
-
-for (let i = 3; i <= 35; i++) {
-    getYourWeek(i);
+    return res
 }
+
+
+const config = getJson("EDT/config.json")
+
+const classes = Object.keys(config);
+const CallEdt = {};
+
+const CGroupe = {}
+const Cnoms = {}
+const Cds = {}
+const CsemaineNom = {}
+
+const CgetNumJours = {}
+const CgetKholles = {}
+const CgetCurrentWeek = {}
+const CpersFromGroup = {}
+
+
+
+classes.forEach(classe => {
+    const classeConfig = getJson(config[classe])
+    const { ds, semaineNom, groupes, getNumJours, makeEDT, getKholles, getCurrentWeek } = require(path.join(__dirname,"EDT/", classeConfig["path"],classeConfig["main"]))
+    
+    let preAllEdt = {}
+    const getYourWeek = (week) => { // récupère tout les cours de la semaine pour tout les groupes et le rajoute à la var allEdt
+        const sweek = week.toString();
+        if (!preAllEdt[sweek]) {
+            preAllEdt[sweek] = [];
+            for (let i = 1; i <= 15; i++) {
+                preAllEdt[sweek].push(makeEDT(i, week));
+            }
+        }
+        return preAllEdt[sweek];
+    };
+
+    // exécute getYouWeek pour toutes les semaines pour remplir preAllEdt
+    for (let i = 1; i <= semaineNom.length; i++) {
+        getYourWeek(i);
+    }
+
+    CallEdt[classe] = preAllEdt
+
+    Cds[classe] = ds
+    CGroupe[classe] = groupes
+    Cnoms[classe] = Object.keys(CGroupe[classe])
+    CsemaineNom[classe] = semaineNom
+    CgetNumJours[classe] = getNumJours
+    CgetKholles[classe] = getKholles
+    CgetCurrentWeek[classe] = getCurrentWeek
+
+    CpersFromGroup[classe] = NomEtGoupeToGoupeEtNom(groupes)
+});
+
 log(1, "All the weeks were loaded");
-const regroupeInfo = (nom, s) => {
-    const k = groupes[nom][s < 19 ? 0 : 1];
-    const days = getNumJours(s);
+
+
+
+const regroupeInfo = (classe, nom, s) => {
+    const k = CGroupe[classe][nom][s < 19 ? 0 : 1];
+    const days = CgetNumJours[classe](s);
     let res = {
         ok: true,
         days: days[1],
         fullDays: days[0],
-        EDT: allEdt[s.toString()][k - 1][0],
-        kholles: getKholes(k, s),
-        membres: s < 19 ? groupesPers1[k - 1] : groupesPers2[k - 1],
-        DS: ds[s - 2],
-        message: allEdt[s.toString()][k - 1][1],
+        EDT: CallEdt[classe][s.toString()][k - 1][0],
+        kholles: CgetKholles[classe](k, s),
+        membres: CpersFromGroup[classe][0][k - 1],
+        DS: Cds[classe][s - 2],
+        message: CallEdt[classe][s.toString()][k - 1][1],
     };
     return res;
 };
-const noms = Object.keys(groupes);
-const base = () => {
+const base = (classe) => {
     return {
-        weeks: semaineNom,
-        noms: noms,
-        currentWeek: getCurrentWeek(),
+        weeks: CsemaineNom[classe],
+        noms: Cnoms[classe],
+        currentWeek: CgetCurrentWeek[classe](),
     };
 };
 
 module.exports = {
     regroupeInfo,
-    makeEDT,
-    getNumJours,
+    CgetNumJours,
     base,
-    getCurrentWeek,
-    allEdt,
-    noms,
+    CgetCurrentWeek,
+    CallEdt,
+    Cnoms,
+    "noms":Object.keys(Cnoms).map(classe => Cnoms[classe]),
+    CpersFromGroup,
+    CsemaineNom,
+    CgetCurrentWeek,
+    CGroupe,
+    "Classes":Object.keys(CallEdt)
 };

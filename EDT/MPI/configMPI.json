@@ -1,0 +1,7 @@
+{
+	"main": "makeMPI.js",
+	"DS": "DS.json",
+	"groupes": "groupes.json",
+	"semaines": "../semaineQuePremierSemestre.json",
+	"path": "MPI"
+}

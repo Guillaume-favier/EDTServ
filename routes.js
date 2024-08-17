@@ -1,196 +1,234 @@
-const { regroupeInfo, makeEDT, getNumJours, base, noms } = require("./edt.js");
-const { allClasses, allProfs, getEDTX } = require("./altEDT.js");
-const textColisions = require("./testCOllisions.js");
+const { regroupeInfo, makeEDT, getNumJours, base, Cnoms, Classes, CsemaineNom, CgetCurrentWeek, CallEdt, CGroupe } = require("./edt.js");
+const { allSalles, allProfs, getEDTX } = require("./altEDT.js");
+const textColisions = require("./script test/testCollisions");
 const { log, connection } = require("./logger.js");
 const getLogs = require("./stats.js")
 const { graph, heatmap, minute } = require("./anayse stats/analyse.js")
 const path = require("path")
 
-const checkweek = (week) => week > 2 && week < 36;
-const checkNom = (nom) => noms.includes(nom);
 
+// check for valid parameters in requests
+const checkWeek = (addr, req ,res) => {
+    const params = req.query;
+    if (Object.keys(params).includes("week")){
+        const week = params.week
+        if (week > 0 && week <= CsemaineNom[Object.keys(CallEdt)[0]].length) {
+            connection(addr, req, 200);
+            return true
+        }else {
+            connection(addr, req, 400);
+            return res.status(400).json({ ok: false, error: "week out of range" })
+        };
+    } else {
+        connection(addr, req, 400);
+        return res.status(400).json({ ok: false, error: "week parameter required" });
+    }
+}
+
+const checkNom = (addr, req, res) => {
+    let noms = []
+    Object.keys(Cnoms).forEach(classe => noms = noms.concat(Cnoms[classe]))
+    const params = req.query;
+    if (Object.keys(params).includes("pers")) {
+        const pers = params.pers
+        // console.log(noms, pers)
+        if (noms.includes(pers))  {
+            connection(addr, req, 200);
+            return true
+        } else {
+            connection(addr, req, 400);
+            return res.status(400).json({ ok: false, error: "unknown pers : \""+pers.toString()+"\"" })
+        };
+    } else {
+        connection(addr, req, 400);
+        return res.status(400).json({ ok: false, error: "\"pers\" parameter required" });
+    }
+}
+
+const checkSalle = (addr, req, res) => {
+    const params = req.query;
+    if (Object.keys(params).includes("pers")) {
+        const pers = params.pers
+        if (noms.includes(pers)) {
+            connection(addr, req, 200);
+            return true
+        }
+        else {
+            connection(addr, req, 400);
+            return res.status(400).json({ ok: false, error: "unknown pers : \"" + pers.toString() + "\"" });
+        }
+    } else {
+        connection(addr, req, 400);
+        return res.status(400).json({ ok: false, error: "\"pers\" parameter required" });
+    }
+}
+
+const checkProf = (addr, req, res) => {
+    const params = req.query;
+    if (Object.keys(params).includes("prof")) {
+        const prof = params.prof
+        if (allProfs.includes(prof)) {
+            connection(addr, req, 200);
+            return true
+        }
+        else {
+            connection(addr, req, 400);
+            return res.status(400).json({ ok: false, error: "unknown prof : \"" + prof.toString() + "\"" });
+        }
+    } else {
+        connection(addr, req, 400);
+        return res.status(400).json({ ok: false, error: "\"prof\" parameter required" });
+    }
+}
+
+
+// api connexions
 module.exports = function (app) {
-    app.get("/api/v1/base/", (req, res) => {
-        const params = req.query;
-        if (req.query.week) {
-            if (!checkweek(Number(req.query.week))) {
-                connection("/api/v1/base/", req, 400);
-                return res
-                    .status(400)
-                    .json({ ok: false, error: "week out of range" });
-            }
-            connection("/api/v1/base/", req, 200);
-            return res.status(200).json(base(Number(req.query.week)));
-        }
+    app.get("/api/v2/pages/", (req, res) => {
+        // 
+        connection("/api/v2/pages/", req, 200);
+        return res.status(200).json(      );
+    });
 
-        const temp = base(Number(req.query.week));
+    app.get("/api/v2/classe/:classe", (req, res) => {
+        if (req.params.classe && Classes.includes(req.params.classe)){
+            connection("/api/v2/classe/:classe", req, 400);
+            return res.status(200).json(base(req.params.classe));
+        } else{
+            connection("/api/v2/classe/:classe", req, 400);
+            return res.status(400).json({ok: false, error: "valid \"pers\" parameter required"});
+        }
+    });
+
+    app.get("/api/v2/classe/:classe/EDT", (req, res) => {
+        const params = req.query;
+        if (req.params.classe && Classes.includes(req.params.classe)) {
+            const cN = checkNom("/api/v2/classe/:classe/EDT",req,res)
+            if (cN !== true) return cN
+            const cW = checkWeek("/api/v2/classe/:classe/EDT", req, res)
+            if (cW !== true) return cW
+            // console.log(CGroupe, CGroupe[req.params.classe], params.pers)
+            if (!(Cnoms[req.params.classe].includes(params.pers))) return res.status(400).json({ok:false,error:"pers : \""+params.pers+"\" exist but isn't in this class"})
+            connection("/api/v2/classe/:classe/EDT", req, 200);
+            return res.status(200).json(regroupeInfo(req.params.classe, params.pers, params.week));
+        } else {
+            connection("/api/v2/classe/:classe/EDT", req, 400);
+            return res.status(400).json({ ok: false, error: "valid \"pers\" parameter required" });
+        }
+    });
+
+    app.get("/api/v2/salle/", (req, res) => {
+        const params = req.query;
+
+        const testWeek = checkWeek("/api/v2/salle/", req, res)
+        if (testWeek!==true) return testWeek
+        const testSalle = checkSalle("/api/v2/salle/", req, res)
+        if (testSalle !== true) return testSalle
+        
+        const days = getNumJours(Number(params.week));
+        const rs = {
+            ok: true,
+            days: days[1],
+            fullDays: days[0],
+            EDT: getEDTX(params.week, params.salle, 2),
+        };
+        if (rs && days) {
+            connection("/api/v2/salle/", req, 200);
+            return res.status(200).json(rs);
+        } else {
+            connection("/api/v2/salle/", req, 500);
+            return res
+                .status(500)
+                .json({ ok: false, error: "server error" });
+        }
+    });
+
+    app.get("/api/v2/sallesBases/", (req, res) => {
+        const premiereClasse = Object.keys(CallEdt)[0]
+        let temp = {
+            "weeks": CsemaineNom[premiereClasse],
+            "currentWeek": CgetCurrentWeek[premiereClasse](),
+            "salles": allSalles
+        }
         if (temp) {
-            connection("/api/v1/base/", req, 400);
+            connection("/api/v2/sallesBases/", req, 200);
             return res.status(200).json(temp);
         } else {
+            connection("/api/v2/sallesBases/", req, 500);
             return res.status(500).json({ ok: false, error: "server error" });
         }
     });
 
-    app.get("/api/v1/all/", (req, res) => {
-        // print parameter of request
+    app.get("/api/v2/prof/", (req, res) => {
         const params = req.query;
-        if (
-            Object.keys(params).includes("week") &&
-            Object.keys(params).includes("name")
-        ) {
-            if (!checkweek(Number(params.week))) {
-                connection("/api/v1/all/", req, 400);
-                return res
-                    .status(400)
-                    .json({ ok: false, error: "week out of range" });
-            }
-            if (!checkNom(params.name)) {
-                connection("/api/v1/all/", req, 400);
-                return res
-                    .status(400)
-                    .json({ ok: false, error: "week out of range" });
-            }
 
-            const rs = regroupeInfo(params.name, Number(params.week));
-            if (rs) {
-                connection("/api/v1/all/", req, 200);
-                return res.status(200).json(rs);
-            } else {
-                connection("/api/v1/all/", req, 500);
-                return res
-                    .status(500)
-                    .json({ ok: false, error: "server error" });
-            }
+        const testWeek = checkWeek("/api/v2/prof/", req, res)
+        if (testWeek !== true) return testWeek
+        const testProf = checkProf("/api/v2/prof/", req, res)
+        if (testProf !== true) return testProf
+
+
+        const days = getNumJours(Number(params.week));
+        const rs = {
+            ok: true,
+            days: days[1],
+            fullDays: days[0],
+            EDT: getEDTX(params.week, params.prof, 5),
+        };
+        if (rs && days) {
+            connection("/api/v2/prof/", req, 200);
+            return res.status(200).json(rs);
         } else {
-            connection("/api/v1/all/", req, 400);
+            connection("/api/v2/prof/", req, 500);
             return res
-                .status(400)
-                .json({ ok: false, error: "missing parameters" });
+                .status(500)
+                .json({ ok: false, error: "server error" });
         }
     });
 
-    app.get("/api/v1/salle/", (req, res) => {
-        const params = req.query;
-        if (
-            Object.keys(params).includes("week") &&
-            Object.keys(params).includes("salle")
-        ) {
-            if (!checkweek(Number(params.week))) {
-                connection("/api/v1/salle/", req, 400);
-                return res
-                    .status(400)
-                    .json({ ok: false, error: "week out of range" });
-            }
-
-            const days = getNumJours(Number(params.week));
-            const rs = {
-                ok: true,
-                days: days[1],
-                fullDays: days[0],
-                EDT: getEDTX(params.week, params.salle, 2),
-            };
-            if (rs && days) {
-                connection("/api/v1/salle/", req, 200);
-                return res.status(200).json(rs);
-            } else {
-                connection("/api/v1/salle/", req, 500);
-                return res
-                    .status(500)
-                    .json({ ok: false, error: "server error" });
-            }
-        } else {
-            connection("/api/v1/salle/", req, 400);
-            res.status(400).json({ ok: false, error: "missing parameters" });
-            return;
-        }
-    });
-
-    app.get("/api/v1/sallesBases/", (req, res) => {
-        const params = req.query;
-        let temp = base(Number(req.query.week));
-        temp["salles"] = allClasses;
-        if (temp) {
-            connection("/api/v1/sallesBases/", req, 200);
-            return res.status(200).json(temp);
-        } else {
-            connection("/api/v1/sallesBases/", req, 500);
-            return res.status(500).json({ ok: false, error: "server error" });
-        }
-    });
-
-    app.get("/api/v1/prof/", (req, res) => {
-        const params = req.query;
-        if (
-            Object.keys(params).includes("week") &&
-            Object.keys(params).includes("prof")
-        ) {
-            const days = getNumJours(Number(params.week));
-            const rs = {
-                ok: true,
-                days: days[1],
-                fullDays: days[0],
-                EDT: getEDTX(params.week, params.prof, 5),
-            };
-            if (rs && days) {
-                connection("/api/v1/prof/", req, 200);
-                return res.status(200).json(rs);
-            } else {
-                connection("/api/v1/prof/", req, 500);
-                return res
-                    .status(500)
-                    .json({ ok: false, error: "server error" });
-            }
-        } else {
-            connection("/api/v1/prof/", req, 400);
-            return res
-                .status(400)
-                .json({ ok: false, error: "missing parameters" });
-        }
-    });
-
-    app.get("/api/v1/profsBases/", (req, res) => {
-        const params = req.query;
-        let temp = req.query.week ? base(Number(req.query.week)) : base();
+    app.get("/api/v2/profsBases/", (req, res) => {
+        const premiereClasse = Object.keys(CallEdt)[0]
+        let temp = base(premiereClasse);
         temp["profs"] = allProfs;
         if (temp) {
-            connection("/api/v1/profsBases/", req, 200);
+            connection("/api/v2/profsBases/", req, 200);
             return res.status(200).json(temp);
         } else {
-            connection("/api/v1/profsBases/", req, 500);
+            connection("/api/v2/profsBases/", req, 500);
             return res.status(500).json({ ok: false, error: "server error" });
         }
     });
-    app.get("/api/v1/colisions/", (req, res) => {
-        connection("/api/v1/colisions/", req, 200);
+
+    app.get("/api/v2/colisions/", (req, res) => {
+        connection("/api/v2/colisions/", req, 200);
         return res.status(200).send(textColisions);
     });
 
     // Statistiques :
 
-    app.get("/api/v1/gitVers/", (req, res) => {
-        connection("/api/v1/gitVers/", req, 200);
+    app.get("/api/v2/gitVers/", (req, res) => {
+        connection("/api/v2/gitVers/", req, 200);
         return res.status(200).sendFile(path.join(__dirname, ".git", "refs", "heads","main"));
     });
 
-    app.get("/api/v1/stats/", (req, res) => {
-        connection("/api/v1/stats/", req, 200);
+    app.get("/api/v2/stats/", (req, res) => {
+        connection("/api/v2/stats/", req, 200);
         return res.status(200).json(getLogs());
     });
 
-    app.get("/api/v1/connGraph/", (req, res) => {
-        connection("/api/v1/connGraph/", req, 200);
+    app.get("/api/v2/connGraph/", (req, res) => {
+        connection("/api/v2/connGraph/", req, 200);
         return res.status(200).json(graph());
     });
 
-    app.get("/api/v1/connHeatmap/", (req, res) => {
-        connection("/api/v1/connHeatmap/", req, 200);
+    app.get("/api/v2/connHeatmap/", (req, res) => {
+        connection("/api/v2/connHeatmap/", req, 200);
         return res.status(200).json(heatmap());
     });
 
-    app.get("/api/v1/connMin/", (req, res) => {
+    app.get("/api/v2/connMin/", (req, res) => {
         if (req.id.start && Number(req.id.start) > 0) {
-            connection("/api/v1/connMin/", req, 200);
+            connection("/api/v2/connMin/", req, 200);
             return res.status(200).json(minute(Number(req.id.start)));
         }
     });
