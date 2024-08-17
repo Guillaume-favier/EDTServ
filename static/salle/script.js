@@ -77,8 +77,8 @@
     for (let i = 0; i < salles.length; i++) {
         // affichage primitif pour le choix des groupes
         const opt = document.createElement("option");
-        opt.value = salles[i - 1];
-        opt.innerText = salles[i - 1];
+        opt.value = salles[i];
+        opt.innerText = salles[i];
         salleSelect.appendChild(opt);
     }
     const ajusteDate = (n) => {
