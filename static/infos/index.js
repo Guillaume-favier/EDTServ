@@ -6,14 +6,14 @@
     
     console.log(text)
     if(!isPages){
-        const here = await fetch("/api/v1/gitVers/")
+        const here = await fetch("/api/v2/gitVers/")
         const hereJ = await here.text()
         console.log(hereJ)
         text += "\n\n Comme on est sur un vrai server : \nLast operation : " + hereJ
     }
     document.getElementById("res").innerText = text
 
-    const stats = await fetch("/api/v1/stats/")
+    const stats = await fetch("/api/v2/stats/")
     const jstats = (await stats.json())
     console.log(jstats)
 
