@@ -92,10 +92,10 @@ module.exports = function (app) {
 
     app.get("/api/v2/classe/:classe", (req, res) => {
         if (req.params.classe && Classes.includes(req.params.classe)){
-            connection("/api/v2/classe/:classe", req, 400);
+            connection("/api/v2/classe/" + req.params.classe, req, 400);
             return res.status(200).json(base(req.params.classe));
         } else{
-            connection("/api/v2/classe/:classe", req, 400);
+            connection("/api/v2/classe/" + req.params.classe, req, 400);
             return res.status(400).json({ok: false, error: "valid \"pers\" parameter required"});
         }
     });
@@ -103,16 +103,16 @@ module.exports = function (app) {
     app.get("/api/v2/classe/:classe/EDT", (req, res) => {
         const params = req.query;
         if (req.params.classe && Classes.includes(req.params.classe)) {
-            const cN = checkNom("/api/v2/classe/:classe/EDT",req,res)
+            const cN = checkNom("/api/v2/classe/" + req.params.classe +"/EDT",req,res)
             if (cN !== true) return cN
-            const cW = checkWeek("/api/v2/classe/:classe/EDT", req, res)
+            const cW = checkWeek("/api/v2/classe/" + req.params.classe +"/EDT", req, res)
             if (cW !== true) return cW
             // console.log(CGroupe, CGroupe[req.params.classe], params.pers)
             if (!(Cnoms[req.params.classe].includes(params.pers))) return res.status(400).json({ok:false,error:"pers : \""+params.pers+"\" exist but isn't in this class"})
-            connection("/api/v2/classe/:classe/EDT", req, 200);
+            connection("/api/v2/classe/"+req.params.classe+"/EDT", req, 200);
             return res.status(200).json(regroupeInfo(req.params.classe, params.pers, params.week));
         } else {
-            connection("/api/v2/classe/:classe/EDT", req, 400);
+            connection("/api/v2/classe/"+req.params.classe+"/EDT", req, 400);
             return res.status(400).json({ ok: false, error: "valid \"pers\" parameter required" });
         }
     });

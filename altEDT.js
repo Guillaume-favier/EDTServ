@@ -33,7 +33,7 @@ const allX = (n) => { // récupère toutes les possibilités de 1 paramètre (n)
 
 const allProfs = allX(5) // récupère tout les profs possible
 const allSalles = allX(2) // récupère toutes les salles possible
-console.log(allProfs, allSalles)
+
 log(1, "All the classes and profs were calculated, there is " + allSalles.length + " classes and " + allProfs.length + " profs");
 
 const getEDTX = (s, param, X) => {
