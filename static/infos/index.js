@@ -50,6 +50,9 @@
             passtxt.select();
             return
         }
+        document.getElementById("logsContent").style.display = "block"
+
+
         const jstats = tempStats["graph"]
     
         const select = document.getElementById("jour-select")
