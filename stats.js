@@ -40,12 +40,14 @@ const getInteractionsForDayOld = (data) => {
 }
 const getLogs = () => {
     let s = fs.readdirSync(pathToFolder)
-    let all = {}
+    let graph = {}
     s.forEach(e => {
         if (!e.startsWith("connections ")) return
         const data = JSON.parse(fs.readFileSync(path.join(pathToFolder,e)))
-        all[e.split(" ")[1].split(".")[0]] = getInteractionsForDay(data)
+        graph[e.split(" ")[1].split(".")[0]] = getInteractionsForDay(data)
     })
+    let all = { "ok":true, graph, "logToday": JSON.parse(fs.readFileSync(path.join(pathToFolder,s[s.length-3])))}
+    console.log(all)
     return all
 }
 

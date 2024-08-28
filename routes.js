@@ -213,26 +213,37 @@ module.exports = function (app) {
     });
 
     app.get("/api/v2/stats/", (req, res) => {
-        connection("/api/v2/stats/", req, 200);
-        return res.status(200).json(getLogs());
-    });
-
-    app.get("/api/v2/connGraph/", (req, res) => {
-        connection("/api/v2/connGraph/", req, 200);
-        return res.status(200).json(graph());
-    });
-
-    app.get("/api/v2/connHeatmap/", (req, res) => {
-        connection("/api/v2/connHeatmap/", req, 200);
-        return res.status(200).json(heatmap());
-    });
-
-    app.get("/api/v2/connMin/", (req, res) => {
-        if (req.id.start && Number(req.id.start) > 0) {
-            connection("/api/v2/connMin/", req, 200);
-            return res.status(200).json(minute(Number(req.id.start)));
+        const params = req.query;
+        if (Object.keys(params).includes("passwd")) {
+            if (req.query.passwd === "e67857838312cb274848b96795f6a2a28b43e5acb4435acccd1210a6e96e79d3") {
+                connection("/api/v2/stats/", req, 200);
+                return res.status(200).json(getLogs());
+            } else {
+                connection("/api/v2/stats/", req, 401);
+                return res.status(401).json({ ok: false, error: "wrong password" });
+            }
+        } else {
+            connection("/api/v2/stats/", req, 400);
+            return res.status(400).json({ ok: false, error: "\"passwd\" parameter required" });
         }
     });
+
+    // app.get("/api/v2/connGraph/", (req, res) => {
+    //     connection("/api/v2/connGraph/", req, 200);
+    //     return res.status(200).json(graph());
+    // });
+
+    // app.get("/api/v2/connHeatmap/", (req, res) => {
+    //     connection("/api/v2/connHeatmap/", req, 200);
+    //     return res.status(200).json(heatmap());
+    // });
+
+    // app.get("/api/v2/connMin/", (req, res) => {
+    //     if (req.id.start && Number(req.id.start) > 0) {
+    //         connection("/api/v2/connMin/", req, 200);
+    //         return res.status(200).json(minute(Number(req.id.start)));
+    //     }
+    // });
 
     //other routes..
 };

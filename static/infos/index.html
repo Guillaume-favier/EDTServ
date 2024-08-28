@@ -38,9 +38,11 @@
         <h1 class="beau">Infos</h1>
         <h2>Voilà les ressources les plus importantes : </h2>
     </center>
+    
     <div class="content" id="res">
 
     </div>
+    <div class="content" id="pass"><input type="password" id="passInp"><input type="checkbox" id="passCheck"><button id="passSend">envoyer</button></div>
     <div class="content">
         <select name="jour" id="jour-select">
             <option value="">--Please choose an option--</option>
@@ -48,7 +50,7 @@
         <h3>Résultat de la journée :</h3>
         <p id="textRes">
             Connexions individuelles : <span id="nbPersConnection"></span><br>
-            Nombre total de connexions : <span id="nbConnection"></span>
+            Nombre total de requête vers le serveur : <span id="nbConnection"></span>
         </p>
         <canvas id="temps"></canvas>
         <canvas id="personnes"></canvas>
