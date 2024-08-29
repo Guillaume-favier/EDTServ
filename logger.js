@@ -54,6 +54,7 @@ const log = (level, text) => {
 };
 
 const connection = (page, req, sucess) => {
+    // console.log(req.cookies.id)
     checkFile()
     const obj = [
         Date.now(),
@@ -62,6 +63,7 @@ const connection = (page, req, sucess) => {
         req.ip,
         req.headers["user-agent"],
         req.query,
+        req.cookies.id ? req.cookies.id : "",
     ];
 
     const data = fs.readFileSync(connectionFilePath, "utf8")

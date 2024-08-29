@@ -1,4 +1,4 @@
-const { allEdt, CpersFromGroup, CallEdt, CsemaineNom } = require("../edt.js")
+const { allEdt, CpersFromGroup, CallEdt, CsemaineNom } = require("../EDT/edt.js")
 const { log } = require("../logger.js");
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
 

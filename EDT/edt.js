@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path")
-const { log } = require("./logger.js");
+const { log } = require("../logger.js");
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
 
 const getText = (p) => fs.readFileSync(path.join(__dirname, p), "utf8");
@@ -31,7 +31,7 @@ const NomEtGoupeToGoupeEtNom = (groupes) => {
 }
 
 
-const config = getJson("EDT/config.json")
+const config = getJson("./config.json")
 
 const classes = Object.keys(config);
 const CallEdt = {};
@@ -49,8 +49,8 @@ const CpersFromGroup = {}
 
 
 classes.forEach(classe => {
-    const classeConfig = getJson(config[classe])
-    const { ds, semaineNom, groupes, getNumJours, makeEDT, getKholles, getCurrentWeek } = require(path.join(__dirname,"EDT/", classeConfig["path"],classeConfig["main"]))
+    const classeConfig = getJson("./"+config[classe])
+    const { ds, semaineNom, groupes, getNumJours, makeEDT, getKholles, getCurrentWeek } = require(path.join(__dirname, classeConfig["path"],classeConfig["main"]))
     
     let preAllEdt = {}
     const getYourWeek = (week) => { // récupère tout les cours de la semaine pour tout les groupes et le rajoute à la var allEdt

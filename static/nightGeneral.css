@@ -95,3 +95,11 @@ h3 {
 .heure {
     border-top: 1px solid white;
 }
+
+.even > td {
+    background-color: #0d0d0d;
+}
+
+.odd > td{
+    background-color: #1b1c1b;
+}

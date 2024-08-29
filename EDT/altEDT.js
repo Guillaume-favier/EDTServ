@@ -1,5 +1,5 @@
 const { CallEdt, CsemaineNom } = require("./edt.js")
-const { log } = require("./logger.js")
+const { log } = require("../logger.js")
 
 
 

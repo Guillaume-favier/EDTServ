@@ -7,6 +7,7 @@
 /ssl/*
 /static/music
 /static/music/*
+.key
 out.json
 .prettierrc
 log.txt

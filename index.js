@@ -3,12 +3,13 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const express = require("express");
+const cookieParser = require("cookie-parser");
 const { log } = require("./logger");
 log(1, "Starting server");
 
 
 const app = express();
-
+app.use(cookieParser());
 app.use("/", express.static("static")); // fichiers statics
 require("./routes")(app); // utilise le fichiers routes.js pour définir les appels api
 

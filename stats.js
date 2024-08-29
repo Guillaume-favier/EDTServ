@@ -46,8 +46,8 @@ const getLogs = () => {
         const data = JSON.parse(fs.readFileSync(path.join(pathToFolder,e)))
         graph[e.split(" ")[1].split(".")[0]] = getInteractionsForDay(data)
     })
-    let all = { "ok":true, graph, "logToday": JSON.parse(fs.readFileSync(path.join(pathToFolder,s[s.length-3])))}
-    console.log(all)
+    let all = { "ok":true, graph}
+    // console.log(all)
     return all
 }
 

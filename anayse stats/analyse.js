@@ -68,5 +68,5 @@ const heatmap = () => {
 
 const minute = (start) => mergedToMinutesGraph(getMerged(), start)
 
-fs.writeFileSync("heatmap.json", JSON.stringify(heatmap()))
+// fs.writeFileSync("heatmap.json", JSON.stringify(heatmap()))
 module.exports = { graph, heatmap, minute }

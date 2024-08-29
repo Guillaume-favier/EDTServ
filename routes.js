@@ -1,10 +1,12 @@
-const { regroupeInfo, makeEDT, CgetNumJours, base, Cnoms, Classes, CsemaineNom, CgetCurrentWeek, CallEdt, CGroupe } = require("./edt.js");
-const { allSalles, allProfs, getEDTX } = require("./altEDT.js");
+const fs = require("fs")
+const path= require("path")
+const { regroupeInfo, makeEDT, CgetNumJours, base, Cnoms, Classes, CsemaineNom, CgetCurrentWeek, CallEdt, CGroupe } = require("./EDT/edt.js");
+const { allSalles, allProfs, getEDTX } = require("./EDT/altEDT.js");
 const textColisions = require("./script test/testCollisions");
 const { log, connection } = require("./logger.js");
+const getLast50 = require("./sendLogs.js")
 const getLogs = require("./stats.js")
 const { graph, heatmap, minute } = require("./anayse stats/analyse.js")
-const path = require("path")
 
 
 // check for valid parameters in requests
@@ -92,7 +94,7 @@ module.exports = function (app) {
 
     app.get("/api/v2/classe/:classe", (req, res) => {
         if (req.params.classe && Classes.includes(req.params.classe)){
-            connection("/api/v2/classe/" + req.params.classe, req, 400);
+            connection("/api/v2/classe/" + req.params.classe, req, 200);
             return res.status(200).json(base(req.params.classe));
         } else{
             connection("/api/v2/classe/" + req.params.classe, req, 400);
@@ -212,10 +214,14 @@ module.exports = function (app) {
         return res.status(200).sendFile(path.join(__dirname, ".git", "refs", "heads","main"));
     });
 
+    const fromFile = fs.readFileSync(path.join(__dirname, ".key")).toString()
+    const privateKey = Buffer.from(fromFile, "base64").toString();
+    // console.log(fromFile, '"'+privateKey+'"')
+
     app.get("/api/v2/stats/", (req, res) => {
         const params = req.query;
         if (Object.keys(params).includes("passwd")) {
-            if (req.query.passwd === "e67857838312cb274848b96795f6a2a28b43e5acb4435acccd1210a6e96e79d3") {
+            if (req.query.passwd === privateKey) {
                 connection("/api/v2/stats/", req, 200);
                 return res.status(200).json(getLogs());
             } else {
@@ -227,6 +233,25 @@ module.exports = function (app) {
             return res.status(400).json({ ok: false, error: "\"passwd\" parameter required" });
         }
     });
+
+    app.get("/api/v2/viewLogs/", (req, res) => {
+        const params = req.query;
+        if (Object.keys(params).includes("passwd")) {
+            if (req.query.passwd === privateKey) {
+                connection("/api/v2/viewLogs/", req, 200);
+                return res.status(200).json(getLast50());
+            } else {
+                connection("/api/v2/viewLogs/", req, 401);
+                return res.status(401).json({ ok: false, error: "wrong password" });
+            }
+        } else {
+            connection("/api/v2/viewLogs/", req, 400);
+            return res.status(400).json({ ok: false, error: "\"passwd\" parameter required" });
+        }
+    });
+
+    
+
 
     // app.get("/api/v2/connGraph/", (req, res) => {
     //     connection("/api/v2/connGraph/", req, 200);

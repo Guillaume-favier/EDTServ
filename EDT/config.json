@@ -1,4 +1,4 @@
 {
-	"MP2I": "EDT/MP2I/configMP2I.json",
-	"MPI": "EDT/MPI/configMPI.json"
+	"MP2I": "MP2I/configMP2I.json",
+	"MPI": "MPI/configMPI.json"
 }
