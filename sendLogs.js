@@ -16,10 +16,12 @@ const getLast50 = () => {
         const tmp = data.slice(-(50-n))
         // tmp.forEach(e => console.log(e.length))
         // console.log(data[0])
+        tmp.reverse()
         logs = logs.concat(tmp)
+
         n += tmp.length
     })
-    return logs.reverse()
+    return logs
 }
 
 // let d = getLast50()
