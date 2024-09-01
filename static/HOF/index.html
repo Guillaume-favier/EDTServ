@@ -16,8 +16,25 @@
     <link rel="icon" type="image/x-icon" href="/logo.ico">
     <script src="https://kit.fontawesome.com/5bd3a64755.js" crossorigin="anonymous"></script>
     <link href="/nav/nav.css" rel="stylesheet" />
-    <link href="/search/index.css" rel="stylesheet" />
-    <title>Recherche - MP2I CIV</title>
+    <style>
+        table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid;
+		}
+
+		th,
+		td {
+			padding: 15px;
+			text-align: left;
+		}
+    </style>
+    <title>Hall Of Fame - MP2I CIV</title>
 </head>
 
 <body>
@@ -27,28 +44,23 @@
         <a href="/Agenda/">Agenda</a>
         <a href="/ressources/">Ressources</a>
         <a href="/palette/">Palette</a>
+        <a href="/HOF/" class="active">HOF</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <center>
-        <h1 class="beau">Recherche</h1>
-        <form>
-            <input type="text" placeholder="nom ou prenom" id="inp">
-        </form>
-    </center>
-    <div class="content">
-        <table id="toPutTo" style="display:none;">
-        </table>
-        <div id="errr">
-            Pas assès de caractères
+    <center >
+        <h1 class="beau">Hall Of Fame</h1>
+        <div class="content">
+            <h2>Voilà les résultats aux DSs de l'année:</h2>
         </div>
+    </center>
+    <div class="content" id="HOF">
     </div>
+    <div id="contrib" class="content"><h2>Les personnes incroyables qui notent les devoirs :</h2><div id="listContr"></div></div>
     <div class="footer"><span id="url"></span> sous licence : <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html"><i class="fa-solid fa-scale-balanced"></i> GPL-3.0 </a><i class="fa-solid fa-moon" id="dark"></i> <a href="https://github.com/Guillaume-favier/mp2iciv.fr"><i class="fa-brands fa-github"></i></a></div>
-
 </body>
 <script src="/nav/nav.js"></script>
-<script src="/search/index.js"></script>
-
+<script src="/HOF/index.js"></script>
 
 </html>

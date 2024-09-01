@@ -140,8 +140,15 @@ const makeEDT = (k, semaine) => {
 		mettreSemaine[2].push(["TD Maths", "maths", "25", 8, 9, "Broizat"]);
 		// mettreSemaine[2].push(["TD Anglais", "anglais", "25", 8, 9, "Calvin"]); certains ne font pas anglais LV2
 		mettreSemaine[2].push(["TD Maths", "maths", "34", 13, 15, "Broizat"]);
-		// mettreSemaine[2].push(["TP Info", "info", "37", 13, 15, "Camponovo"]); dépend de la semaine (G2A ou G2B)
 	}
+
+	const g2a = () => mettreSemaine[2].push(["TP Info", "info", "37", 15, 17, "Camponovo"]);
+	const g2b = () => mettreSemaine[2].push(["TP Info", "info", "37", 17, 19, "Camponovo"]);
+
+	const tpa = () => mettreSemaine[3].push(["TP Physique", "physique", "labo", 13, 15, "Boqueho"]);
+	const tpb = () => mettreSemaine[3].push(["TP Physique", "physique", "labo", 15, 17, "Boqueho"]);
+
+
 
 	// TODO : goupes de LV2
 	if ([].includes(k)) {

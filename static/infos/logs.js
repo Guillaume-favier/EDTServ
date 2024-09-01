@@ -39,7 +39,7 @@ const dispOne = log => {
 	const date = document.createElement('td')
 
 	id.innerText = log[6] ? log[6] : ""
-	url.innerText = log[1]
+	url.innerText = log[1].startsWith("/api/v2/") ? log[1].replace("/api/v2/","") : log[1]
 	respCode.innerText = log[2]
 	// adapt color to response code
 	if (log[2].toString().startsWith("2")) respCode.className += "green"
