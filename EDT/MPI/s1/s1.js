@@ -139,8 +139,8 @@ const makeEDT = (pers, semaine) => {
 
 	const g2 = () => { // non étoilés
 		mettreSemaine[0].push(["TD Physique", "physique", "34", 15, 16, "Boqueho"]);
-		mettreSemaine[2].push(["TD Maths", "maths", "25", 8, 9, "Broizat"]);
-		mettreSemaine[2].push(["TD Anglais", "anglais", "25", 9, 10, "Calvin"]); //  certains ne font pas anglais LV2
+		mettreSemaine[2].push(["TD Maths", "maths", "34", 8, 9, "Broizat"]);
+		mettreSemaine[2].push(["TD Anglais", "anglais", "34", 9, 10, "Calvin"]); //  certains ne font pas anglais LV2
 		mettreSemaine[2].push(["TD Maths", "maths", "34", 13, 15, "Broizat"]);
 	}
 
