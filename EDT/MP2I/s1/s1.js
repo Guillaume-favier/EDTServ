@@ -202,7 +202,7 @@ const makeEDT = (pers, semaine) => {
 		mettreSemaine[1].push(["TP Info", "info", "37", 17, 19, "Rozsavolgyi"]);
 	}
 	if (groupeI == 3 || groupeI == "S") {
-		mettreSemaine[2].push(["TP Info", "info", "26", 16, 18, "Rozsavolgyi"]);
+		mettreSemaine[2].push(["TP Info", "info", "26", 14, 16, "Rozsavolgyi"]);
 	}
 	// if (groupeI == "S") alert("Il faut se répartir les groupes d'info !")
 
