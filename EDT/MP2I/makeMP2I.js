@@ -51,7 +51,7 @@ const getNumJours = (semaine) => { // donne les dates des jours scolaire pour un
 };
 
 const makeEDT = (groupe, semaine, info = null) => {
-    if (semaine >= 1 && semaine <= 19) return [makeEDT1(groupe, semaine), "Attention béta ! Les cours ne sont très probablement pas corrects."];
+    if (semaine >= 1 && semaine <= 19) return [makeEDT1(groupe, semaine), "Attention béta ! tout n'est pas clair dans votre EDT je le ferais au propre autour du ~16"];
     if (semaine >= 20 && semaine <= 35) return makeEDT2(groupe, semaine, info);
     return null;
 };

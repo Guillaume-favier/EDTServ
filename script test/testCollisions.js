@@ -82,11 +82,12 @@ const getKfromC = (c, s) => {
 let p = ""
 Object.keys(CallEdt).forEach(classe => {
     for (let s = 1; s <= CsemaineNom[Object.keys(CsemaineNom)[0]].length; s++) {
-        for (let i = 0; i < 15; i++) {
-            const edtSemaine = CallEdt[classe][s.toString()][i]
+        const allPers = Object.keys(CallEdt[classe][s.toString()])
+        allPers.forEach(pers => {
+            const edtSemaine = CallEdt[classe][s.toString()][pers]
             const de = detectOverlap(edtSemaine[0])
             if (de.length > 0) {
-                p += "Semaine " + s + " Groupe " + (i + 1) + " en C" + getC(i + 1, s) + " (" + CpersFromGroup[classe][s<19 ? 0 : 1][i].join(";")+") : "+de.length+" conflits\n"
+                p += "Semaine " + s + " Personne " + pers +" : "+de.length+" conflits\n"
                 if (edtSemaine[1] != "") {
                     p+="Sachant que : "+edtSemaine[1]+"\n"
                 }
@@ -94,7 +95,7 @@ Object.keys(CallEdt).forEach(classe => {
                     p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) +"]\n"
                 }
             }
-        }
+        })
     }
 });
 if (p!="") {

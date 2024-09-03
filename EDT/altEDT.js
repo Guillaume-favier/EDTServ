@@ -16,16 +16,19 @@ const allX = (n) => { // récupère toutes les possibilités de 1 paramètre (n)
     let p = [] 
     Object.keys(CallEdt).forEach(classe => {
         for (let s = 1; s <= CsemaineNom[Object.keys(CsemaineNom)[0]].length; s++) { // pour toutes les semaines
-            for (let i = 0; i < 15; i++) { // pour tout les groupes
+            let temp = CallEdt[classe][s.toString()]
+            const toutNoms = Object.keys(temp)
+            toutNoms.forEach(nom => { // pour tout les groupes
                 for (let j = 0; j < 5; j++) { // pour tout les jours de la semaine scolaire
                     // console.log(CallEdt[classe][s.toString()],classe, s)
-                    for (let h = 0; h < CallEdt[classe][s.toString()][i][0][j].length; h++) { // pour tout les cours de la journée
-                        const c = CallEdt[classe][s.toString()][i][0][j][h];
+                    //console.log(CallEdt[classe][s.toString()], nom)
+                    for (let h = 0; h < CallEdt[classe][s.toString()][nom][0][j].length; h++) { // pour tout les cours de la journée
+                        const c = CallEdt[classe][s.toString()][nom][0][j][h];
                         if (p.includes(c[n])) continue
                         p.push(c[n])
                     }
                 }
-            }
+            })
         }
     })
     return p

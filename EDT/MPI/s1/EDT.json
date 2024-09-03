@@ -6,10 +6,10 @@
 	],
 	[
 		["Info", "info", "34", 8, 10, "Camponovo"],
-		["Maths", "maths", "34", 10, 12, "Broizat"],
+		["Maths", "maths", "34", 10, 12.5, "Broizat"],
 
-		["Maths", "maths", "34", 13, 15, "Broizat"],
-		["EPS", "EPS", "dehors", 16, 18, "Sport"]
+		["Maths", "maths", "34", 13.5, 15, "Broizat"],
+		["EPS", "EPS", "dehors", 15, 17, "Sport"]
 	],
 	[
 		["Français", "français", "34", 10, 12, "Capitani"]

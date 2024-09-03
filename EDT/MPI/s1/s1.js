@@ -24,7 +24,8 @@ const nombreToHeure = (n) => {
 
 const db = getJson("/EDT/MPI/s1/kholes.json"); // document qui répertorie les khôlles
 const orgEDT = getJson("/EDT/MPI/s1/EDT.json"); // document qui répertorie les les cours communs
-// const groupesPers = getJson("/EDT/MPI/s1/groupes.json"); // document qui répertorie le nom des memebres de chaques groupes
+const groupes = getJson("/EDT/MPI/groupes.json")
+const groupesSpeciaux = getJson("/EDT/MPI/s1/petitsGroupes.json"); // document qui répertorie le nom des memebres de chaques groupes
 const hotfix = getJson("/EDT/MPI/s1/hotfix.json"); // document qui répertorie les hotfixs
 let EDT = clone(orgEDT); // variable qui stocke tout l'EDTA qui sera à consulter
 let tableauInfo = [];
@@ -109,7 +110,8 @@ const testparams = () => {
 	return groupeK != 0;
 };
 
-const makeEDT = (k, semaine) => {
+const makeEDT = (pers, semaine) => {
+	const k = groupes[pers]
 	// console.log("semaine",semaine,"k",k)
 // 	groupeI = tableauInfo[k - 1][semaine - 1];
 	EDT = []
@@ -138,16 +140,41 @@ const makeEDT = (k, semaine) => {
 	const g2 = () => { // non étoilés
 		mettreSemaine[0].push(["TD Physique", "physique", "34", 15, 16, "Boqueho"]);
 		mettreSemaine[2].push(["TD Maths", "maths", "25", 8, 9, "Broizat"]);
-		// mettreSemaine[2].push(["TD Anglais", "anglais", "25", 8, 9, "Calvin"]); certains ne font pas anglais LV2
+		mettreSemaine[2].push(["TD Anglais", "anglais", "25", 9, 10, "Calvin"]); //  certains ne font pas anglais LV2
 		mettreSemaine[2].push(["TD Maths", "maths", "34", 13, 15, "Broizat"]);
 	}
 
-	const g2a = () => mettreSemaine[2].push(["TP Info", "info", "37", 15, 17, "Camponovo"]);
-	const g2b = () => mettreSemaine[2].push(["TP Info", "info", "37", 17, 19, "Camponovo"]);
+	const premierTPinfo = () => mettreSemaine[2].push(["TP Info", "info", "37", 15, 17, "Camponovo"]);
+	const deuxiemeTPinfo = () => mettreSemaine[2].push(["TP Info", "info", "37", 17, 19, "Camponovo"]);
 
 	const tpa = () => mettreSemaine[3].push(["TP Physique", "physique", "labo", 13, 15, "Boqueho"]);
 	const tpb = () => mettreSemaine[3].push(["TP Physique", "physique", "labo", 15, 17, "Boqueho"]);
 
+	const spe = groupesSpeciaux[pers]
+
+	if (spe[0] == "G1") g1()
+	else if (spe[0] == "G2A") {
+		g2()
+		if (semaine % 2 == 0)  premierTPinfo()
+		else deuxiemeTPinfo()
+	}
+	else if (spe[0] == "G2B") {
+		g2()
+		if (semaine % 2 == 1) premierTPinfo()
+		else deuxiemeTPinfo()
+	}
+
+	if (spe[1] == "TPA") {
+		if (semaine % 2 == 1) tpa()
+		else tpb()
+	}
+	else if (spe[1] == "TPB") {
+		if (semaine % 2 == 0) tpa()
+		else tpb()
+	}
+	
+	if (semaine % 2 == 0) mettreSemaine[4].push(["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"]);
+	else mettreSemaine[4].push(["TIPE Info", "tipe", "37", 10, 12, "Camponovo"]);
 
 
 	// TODO : goupes de LV2

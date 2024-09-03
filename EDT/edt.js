@@ -56,10 +56,10 @@ classes.forEach(classe => {
     const getYourWeek = (week) => { // récupère tout les cours de la semaine pour tout les groupes et le rajoute à la var allEdt
         const sweek = week.toString();
         if (!preAllEdt[sweek]) {
-            preAllEdt[sweek] = [];
-            for (let i = 1; i <= 15; i++) {
-                preAllEdt[sweek].push(makeEDT(i, week));
-            }
+            preAllEdt[sweek] = {};
+            Object.keys(groupes).forEach( pers => {
+                preAllEdt[sweek][pers] = makeEDT(pers, week);
+            })
         }
         return preAllEdt[sweek];
     };
@@ -93,11 +93,11 @@ const regroupeInfo = (classe, nom, s) => {
         ok: true,
         days: days[1],
         fullDays: days[0],
-        EDT: CallEdt[classe][s.toString()][k - 1][0],
+        EDT: CallEdt[classe][s.toString()][nom][0],
         kholles: CgetKholles[classe](k, s),
         membres: CpersFromGroup[classe][0][k],
-        DS: Cds[classe][s - 2],
-        message: CallEdt[classe][s.toString()][k - 1][1],
+        DS: Cds[classe][s - 1],
+        message: CallEdt[classe][s.toString()][nom][1],
     };
     return res;
 };
