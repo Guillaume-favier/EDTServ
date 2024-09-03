@@ -4,7 +4,8 @@
 		["EPS", "EPS", "dehors", 16, 18, "Sport"]
 	],
 	[
-		["Info", "info", "20", 8, 11, "Rozsavolgyi"],
+		["Info", "info", "20", 8, 10, "Rozsavolgyi"],
+		["Anglais", "anglais", "20", 10, 11, "Bocquillon"],
 		["Maths", "maths", "20", 12, 15, "Aufranc"]
 		
 	],
