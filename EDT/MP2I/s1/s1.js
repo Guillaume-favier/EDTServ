@@ -77,9 +77,9 @@ const getKholles = (k, s) => {
 		all.push([]);
 	}
 
-	if (s < 3) {
-		return all
-	}
+	// if (s <= 3) {
+	return all
+	// }
 
 	const maths = db["maths"][c - 1];
 	all[maths[1] - 1].push(khollesToEDT(maths, "maths"));
