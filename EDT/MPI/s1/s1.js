@@ -155,12 +155,12 @@ const makeEDT = (pers, semaine) => {
 	if (spe[0] == "G1") g1()
 	else if (spe[0] == "G2A") {
 		g2()
-		if (semaine % 2 == 0)  premierTPinfo()
-		else deuxiemeTPinfo()
+		if (semaine % 2 == 0)  deuxiemeTPinfo()
+		else premierTPinfo()
 	}
 	else if (spe[0] == "G2B") {
 		g2()
-		if (semaine % 2 == 1) premierTPinfo()
+		if (semaine % 2 == 0) premierTPinfo()
 		else deuxiemeTPinfo()
 	}
 
