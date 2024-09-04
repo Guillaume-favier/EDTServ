@@ -127,7 +127,7 @@ const makeEDT = (pers, semaine) => {
 		mettreSemaine[2].push(["TD Anglais", "anglais", "25", 8, 9, "Calvin"]);
 		mettreSemaine[2].push(["TD Maths", "maths", "25", 9, 10, "Broizat"]);
 		mettreSemaine[2].push(["TP Info", "info", "37", 13, 15, "Camponovo"]);
-		mettreSemaine[2].push(["TD Maths", "maths", "34", 15, 16, "Broizat"]);
+		mettreSemaine[2].push(["TD Maths", "maths", "34", 15, 17, "Broizat"]);
 	};
 	// TODO : les groupes d'anglais 1 et 2
 /*
