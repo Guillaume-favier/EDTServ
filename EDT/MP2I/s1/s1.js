@@ -27,6 +27,7 @@ const info = getText("/EDT/MP2I/s1/info.txt"); // document qui répertorie la ma
 const orgEDT = getJson("/EDT/MP2I/s1/EDT.json"); // document qui répertorie les les cours communs
 const hotfix = getJson("/EDT/MP2I/s1/hotfix.json"); // document qui répertorie les hotfixs
 const groupes = getJson("/EDT/MP2I/groupes.json")
+const speGroupes = getJson("/EDT/MP2I/s1/petitsgroupes.json")
 let EDT = clone(orgEDT); // variable qui stocke tout l'EDTA qui sera à consulter
 let tableauInfo = [];
 
@@ -113,6 +114,7 @@ const makeEDT = (pers, semaine) => {
 	// console.log("semaine",semaine,"k",k)
 	let k = groupes[pers][0]
 	groupeI = tableauInfo[k - 1][semaine - 3];
+	const spe = speGroupes[pers]
 	EDT = [];
 	EDT = clone(orgEDT);
 	kholles = [];
@@ -122,93 +124,45 @@ const makeEDT = (pers, semaine) => {
 	let mettreSemaine = [[], [], [], [], []];
 	// on ajoute sans ordre précis les cours kholles et TD à ajouter à l'EDT pour on les remmettra bien dans l'EDT plus tard
 	const n1 = () => {
-		mettreSemaine[0].push(["Anglais", "anglais", "33", 13, 14, "Bocquillon"]);
-		mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"]);
-		mettreSemaine[4].push([
-			"TD Maths",
-			"maths",
-			"20",
-			heureToNombre("7h50"),
-			heureToNombre("9h50"),
-			"Aufranc",
-		]);
-		mettreSemaine[4].push([
-			"TP Physique",
-			"physique",
-			"B214",
-			heureToNombre("9h50"),
-			heureToNombre("11h50"),
-			"Bouchet",
-		]);
+		mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
+		mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"]);
+		mettreSemaine[3].push(["Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
+		mettreSemaine[4].push(["TD Maths", "maths", "20", 8, 10, "Aufranc"]);
+		mettreSemaine[4].push(["TP Physique", "physique", "B214", 10, 12, "Bouchet"]);
 	};
 
 	const n2 = () => {
-		mettreSemaine[0].push(["Anglais", "anglais", "33", 14, 15, "Bocquillon"]);
-		mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"]);
-		mettreSemaine[4].push([
-			"TD Maths",
-			"maths",
-			"20",
-			heureToNombre("9h50"),
-			heureToNombre("11h50"),
-			"Aufranc",
-		]);
-		mettreSemaine[4].push([
-			"TP Physique",
-			"physique",
-			"B214",
-			heureToNombre("7h50"),
-			heureToNombre("9h50"),
-			"Bouchet",
-		]);
+		mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
+		mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"]);
+		mettreSemaine[1].push(["Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
+		mettreSemaine[4].push(["TP Physique", "physique", "B214", 8, 10, "Bouchet", ]);
+		mettreSemaine[4].push(["TD Maths", "maths", "20", 10, 12, "Aufranc"]);
 	};
+
+	if (spe[0] == "G1") n1();
+	if (spe[0] == "G2") n2();
 
 	for (let i = 0; i < 16; i++) {
 		kholles[i] = ((16 - i + Number(k) - 1) % 16) + 1;
 	}
 
 	const semaineC = kholles[semaine - 3];
-	if (semaine % 2 == 1) {
-		if (k % 2 == 1) {
-			if (semaineC == 5) {
-				mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"]);
-			} else mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"]);
-			n1();
-		} else {
-			if (semaineC == 6) {
-				mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"]);
-			} else mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"]);
-			n2();
-		}
-	} else {
-		if (k % 2 == 1) {
-			if (semaineC == 6) {
-				mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"]);
-			} else mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"]);
-			n2();
-		} else {
-			if (semaineC == 5) {
-				mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"]);
-			} else mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"]);
-			n1();
-		}
-	}
-
+	const allTP = true
 	// Groupes d'info
-	if (groupeI == 1 || groupeI == "S") {
+	if (spe[0] == "G1" && spe[1] == null &&(groupeI == 1 || groupeI == "S" || allTP)) {
 		mettreSemaine[1].push(["TP Info", "info", "37", 15, 17, "Rozsavolgyi"]);
 	}
-	if (groupeI == 2 || groupeI == "S") {
+	if (spe[1] == null && (groupeI == 2 || groupeI == "S" || allTP)) {
 		mettreSemaine[1].push(["TP Info", "info", "37", 17, 19, "Rozsavolgyi"]);
 	}
-	if (groupeI == 3 || groupeI == "S") {
+	if (groupeI == 3 || groupeI == "S" || allTP) {
 		mettreSemaine[2].push(["TP Info", "info", "26", 14, 16, "Rozsavolgyi"]);
 	}
 	// if (groupeI == "S") alert("Il faut se répartir les groupes d'info !")
 
 	// goupes de LV2
-	if ([1, 6, 14, 15, 16].includes(k)) {
-		mettreSemaine[3].push(["LV2", "lv2", "🤷‍♂️", 17, 19, "LV2"]);
+	if (spe[1] != null) {
+		mettreSemaine[3].push(["LV2 " + spe[1], "lv2", "🤷‍♂️", 17, 19, "LV2"]);
 	}
 
 	// ajout de tout les cours dans l'EDT au bon endroit
