@@ -50,17 +50,21 @@ const getEDTX = (s, param, X) => {
     if (X == 2 && !allSalles.includes(param)) return false // idem pour les salles
     let out = []
     Object.keys(CallEdt).forEach(classe => {
-        for (let i = 0; i < 15; i++) { // pour tout les groupes
+        let once = true
+        Object.keys(CallEdt[classe][s.toString()]).forEach(pers => {
             for (let j = 0; j < 5; j++) { //pour tout les jours de la semaine scolaire
-                if (i == 0) out.push([]) // on ignore le groupe 0 car il n'existe pas mais on le rajoute à la liste pour que les indices soit cohérents
-                // console.log(i,j)
-                const jours = CallEdt[classe][s.toString()][i][0]
+                if (once) out.push([]) // on rajoute un tableau pour chaque jour
+                const jours = CallEdt[classe][s.toString()][pers][0]
                 for (let h = 0; h < jours[j].length; h++) {
                     const c = jours[j][h];
-                    if (c[X] == param) pushIfNotIn(out[j], c)
+                    if (c[X] == param) {
+                        console.log(out)
+                        pushIfNotIn(out[j], c)
+                    }
                 }
             }
-        }
+            once = false
+        })
     })
 
     // On trie la liste en fonction du temps
