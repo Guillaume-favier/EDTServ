@@ -58,7 +58,7 @@ const getEDTX = (s, param, X) => {
                 for (let h = 0; h < jours[j].length; h++) {
                     const c = jours[j][h];
                     if (c[X] == param) {
-                        console.log(out)
+                        // console.log(out)
                         pushIfNotIn(out[j], c)
                     }
                 }
