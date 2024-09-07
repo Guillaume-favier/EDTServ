@@ -1,1 +1,848 @@
-{}
+{
+    "2/0": [
+        [
+            "Mayeul A.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Artyom A.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Bastien A.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gahui B.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Lucas B.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alexis B.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alban B.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Yohan B.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Victor B.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Fernand C.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gaël C.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Thomas C.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Evariste C.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Pablo C.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alexandre C.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Maxence D.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Clement D.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Guillaume F.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Jules F.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Nolan G.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alessandro I.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Thomas L.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gauthier L.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Enzo M.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Noah M.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Cendrine N.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Arthur P.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alban Q.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Jérémy R.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Ethan S.",
+            [
+                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+                
+                ["Physique", "physique", "34", 13, 15, "Boqueho"],
+                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ]
+    ],
+    "2/3": [
+        [
+            "Mayeul A.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Artyom A.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Bastien A.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gahui B.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Lucas B.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alexis B.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alban B.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Yohan B.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Victor B.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Fernand C.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gaël C.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Thomas C.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Evariste C.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Pablo C.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alexandre C.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Maxence D.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Clement D.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Guillaume F.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Jules F.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Nolan G.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alessandro I.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Thomas L.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gauthier L.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Enzo M.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Noah M.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Cendrine N.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Arthur P.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alban Q.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Jérémy R.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Ethan S.",
+            [
+                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
+                ["Physique", "physique", "34", 9, 12, "Boqueho"],
+                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ]
+    ],
+    "2/4": [
+        [
+            "Mayeul A.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Artyom A.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Bastien A.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gahui B.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Lucas B.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alexis B.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alban B.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Yohan B.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Victor B.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Fernand C.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gaël C.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Thomas C.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Evariste C.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Pablo C.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alexandre C.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Maxence D.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Clement D.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Guillaume F.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Jules F.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Nolan G.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alessandro I.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Thomas L.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Gauthier L.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Enzo M.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Noah M.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Cendrine N.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Arthur P.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Alban Q.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Jérémy R.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ],
+        [
+            "Ethan S.",
+            [
+                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+                ["Info", "info", "34", 13, 15, "Camponovo"]
+            ],
+            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+        ]
+    ]
+}
