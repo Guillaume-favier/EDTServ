@@ -31,7 +31,7 @@ const getCurrentWeek = (now = new Date()) => { // sur la base d'une date ou de l
     let semaine = 0;
     semaineNom.forEach((s, i) => {
         const d = stringToDate(s);
-        if (d.getTime() + décalage <= nowTime) semaine = i + 3;
+        if (d.getTime() + décalage <= nowTime) semaine = i+1;
     });
     return semaine;
 };
