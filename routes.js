@@ -172,12 +172,7 @@ module.exports = function (app) {
 
         const days = CgetNumJours[Object.keys(CgetNumJours)[0]](Number(params.week));
         const important = getEDTX(params.week, params.prof, 5)
-        const rs = {
-            ok: true,
-            days: days[1],
-            fullDays: days[0],
-            EDT: important,
-        };
+        const rs = {ok: true, days: days[1], fullDays: days[0], EDT: important};
         if (rs && days && important) {
             connection("/api/v2/prof/", req, 200);
             return res.status(200).json(rs);
@@ -250,7 +245,19 @@ module.exports = function (app) {
         }
     });
 
-    
+    app.get("/api/v2/getGrossoModo/", (req, res) => {
+        const params = req.query;
+        let n = Number(fs.readFileSync("./grossomodo.txt","utf-8"))
+        res.status(200).json({"ok":true, "n":n})
+    })
+
+    app.get("/api/v2/pushGrossoModo/:n", (req, res) => {
+        const n = req.params.n
+        let baseN  = Number(fs.readFileSync("./grossomodo.txt", "utf-8"))
+        if (n - baseN == 1) fs.writeFileSync("./grossomodo.txt", n.toString())
+        else return res.status(200).json({ "ok": false, "error":"more then 1 of différence" })
+        return res.status(200).json({ "ok": true, "n": n })
+    })
 
 
     // app.get("/api/v2/connGraph/", (req, res) => {
