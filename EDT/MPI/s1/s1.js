@@ -247,6 +247,10 @@ const makeEDT = (pers, semaine) => {
 					// log(0, "validée : groupe " + k)
 					EDT[s[1]] = poss[1];
 					done = true;
+				} else if (poss[0] == pers) {
+					// log(0, "validée : perseonne " + pers)
+					EDT[s[1]] = poss[1];
+					done = true;
 				}
 			}
 		}
