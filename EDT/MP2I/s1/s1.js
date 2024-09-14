@@ -51,57 +51,46 @@ const trueHeure = (n) => {
 
 const khollesToEDT = (kh, ma) => {
 	// ["Aufranc", 2, 15, "20"] -> ["Khôlle Maths","maths","20",15,16,"Aufranc"]
-	// console.log(kh)
+	// ["Aufranc", 2, 15, "20", 50] -> ["Khôlle Maths","maths","20",15,"15h50","Aufranc"]
+	
 	return [
 		"Khôlle " + majPrem(ma),
 		ma,
 		kh[3],
 		trueHeure(kh[2]),
-		trueHeure(kh[2]) + 1,
+		trueHeure(kh[2]) + (kh[4]? (kh[4]/60):1),
 		kh[0],
 	];
 };
 
 const getC = (k, s) => {
-	let c = ((16 + Number(k) - Number(s) - 1) % 16) + 1;
+	let c = ((16 + Number(k) - Number(s-3) - 1) % 16) + 1;
 	return c;
 };
 
 // cette fonction rassemble toute les kholles en respectant le règles spécifiques
 const getKholles = (k, s) => {
-	// console.log(k,s)
-	s -= 3;
 	let c = getC(k, s);
-	// console.log(c)
 	let all = [];
 	for (let i = 0; i < 5; i++) {
 		all.push([]);
 	}
 
-	// if (s <= 3) {
-	return all
-	// }
+	if (s < 3) return all
 
-	const maths = db["maths"][c - 1];
-	all[maths[1] - 1].push(khollesToEDT(maths, "maths"));
+	const maths = db["maths"][c-1];
+	all[maths[1]-1].push(khollesToEDT(maths, "maths"));
 
 	if (c % 2 == 1) {
-		const physique = db["physique"][c - 1];
-		all[physique[1] - 1].push(khollesToEDT(physique, "physique"));
+		const physique = db["physique"][c-1];
+		all[physique[1]-1].push(khollesToEDT(physique, "physique"));
 	} else {
-		const anglais = db["anglais"][c - 1];
-		all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"));
+		const anglais = db["anglais"][c-1];
+		all[anglais[1]-1].push(khollesToEDT(anglais, "anglais"));
 	}
-	if (c == 1 || c == 10) {
-		const info = db["info"][c - 1];
-		all[info[1] - 1].push(khollesToEDT(info, "info"));
-	}
-	if (
-		(s % 2 == 0 && (c == 2 || c == 5)) ||
-		(s % 2 == 1 && (c == 9 || c == 14))
-	) {
-		const francais = db["francais"][c - 1];
-		all[francais[1] - 1].push(khollesToEDT(francais, "français"));
+	if (c == 15) {
+		const info = db["info"][c-1];
+		all[info[1]-1].push(khollesToEDT(info, "info"));
 	}
 	return all;
 };
@@ -123,42 +112,56 @@ const makeEDT = (pers, semaine) => {
 	}
 	let mettreSemaine = [[], [], [], [], []];
 	// on ajoute sans ordre précis les cours kholles et TD à ajouter à l'EDT pour on les remmettra bien dans l'EDT plus tard
-	const n1 = () => {
-		mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
-		mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"]);
-		mettreSemaine[3].push(["Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
+	const n1 = () => { // s pair g pair et s impair g impair
+		mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"]);
+		mettreSemaine[1].push(["TD Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
 		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("7h50"), heureToNombre("9h50"), "Aufranc"]);
 		mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("9h50"), heureToNombre("11h50"), "Bouchet"]);
 	};
 
-	const n2 = () => {
-		mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
-		mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"]);
-		mettreSemaine[1].push(["Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
+	const n2 = () => { // l'inverse
+		mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"]);
+		mettreSemaine[3].push(["TD Anglais", "anglais", "33", 15, 16, "Bocquillon"]);
 		mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("7h50"), heureToNombre("9h50"), "Bouchet", ]);
 		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("9h50"), heureToNombre("11h50"), "Aufranc"]);
 	};
 
-	if (spe[0] == "G1") n1();
-	if (spe[0] == "G2") n2();
-
-	for (let i = 0; i < 16; i++) {
-		kholles[i] = ((16 - i + Number(k) - 1) % 16) + 1;
+	const n3 = () => { //  impair^2 ou pair^2 mais 
+		mettreSemaine[0].push(["TD SI", "SI", "20", 10, 9, "Cornette"])
+		
 	}
 
-	const semaineC = kholles[semaine - 3];
-	const allTP = true
+	const n4 = () => {
+		mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
+		
+	}
+
+	const c = getC(k, semaine);
+	pairpair = (semaine%2) == (k%2)
+	if (pairpair) n1();
+	else n2();
+	console.log(semaine, k, c, pairpair, groupeI)
+	let test = pers == "Gaya B.";
+	if ([1,3,8,10].includes(c)) {
+		if (pairpair) n3();
+		else n4();
+	}else{
+		if (pairpair) n4();
+		else n3();
+	}
+
+
 	// Groupes d'info
-	if (spe[0] == "G1" && spe[1] == null &&(groupeI == 1 || groupeI == "S" || allTP)) {
+	if (groupeI == 1) {
 		mettreSemaine[1].push(["TP Info", "info", "37", 15, 17, "Rozsavolgyi"]);
 	}
-	if (spe[1] == null && (groupeI == 2 || groupeI == "S" || allTP)) {
+	if (groupeI == 2) {
 		mettreSemaine[1].push(["TP Info", "info", "37", 17, 19, "Rozsavolgyi"]);
 	}
-	if (groupeI == 3 || groupeI == "S" || allTP) {
+	if (groupeI == 3) {
 		mettreSemaine[2].push(["TP Info", "info", "26", 14, 16, "Rozsavolgyi"]);
 	}
-	// if (groupeI == "S") alert("Il faut se répartir les groupes d'info !")
+	
 
 	// goupes de LV2
 	if (spe[1] != null) {
