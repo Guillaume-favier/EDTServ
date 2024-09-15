@@ -114,14 +114,14 @@ const makeEDT = (pers, semaine) => {
 	// on ajoute sans ordre précis les cours kholles et TD à ajouter à l'EDT pour on les remmettra bien dans l'EDT plus tard
 	const n1 = () => { // s pair g pair et s impair g impair
 		mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"]);
-		mettreSemaine[1].push(["TD Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
+		mettreSemaine[3].push(["TD Anglais", "anglais", "33", 15, 16, "Bocquillon"]);
 		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("7h50"), heureToNombre("9h50"), "Aufranc"]);
 		mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("9h50"), heureToNombre("11h50"), "Bouchet"]);
 	};
 
 	const n2 = () => { // l'inverse
 		mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"]);
-		mettreSemaine[3].push(["TD Anglais", "anglais", "33", 15, 16, "Bocquillon"]);
+		mettreSemaine[1].push(["TD Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
 		mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("7h50"), heureToNombre("9h50"), "Bouchet", ]);
 		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("9h50"), heureToNombre("11h50"), "Aufranc"]);
 	};
