@@ -126,12 +126,12 @@ const makeEDT = (pers, semaine) => {
 		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("9h50"), heureToNombre("11h50"), "Aufranc"]);
 	};
 
-	const n3 = () => { //  impair^2 ou pair^2 mais 
-		mettreSemaine[0].push(["TD SI", "SI", "20", 10, 9, "Cornette"])
+	const n3 = () => { //  pair impair
+		mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
 		
 	}
 
-	const n4 = () => {
+	const n4 = () => { // impair^2 ou pair^2 mais 
 		mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
 		
 	}
