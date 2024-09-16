@@ -114,24 +114,24 @@ const makeEDT = (pers, semaine) => {
 	// on ajoute sans ordre précis les cours kholles et TD à ajouter à l'EDT pour on les remmettra bien dans l'EDT plus tard
 	const n1 = () => { // s pair g pair et s impair g impair
 		mettreSemaine[0].push(["TD Physique", "physique", "20", 14, 16, "Bouchet"]);
-		mettreSemaine[1].push(["TD Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
+		mettreSemaine[3].push(["TD Anglais", "anglais", "33", 15, 16, "Bocquillon"]);
 		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("7h50"), heureToNombre("9h50"), "Aufranc"]);
 		mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("9h50"), heureToNombre("11h50"), "Bouchet"]);
 	};
 
 	const n2 = () => { // l'inverse
 		mettreSemaine[0].push(["TD Physique", "physique", "20", 12, 14, "Bouchet"]);
-		mettreSemaine[3].push(["TD Anglais", "anglais", "33", 15, 16, "Bocquillon"]);
+		mettreSemaine[1].push(["TD Anglais", "anglais", "33", 16, 17, "Bocquillon"]);
 		mettreSemaine[4].push(["TP Physique", "physique", "B214", heureToNombre("7h50"), heureToNombre("9h50"), "Bouchet", ]);
 		mettreSemaine[4].push(["TD Maths", "maths", "20", heureToNombre("9h50"), heureToNombre("11h50"), "Aufranc"]);
 	};
 
-	const n3 = () => { //  impair^2 ou pair^2 mais 
-		mettreSemaine[0].push(["TD SI", "SI", "20", 10, 9, "Cornette"])
+	const n3 = () => { //  pair impair
+		mettreSemaine[0].push(["TD SI", "SI", "20", 10, 11, "Cornette"])
 		
 	}
 
-	const n4 = () => {
+	const n4 = () => { // impair^2 ou pair^2 mais 
 		mettreSemaine[0].push(["TD SI", "SI", "20", 9, 10, "Cornette"])
 		
 	}
@@ -140,8 +140,6 @@ const makeEDT = (pers, semaine) => {
 	pairpair = (semaine%2) == (k%2)
 	if (pairpair) n1();
 	else n2();
-	console.log(semaine, k, c, pairpair, groupeI)
-	let test = pers == "Gaya B.";
 	if ([1,3,8,10].includes(c)) {
 		if (pairpair) n3();
 		else n4();
@@ -165,6 +163,7 @@ const makeEDT = (pers, semaine) => {
 
 	// goupes de LV2
 	if (spe[1] != null) {
+		console.log(pers)
 		mettreSemaine[3].push(["LV2 " + spe[1], "lv2", "🤷‍♂️", 17, 19, "LV2"]);
 	}
 
