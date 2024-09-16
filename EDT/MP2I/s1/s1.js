@@ -163,7 +163,6 @@ const makeEDT = (pers, semaine) => {
 
 	// goupes de LV2
 	if (spe[1] != null) {
-		console.log(pers)
 		mettreSemaine[3].push(["LV2 " + spe[1], "lv2", "🤷‍♂️", 17, 19, "LV2"]);
 	}
 

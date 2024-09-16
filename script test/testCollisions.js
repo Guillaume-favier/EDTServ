@@ -99,7 +99,6 @@ Object.keys(CallEdt).forEach(classe => {
     }
 });
 if (p!="") {
-
-    log(2,"colisions :"+p)
+    log(2,"colisions :\n"+p)
 }
 module.exports = p
