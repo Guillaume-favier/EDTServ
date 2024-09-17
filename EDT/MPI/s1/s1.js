@@ -44,19 +44,6 @@ const trueHeure = (n) => {
 	return heureToNombre(n);
 };
 
-const khollesToEDT = (kh, ma, pers) => {
-	// ["Aufranc", 2, 15, "20"] -> ["Khôlle Maths","maths","20",15,16,"Aufranc"]
-	// console.log(kh)
-	return [
-		"Khôlle " + majPrem(ma),
-		ma,
-		kh[3],
-		trueHeure(kh[2]),
-		trueHeure(kh[2]) + 1,
-		kh[0],
-	];
-};
-
 
 // construction du tableau de kholle
 
@@ -77,8 +64,12 @@ tableauKholle.split("\n").forEach(ligne => {
 
 
 
-const getKholles = (k, s, numeroDansLeGroupe) => {
-
+const getKholles = (k, s, pers) => {
+	let numeroDansLeGroupe = 0;
+	for (let i = (3 * (k - 1) < 0 ? 0 : 3 * (k - 1)); i < Object.keys(groupes).length; i++) {
+		if (groupes[Object.keys(groupes)[i]] == k) numeroDansLeGroupe++
+		if (Object.keys(groupes)[i] == pers) break;
+	}
 	let all = [];
 	for (let i = 0; i < 5; i++) {
 		all.push([]);
@@ -110,11 +101,6 @@ const testparams = () => {
 
 const makeEDT = (pers, semaine) => {
 	const k = groupes[pers]
-	let numeroDansLeGroupe = 0;
-	for (let i = (3 * (k - 1) < 0 ? 0 : 3 * (k - 1)); i < Object.keys(groupes).length; i++) {
-		if (groupes[Object.keys(groupes)[i]] == k) numeroDansLeGroupe++
-		if (Object.keys(groupes)[i] == pers) break;
-	}
 
 	EDT = []
 	EDT = clone(orgEDT);
@@ -209,7 +195,7 @@ const makeEDT = (pers, semaine) => {
 	}
 
 	// ajout de toutes les kholles dans l'EDT
-	const matiere = getKholles(k[0], semaine, numeroDansLeGroupe);
+	const matiere = getKholles(k[0], semaine, pers);
 	console.log(matiere)
 	for (let jour = 0; jour < matiere.length; jour++) {
 		const element = matiere[jour];

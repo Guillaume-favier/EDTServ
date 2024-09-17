@@ -81,21 +81,25 @@ const getKfromC = (c, s) => {
 
 let p = ""
 Object.keys(CallEdt).forEach(classe => {
+    let pp = ""
     for (let s = 1; s <= CsemaineNom[Object.keys(CsemaineNom)[0]].length; s++) {
         const allPers = Object.keys(CallEdt[classe][s.toString()])
         allPers.forEach(pers => {
             const edtSemaine = CallEdt[classe][s.toString()][pers]
             const de = detectOverlap(edtSemaine[0])
             if (de.length > 0) {
-                p += "Semaine " + s + " Personne " + pers + " (G" + CGroupe[classe][pers] +") : "+de.length+" conflits\n"
+                pp += "Semaine " + s + " Personne " + pers + " (G" + CGroupe[classe][pers] +") : "+de.length+" conflits\n"
                 if (edtSemaine[1] != "") {
-                    p+="Sachant que : "+edtSemaine[1]+"\n"
+                    pp+="Sachant que : "+edtSemaine[1]+"\n"
                 }
                 for (let n = 0; n < de.length; n++) {
-                    p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) +"]\n\n"
+                    pp += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) +"]\n\n"
                 }
             }
         })
+    }
+    if (pp != "") {
+        p += "Pour la classe de " + classe + " :\n" + pp
     }
 });
 if (p!="") {
