@@ -22,7 +22,8 @@ const nombreToHeure = (n) => {
 	return Math.floor(n).toString() + "h";
 };
 
-const db = getJson("/EDT/MPI/s1/kholes.json"); // document qui répertorie les khôlles
+const tableauKholle = getText("/EDT/MPI/s1/tableDeKholles.txt"); // document qui répertorie quels groupes khôllent en fonction des semaines
+const refKholle = getJson("/EDT/MPI/s1/referenceKholle.json"); // document qui répertorie les khôlles et les khôlleur en fonction de l'index dans le tableau de kholle
 const orgEDT = getJson("/EDT/MPI/s1/EDT.json"); // document qui répertorie les les cours communs
 const groupes = getJson("/EDT/MPI/groupes.json")
 const groupesSpeciaux = getJson("/EDT/MPI/s1/petitsGroupes.json"); // document qui répertorie le nom des memebres de chaques groupes
@@ -43,7 +44,7 @@ const trueHeure = (n) => {
 	return heureToNombre(n);
 };
 
-const khollesToEDT = (kh, ma) => {
+const khollesToEDT = (kh, ma, pers) => {
 	// ["Aufranc", 2, 15, "20"] -> ["Khôlle Maths","maths","20",15,16,"Aufranc"]
 	// console.log(kh)
 	return [
@@ -57,63 +58,64 @@ const khollesToEDT = (kh, ma) => {
 };
 
 
-// TODO: à revoir à la rentée
-const getC = (k, s) => {
-	let c = ((16 + Number(k) - Number(s) - 1) % 16) + 1;
-	return c;
-};
+// construction du tableau de kholle
 
-// cette fonction rassemble toute les kholles en respectant le règles spécifiques
-// TODO: à revoir à la rentée car forme potentiellement totalement différente
-/* const getKholes = (k, s) => {
-	
-	s -= 1;
-	let c = getC(k, s);
-	
+const vraiNumeroGroupe = (g) => {
+	if (Number(g[g.length-1]) == NaN) return [false, Number(g.slice(0,-1))]
+	else return [true, Number(g)]
+}
+
+const vraiColloneSemaine = (s) => {
+	const r = [0,0,0,0,1,2,3,0,4,5,6,7,8,9,0,10,11,12,13,14,0,15,16,17,18][s]
+	return r-1
+}
+
+const tabl = [];
+tableauKholle.split("\n").forEach(ligne => {
+	tabl.push(ligne.split(" "));
+});
+
+
+
+const getKholles = (k, s, numeroDansLeGroupe) => {
+
 	let all = [];
 	for (let i = 0; i < 5; i++) {
 		all.push([]);
 	}
-	const maths = db["maths"][c - 1];
-	all[maths[1] - 1].push(khollesToEDT(maths, "maths"));
+	const vs = vraiColloneSemaine(s)
+	// console.log(vs)
+	if (vs == -1) return all
+	for (let ligneIndex = 0; ligneIndex < tabl.length; ligneIndex++) {
+		const ligne = tabl[ligneIndex];
+		// console.log(ligneIndex)
+		const groupe = vraiNumeroGroupe(ligne[vs]);
+		if (groupe[1] == k && ["a", "b", "c"][numeroDansLeGroupe-1]) {
+			const kh = refKholle[ligneIndex];
+			all[kh[1] - 1].push(kh[0]);
+		}
+	}
+	// console.log(all, numeroDansLeGroupe, s)
 
-	if (c % 2 == 1) {
-		const physique = db["physique"][c - 1];
-		all[physique[1] - 1].push(khollesToEDT(physique, "physique"));
-	} else {
-		const anglais = db["anglais"][c - 1];
-		all[anglais[1] - 1].push(khollesToEDT(anglais, "anglais"));
-	}
-	if (c == 1 || c == 10) {
-		const info = db["info"][c - 1];
-		all[info[1] - 1].push(khollesToEDT(info, "info"));
-	}
-	if (
-		(s % 2 == 0 && (c == 2 || c == 5)) ||
-		(s % 2 == 1 && (c == 9 || c == 14))
-	) {
-		const francais = db["francais"][c - 1];
-		all[francais[1] - 1].push(khollesToEDT(francais, "français"));
-	}
-	return all;
-};
-*/
 
-const getKholles = (k, s) => {
-	let all = [];
-	for (let i = 0; i < 5; i++) {
-		all.push([]);
-	}
+
 	return all;
 }
+
+// getKholles(9,4,1)
+
 const testparams = () => {
 	return groupeK != 0;
 };
 
 const makeEDT = (pers, semaine) => {
 	const k = groupes[pers]
-	// console.log("semaine",semaine,"k",k)
-// 	groupeI = tableauInfo[k - 1][semaine - 1];
+	let numeroDansLeGroupe = 0;
+	for (let i = (3 * (k - 1) < 0 ? 0 : 3 * (k - 1)); i < Object.keys(groupes).length; i++) {
+		if (groupes[Object.keys(groupes)[i]] == k) numeroDansLeGroupe++
+		if (Object.keys(groupes)[i] == pers) break;
+	}
+
 	EDT = []
 	EDT = clone(orgEDT);
 	let kholles = [];
@@ -164,21 +166,21 @@ const makeEDT = (pers, semaine) => {
 		else deuxiemeTPinfo()
 	}
 
-	const listPhys = [0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,null];
+	// tableau d'alternance des TP de physique 0 groupe pair en TPA, 1 groupe impair en TPA et inversement
+	const listPhys = [0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1];
 
-	if (semaine <= 2) {
+	if (semaine <= 2) { // ancien système de TP de physique avec alternance en fonction de l'ordre alphabetique
 		if (spe[1] == "TPA") {
 			if (semaine % 2 == 1) tpa()
 			else tpb()
-		}else {
+		} else {
 			if (semaine % 2 == 0) tpa()
 			else tpb()
 		}
 	}
 
-	else if (k[0]%2==listPhys[semaine-3]) tpa()
+	else if (k[0]%2==listPhys[semaine-3]) tpa() // mise en place du nouveau système d'alternance
 	else if (k[0] % 2 != listPhys[semaine - 3]) tpb()
-	console.log(k[0], semaine, listPhys[semaine - 3], k[0] % 2 == listPhys[semaine - 3] ? "TPA" : "TPB")
 	
 	if (semaine % 2 == 0) mettreSemaine[4].push(["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"]);
 	else mettreSemaine[4].push(["TIPE Info", "tipe", "37", 10, 12, "Camponovo"]);
@@ -207,8 +209,8 @@ const makeEDT = (pers, semaine) => {
 	}
 
 	// ajout de toutes les kholles dans l'EDT
-	const matiere = getKholles(k, semaine);
-	// console.log(matiere)
+	const matiere = getKholles(k[0], semaine, numeroDansLeGroupe);
+	console.log(matiere)
 	for (let jour = 0; jour < matiere.length; jour++) {
 		const element = matiere[jour];
 
@@ -218,7 +220,7 @@ const makeEDT = (pers, semaine) => {
 			EDT[jour].forEach((e, i) => {
 				if (bon) return;
 				// console.log("ici",e,kh)
-				if (e[3] > Math.round(heureToNombre(kh[3]))) {
+				if (e[3] > kh[3]) {
 					EDT[jour].splice(i, 0, kh);
 					bon = true;
 				}

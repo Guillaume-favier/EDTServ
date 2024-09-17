@@ -51,7 +51,7 @@ const getNumJours = (semaine) => { // donne les dates des jours scolaire pour un
 
 const makeEDT = (groupe, semaine) => {
     // if (semaine >= 3 && semaine <= 18) 
-    return [makeEDT1(groupe, semaine), "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"];
+    return [makeEDT1(groupe, semaine), ""];
     // if (semaine >= 19 && semaine <= 35) return makeEDT2(groupe, semaine, info);
     return null;
 };

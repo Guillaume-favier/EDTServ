@@ -1,4 +1,4 @@
-const { allEdt, CpersFromGroup, CallEdt, CsemaineNom } = require("../EDT/edt.js")
+const { allEdt, CpersFromGroup, CallEdt, CsemaineNom, CGroupe } = require("../EDT/edt.js")
 const { log } = require("../logger.js");
 const jours = ["Lundi", " Mardi", "Mercredi", "Jeudi", "Vendredi"]
 
@@ -87,12 +87,12 @@ Object.keys(CallEdt).forEach(classe => {
             const edtSemaine = CallEdt[classe][s.toString()][pers]
             const de = detectOverlap(edtSemaine[0])
             if (de.length > 0) {
-                p += "Semaine " + s + " Personne " + pers +" : "+de.length+" conflits\n"
+                p += "Semaine " + s + " Personne " + pers + " (G" + CGroupe[classe][pers] +") : "+de.length+" conflits\n"
                 if (edtSemaine[1] != "") {
                     p+="Sachant que : "+edtSemaine[1]+"\n"
                 }
                 for (let n = 0; n < de.length; n++) {
-                    p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) +"]\n"
+                    p += " - Le " + jours[de[n][2]] + " entre " + de[n][0][0] + " [" + nombreToHeure(de[n][0][3]) + "-" + nombreToHeure(de[n][0][4]) + "] et " + de[n][1][0] + " [" + nombreToHeure(de[n][1][3]) + "-" + nombreToHeure(de[n][1][4]) +"]\n\n"
                 }
             }
         })
