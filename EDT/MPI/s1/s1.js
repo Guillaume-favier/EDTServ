@@ -164,14 +164,21 @@ const makeEDT = (pers, semaine) => {
 		else deuxiemeTPinfo()
 	}
 
-	if (spe[1] == "TPA") {
-		if (semaine % 2 == 1) tpa()
-		else tpb()
+	const listPhys = [0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,null];
+
+	if (semaine <= 2) {
+		if (spe[1] == "TPA") {
+			if (semaine % 2 == 1) tpa()
+			else tpb()
+		}else {
+			if (semaine % 2 == 0) tpa()
+			else tpb()
+		}
 	}
-	else if (spe[1] == "TPB") {
-		if (semaine % 2 == 0) tpa()
-		else tpb()
-	}
+
+	else if (k[0]%2==listPhys[semaine-3]) tpa()
+	else if (k[0] % 2 != listPhys[semaine - 3]) tpb()
+	console.log(k[0], semaine, listPhys[semaine - 3], k[0] % 2 == listPhys[semaine - 3] ? "TPA" : "TPB")
 	
 	if (semaine % 2 == 0) mettreSemaine[4].push(["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"]);
 	else mettreSemaine[4].push(["TIPE Info", "tipe", "37", 10, 12, "Camponovo"]);
