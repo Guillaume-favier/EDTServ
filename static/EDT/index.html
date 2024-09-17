@@ -22,6 +22,27 @@
     <link href="/fa/4.css" rel="stylesheet" />
     <script src="/nav/exceptEDT.js"></script>
     <link href="/nav/nav.css" rel="stylesheet" />
+    <style>
+        .container {
+            display: flex; /* or inline-flex */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 0% 3% 0% 3%;
+        }
+        .item {
+            align-self: center; 
+            margin: 4%;
+            max-width: 40%;
+        }
+        .logoMP2I, .logoMPI {
+            width: 100%;
+        }
+
+        .flexText {
+            font-size: xx-large;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -39,20 +60,13 @@
     <center>
         <h1 class="beau"> Liste des emplois du temps :</h1>
     </center>
-    <div id="content">
-        <ul>
-            <li><a href="/EDT/classe.html?classe=MP2I">classe MP2I</a></li>
-            <li><a href="/EDT/classe.html?classe=MPI">classe MPI</a></li>
-            <li><a href="/prof">prof</a></li>
-            <li><a href="/salle">salle</a></li>
-        </ul>
+    <div id="content" class="container">
+        <div class="item" ><a href="/EDT/classe.html?classe=MP2I"><img src="/asset/MP2I noir.png" class="logoMP2I"></a></div>
+        <div class="item" ><a href="/EDT/classe.html?classe=MPI"><img src="/asset/MP2I noir.png" class="logoMPI"></a></div>
+        <div class="item" ><a href="/prof" class="flexText">PROF</a></div>
+        <div class="item" ><a href="/salle" class="flexText">SALLE</a></div>
     </div>
     <div class="footer"><span id="url"></span> sous licence : <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html"><i class="fa-solid fa-scale-balanced"></i> GPL-3.0 </a><i class="fa-solid fa-moon" id="dark"></i> <a href="https://github.com/Guillaume-favier/mp2iciv.fr"><i class="fa-brands fa-github"></i></a></div>
 </body>
 <script src="/nav/nav.js" type="module"></script>
-<script src="https://momentjs.com/downloads/moment.min.js"></script>
-<script src="/EDT/genescripts.js"></script>
-<script src="/EDT/calendrier.js"></script>
-<script src="/EDT/script.js">
-</script>
 </html>

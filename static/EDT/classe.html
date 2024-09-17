@@ -57,52 +57,53 @@
             </form>
         </div>
         <div class="loader"></div>
-        <div class="alert" style="display:none;">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            Attention ! Certains cours se chevauchent votre emploi du temps peut être totalement faux ! revérifiez bien les
-            heures !
-            <span id="colisionText"></span>
-        </div>
+        <span id="toShowAfterLoading" style="display:none;">
+            <div class="alert" style="display:none;">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Attention ! Certains cours se chevauchent votre emploi du temps peut être totalement faux ! revérifiez bien les
+                heures !
+                <span id="colisionText"></span>
+            </div>
 
-        <div class="warning" style="display:none;">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            <span id="warningText"></span>
-        </div>
-        <table id="tocopy">
-            <tbody id="EDT">
-                <tr >
-                    <th></th>
-                    <th>Lundi</th>
-                    <th>Mardi</th>
-                    <th>Mercredi</th>
-                    <th>Jeudi</th>
-                    <th>Vendredi</th>
-                </tr>
-            </tbody>
-            
-        </table>
-        <table class="hid">
-            <tbody id="EDT2">
-                <tr>
-                    <th></th>
-                    <th>Lundi</th>
-                    <th>Mardi</th>
-                    <th>Mercredi</th>
-                    <th>Jeudi</th>
-                    <th>Vendredi</th>
-                </tr>
-            </tbody>
-            
-        </table>
-        <button id="DownEDT">Télécharger l'EDT (Beta)</button>
-    </center>
-    
+            <div class="warning" style="display:none;">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <span id="warningText"></span>
+            </div>
+            <table id="tocopy">
+                <tbody id="EDT">
+                    <tr >
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <table class="hid">
+                <tbody id="EDT2">
+                    <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <button id="DownEDT">Télécharger l'EDT (Beta)</button>
+        </center>
+    </span>
     <div class="content">
         <div id="outTxt">
-
+    
         </div>
         <div id="persGrp">
-
+    
         </div>
     </div>
     <div class="footer"><span id="url"></span> sous licence : <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html"><i class="fa-solid fa-scale-balanced"></i> GPL-3.0 </a><i class="fa-solid fa-moon" id="dark"></i> <a href="https://github.com/Guillaume-favier/mp2iciv.fr"><i class="fa-brands fa-github"></i></a></div>

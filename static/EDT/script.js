@@ -168,13 +168,15 @@ const txt = document.getElementById("outTxt")
     }
 
     const updateSemaines = async () => {
+
+        document.getElementById("toShowAfterLoading").style.display = "none"
         document.getElementsByClassName("alert")[0].style.display = "none"
         document.getElementsByClassName("warning")[0].style.display = "none"
         let ele = document.getElementById("persGrp");
         ele.innerHTML = ""
         document.getElementById("DownEDT").onclick = () => {}
         if (currNom == "") {
-            txt.innerText = "Veuillez choisir un groupe de kholle"
+            txt.innerText = "Veuillez choisir quelqu'un"
             return
         }
         txt.innerText = ""
@@ -191,6 +193,8 @@ const txt = document.getElementById("outTxt")
             document.getElementsByClassName("loader")[0].style.display = "block"
             all = await getJson("/api/v2/classe/"+classeNom+"/EDT?pers=" + currNom+"&week="+semaine)
             // console.log(all)
+
+            document.getElementById("toShowAfterLoading").style.display = "block"
             document.getElementsByClassName("loader")[0].style.display = "none"
             cache[cacheName] = all
         }

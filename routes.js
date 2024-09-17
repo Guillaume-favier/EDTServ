@@ -115,7 +115,7 @@ module.exports = function (app) {
             return res.status(200).json(regroupeInfo(req.params.classe, params.pers, params.week));
         } else {
             connection("/api/v2/classe/"+req.params.classe+"/EDT", req, 400);
-            return res.status(400).json({ ok: false, error: "valid \"pers\" parameter required" });
+            return res.status(400).json({ ok: false, error: "invalid classe : " + req.params.classe });
         }
     });
 

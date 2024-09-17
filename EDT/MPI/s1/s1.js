@@ -2,12 +2,11 @@ const fs = require("fs");
 const { log } = require("../../../logger.js");
 jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
 
-const getText = (path) =>
-	fs.readFileSync(path.substring(1, path.length), "utf8");
+const getText = (path) => fs.readFileSync(path.substring(1, path.length), "utf8");
 
 const getJson = (path) => JSON.parse(getText(path));
 
-const heureToNombre = (n) => {
+const heureToNombre = (n) => { // "7h50" -> 7.833333333333333
 	if (typeof n == typeof 2) return n;
 	if (n.indexOf("h") > -1) {
 		let nn = n.split("h");
@@ -16,7 +15,7 @@ const heureToNombre = (n) => {
 	return Number(n);
 };
 
-const nombreToHeure = (n) => {
+const nombreToHeure = (n) => { // 7.833333333333333 -> "7h50"
 	let reste = n - Math.floor(n);
 	if (reste > 0) return Math.floor(n).toString() + "h" + Math.round(reste * 60);
 	return Math.floor(n).toString() + "h";
@@ -196,16 +195,11 @@ const makeEDT = (pers, semaine) => {
 
 	// ajout de toutes les kholles dans l'EDT
 	const matiere = getKholles(k[0], semaine, pers);
-	console.log(matiere)
-	for (let jour = 0; jour < matiere.length; jour++) {
-		const element = matiere[jour];
-
+	for (let jour = 0; jour < matiere.length; jour++) { // ajoute des l'ordre des cours
 		matiere[jour].forEach((kh) => {
-			// console.log("kh",kh)
 			let bon = false;
 			EDT[jour].forEach((e, i) => {
 				if (bon) return;
-				// console.log("ici",e,kh)
 				if (e[3] > kh[3]) {
 					EDT[jour].splice(i, 0, kh);
 					bon = true;
@@ -255,5 +249,4 @@ const makeEDT = (pers, semaine) => {
 module.exports = {
 	getKholles,
 	makeEDT,
-// 	groupesPers,
 };

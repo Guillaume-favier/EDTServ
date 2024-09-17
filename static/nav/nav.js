@@ -62,10 +62,20 @@ if (getCook("dark") == "") {
 }
 
 const applyTheme = () => {
+    const logoMP2I = document.getElementsByClassName("logoMP2I")
+    const logoMPI = document.getElementsByClassName("logoMPI")
     if (getCook("dark") == "true") {
         document.getElementById("genestyle").setAttribute("href", "/nightGeneral.css")
+        if(logoMP2I[0]) {
+            logoMP2I[0].src = "/asset/MP2I blanc.png"
+            logoMPI[0].src = "/asset/MPI blanc.png"
+        }
     } else {
         document.getElementById("genestyle").setAttribute("href", "/general.css")
+        if (logoMP2I[0]) {
+            logoMP2I[0].src = "/asset/MP2I noir.png"
+            logoMPI[0].src = "/asset/MPI noir.png"
+        }
     }
 }
 
