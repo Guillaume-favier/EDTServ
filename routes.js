@@ -254,9 +254,11 @@ module.exports = function (app) {
     app.get("/api/v2/pushGrossoModo/:n", (req, res) => {
         const n = req.params.n
         let baseN  = Number(fs.readFileSync("./grossomodo.txt", "utf-8"))
-        if (n - baseN == 1) fs.writeFileSync("./grossomodo.txt", n.toString())
-        else return res.status(200).json({ "ok": false, "error":"more then 1 of différence" })
-        return res.status(200).json({ "ok": true, "n": n })
+        if (n - baseN == 1) {
+            fs.writeFileSync("./grossomodo.txt", n.toString())
+            return res.status(200).json({ "ok": true, "n": n })
+        }
+        else return res.status(400).json({ "ok": false, "error":"more then 1 of différence" })
     })
 
 
