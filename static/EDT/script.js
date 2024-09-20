@@ -189,6 +189,7 @@ const txt = document.getElementById("outTxt")
         let all
         if (Object.keys(cache).includes(cacheName)) {
             all = cache[cacheName]
+            document.getElementById("toShowAfterLoading").style.display = "block"
         }else{
             document.getElementsByClassName("loader")[0].style.display = "block"
             all = await getJson("/api/v2/classe/"+classeNom+"/EDT?pers=" + currNom+"&week="+semaine)
