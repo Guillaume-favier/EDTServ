@@ -167,8 +167,8 @@ const makeEDT = (pers, semaine) => {
 	else if (k[0]%2==listPhys[semaine-3]) tpa() // mise en place du nouveau système d'alternance
 	else if (k[0] % 2 != listPhys[semaine - 3]) tpb()
 	
-	if (semaine % 2 == 0) mettreSemaine[4].push(["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"]);
-	else mettreSemaine[4].push(["TIPE Info", "tipe", "37", 10, 12, "Camponovo"]);
+	if (semaine % 2 == 0) mettreSemaine[4].push(["TIPE Physique", "tipe", "Labo Physique", heureToNombre("9h50"), heureToNombre("11h50"), "Boqueho"]);
+	else mettreSemaine[4].push(["TIPE Info", "tipe", "37", heureToNombre("9h50"), heureToNombre("11h50"), "Camponovo"]);
 
 
 	// TODO : goupes de LV2
