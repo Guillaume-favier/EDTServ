@@ -139,15 +139,24 @@ const makeEDT = (pers, semaine) => {
 
 	const spe = groupesSpeciaux[pers]
 
+	const listTPInfo = [7,8,9,10,10,1,2,3,4,5,6,6,7,8,9,10,1,1,2,3,4]
+	//                  7 8 9    10 1 2 3 4 5 6   7 8 9 10   1 2 3 4
+
 	if (spe[0] == "G1") g1()
-	else if (spe[0] == "G2A") {
+	else if (semaine <= 3 ) {
+		if (spe[0] == "G2A") {
+			g2()
+			if (semaine % 2 == 0)  deuxiemeTPinfo()
+			else premierTPinfo()
+		}
+		else if (spe[0] == "G2B") {
+			g2()
+			if (semaine % 2 == 0) premierTPinfo()
+			else deuxiemeTPinfo()
+		}
+	}else {
 		g2()
-		if (semaine % 2 == 0)  deuxiemeTPinfo()
-		else premierTPinfo()
-	}
-	else if (spe[0] == "G2B") {
-		g2()
-		if (semaine % 2 == 0) premierTPinfo()
+		if (listTPInfo[semaine-4]%2 == k%2) premierTPinfo()
 		else deuxiemeTPinfo()
 	}
 
