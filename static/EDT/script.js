@@ -264,6 +264,9 @@ const txt = document.getElementById("outTxt")
         else if (currNom == "Jules F.") {
             document.body.className = "KCWIN"
         }
+        else if (currNom == "Kamel S.") {
+            document.body.className = "BFMVC"
+        }
         else {
             document.body.className = ""
         }
