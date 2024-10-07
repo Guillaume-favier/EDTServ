@@ -47,7 +47,7 @@ const trueHeure = (n) => {
 // construction du tableau de kholle
 
 const vraiNumeroGroupe = (g) => {
-	if (Number(g[g.length-1]) == NaN) return [false, Number(g.slice(0,-1))]
+	if (["a","b","c"].includes(g[g.length-1])) return [false, Number(g.slice(0,-1))]
 	else return [true, Number(g)]
 }
 
@@ -80,7 +80,8 @@ const getKholles = (k, s, pers) => {
 		const ligne = tabl[ligneIndex];
 		// console.log(ligneIndex)
 		const groupe = vraiNumeroGroupe(ligne[vs]);
-		if (groupe[1] == k && ["a", "b", "c"][numeroDansLeGroupe-1]) {
+		// console.log(groupe, k, numeroDansLeGroupe, ligne[vs])
+		if (groupe[1] == k && (groupe[0] || ["a", "b", "c"][numeroDansLeGroupe - 1] == ligne[vs][ligne[vs].length - 1])) {
 			const kh = refKholle[ligneIndex];
 			all[kh[1] - 1].push(kh[0]);
 		}
