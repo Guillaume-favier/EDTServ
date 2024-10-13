@@ -140,7 +140,7 @@ const makeEDT = (pers, semaine) => {
 
 	const spe = groupesSpeciaux[pers]
 
-	const listTPInfo = [7,8,9,10,10,1,2,3,4,5,6,6,7,8,9,10,1,1,2,3,4]
+	const listTPInfo = [7,8,9,9,10,1,2,3,4,5,6,6,7,8,9,10,1,1,2,3,4]
 	//                  7 8 9    10 1 2 3 4 5 6   7 8 9 10   1 2 3 4
 
 	if (spe[0] == "G1") g1()
