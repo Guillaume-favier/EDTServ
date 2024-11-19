@@ -5,7 +5,6 @@ let tmp = []
 for (let i = 0; i < 24; i++) tmp.push(0);
 const zéros24 = JSON.parse(JSON.stringify(tmp))
 
-
 const getInteractionsForDay = (data) => {
     let hours = { "everyone": JSON.parse(JSON.stringify(zéros24)) }
     for (let i = 0; i < data.length; i++) {
