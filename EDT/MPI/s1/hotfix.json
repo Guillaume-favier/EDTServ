@@ -1,1784 +1,2713 @@
 {
-    "2/0": [
-        [
-            "Mayeul A.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+	"2/0": [
+		[
+			"Mayeul A.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Artyom A.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Artyom A.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Bastien A.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Bastien A.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gahui B.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gahui B.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Lucas B.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Lucas B.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alexis B.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alexis B.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alban B.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alban B.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Yohan B.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Yohan B.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Victor B.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Victor B.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Fernand C.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Fernand C.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gaël C.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gaël C.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Thomas C.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Thomas C.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Evariste C.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Evariste C.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Pablo C.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Pablo C.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alexandre C.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alexandre C.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Maxence D.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Maxence D.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Clement D.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Clement D.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Guillaume F.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Guillaume F.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Jules F.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Jules F.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Nolan G.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Nolan G.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alessandro I.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alessandro I.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Thomas L.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Thomas L.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gauthier L.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gauthier L.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Enzo M.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Enzo M.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Noah M.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Noah M.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Cendrine N.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Cendrine N.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Arthur P.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Arthur P.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alban Q.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alban Q.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Jérémy R.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Jérémy R.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Ethan S.",
-            [
-                ["Maths", "maths", "34", 8.5, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Ethan S.",
+			[
+				["Maths", "maths", "34", 8.5, 12, "Broizat"],
 
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ]
-    ],
-    "2/3": [
-        [
-            "Mayeul A.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Artyom A.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Bastien A.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gahui B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Lucas B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alexis B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alban B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Yohan B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Victor B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Fernand C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gaël C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Thomas C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Evariste C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Pablo C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alexandre C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Maxence D.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Clement D.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Guillaume F.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Jules F.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Nolan G.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alessandro I.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Thomas L.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gauthier L.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Enzo M.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Noah M.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Cendrine N.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Arthur P.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alban Q.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Jérémy R.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Ethan S.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ]
-    ],
-    "2/4": [
-        [
-            "Mayeul A.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Artyom A.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Bastien A.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gahui B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Lucas B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alexis B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alban B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Yohan B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Victor B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Fernand C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gaël C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Thomas C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Evariste C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Pablo C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alexandre C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Maxence D.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Clement D.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Guillaume F.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Jules F.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Nolan G.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alessandro I.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Thomas L.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Gauthier L.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Enzo M.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Noah M.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Cendrine N.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Arthur P.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Alban Q.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Jérémy R.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ],
-        [
-            "Ethan S.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Boqueho"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            "Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
-        ]
-    ],
-    "10/0": [
-        [
-            "Mayeul A.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"],
-                ["Khôlle Français", "français", "K26-27", 17, 18, "Barbet"]
-            ],
-            ""
-        ],
-        [
-            "Yohan B.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"],
-                ["Khôlle Français", "français", "K26-27", 17.5, 18.5, "Barbet"]
-            ],
-            ""
-        ],
-        [
-            "Nolan G.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"],
-                ["Khôlle Français", "français", "K26-27", 18, 19, "Barbet"]
-            ],
-            ""
-        ],
-        [
-            "Maxence D.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Arthur P.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Jérémy R.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Evariste C.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
-            ],
-            ""
-        ],
-        [
-            "Thomas L.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
-            ],
-            ""
-        ],
-        [
-            "Enzo M.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 16, 17, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
-            ],
-            ""
-        ],
-        [
-            "Alexis B.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Gaël C.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Alban Q.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Artyom A.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
-            ],
-            ""
-        ],
-        [
-            "Bastien A.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
-            ],
-            ""
-        ],
-        [
-            "Fernand C.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
-            ],
-            ""
-        ],
-        [
-            "Thomas C.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Alexandre C.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Ethan S.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Lucas B.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
-            ],
-            ""
-        ],
-        [
-            "Pablo C.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
-            ],
-            ""
-        ],
-        [
-            "Clement D.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
-            ],
-            ""
-        ],
-        [
-            "Alessandro I.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"]
-            ],
-            ""
-        ],
-        [
-            "Gauthier L.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"]
-            ],
-            ""
-        ],
-        [
-            "Xavier T.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"]
-            ],
-            ""
-        ],
-        [
-            "Guillaume F.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
-            ],
-            ""
-        ],
-        [
-            "Jules F.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
-            ],
-            ""
-        ],
-        [
-            "Emma V.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
-            ],
-            ""
-        ],
-        [
-            "Gahui B.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
-            ],
-            ""
-        ],
-        [
-            "Noah M.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
-            ],
-            ""
-        ],
-        [
-            "Cendrine N.",
-            [
-                ["Maths", "maths", "34", 8.5, 9, "Broizat"],
-                ["Physique", "physique", "34", 9, 11, "Boqueho"],
-                ["Maths", "maths", "34", 11, 12, "Broizat"],
-                ["Physique", "physique", "34", 13, 15, "Boqueho"],
-                ["TD Physique", "physique", "34", 15, 16, "Boqueho"],
-                ["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
-            ],
-            ""
-        ]
-    ],
-    "10/3": [
-        [
-            "Mayeul A.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Yohan B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Nolan G.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Maxence D.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
-            ],
-            ""
-        ],
-        [
-            "Arthur P.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
-            ],
-            ""
-        ],
-        [
-            "Jérémy R.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
-                ["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
-            ],
-            ""
-        ],
-        [
-            "Evariste C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Thomas L.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Enzo M.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Alexis B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Gaël C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Alban Q.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Artyom A.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Bastien A.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Fernand C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Thomas C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Alexandre C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Ethan S.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Lucas B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Pablo C.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Clement D.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Alessandro I.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Gauthier L.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Xavier T.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Guillaume F.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Jules F.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Emma V.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
-            ],
-            ""
-        ],
-        [
-            "Gahui B.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
-                ["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
-            ],
-            ""
-        ],
-        [
-            "Noah M.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
-                ["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
-            ],
-            ""
-        ],
-        [
-            "Cendrine N.",
-            [
-                ["Anglais", "anglais", "34", 8, 9, "Calvin"],
-                ["Physique", "physique", "34", 9, 12, "Boqueho"],
-                ["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
-                ["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
-            ],
-            ""
-        ]
-    ],
-    "10/4": [
-        [
-            "Mayeul A.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
-            ],
-            ""
-        ],
-        [
-            "Yohan B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
-            ],
-            ""
-        ],
-        [
-            "Nolan G.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
-            ],
-            ""
-        ],
-        [
-            "Maxence D.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Arthur P.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Jérémy R.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Evariste C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "37", 16, 17, "Klein"]
-            ],
-            ""
-        ],
-        [
-            "Thomas L.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "37", 16, 17, "Klein"]
-            ],
-            ""
-        ],
-        [
-            "Enzo M.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "37", 16, 17, "Klein"]
-            ],
-            ""
-        ],
-        [
-            "Alexis B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
-            ],
-            ""
-        ],
-        [
-            "Gaël C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
-            ],
-            ""
-        ],
-        [
-            "Alban Q.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
-            ],
-            ""
-        ],
-        [
-            "Artyom A.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
-            ],
-            ""
-        ],
-        [
-            "Bastien A.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
-            ],
-            ""
-        ],
-        [
-            "Fernand C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
-            ],
-            ""
-        ],
-        [
-            "Thomas C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "36", 15, 16, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Alexandre C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "36", 15, 16, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Ethan S.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "36", 15, 16, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Lucas B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
-            ],
-            ""
-        ],
-        [
-            "Pablo C.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
-            ],
-            ""
-        ],
-        [
-            "Clement D.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
-            ],
-            ""
-        ],
-        [
-            "Alessandro I.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Gauthier L.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Xavier T.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"]
-            ],
-            ""
-        ],
-        [
-            "Guillaume F.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
-            ],
-            ""
-        ],
-        [
-            "Jules F.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
-            ],
-            ""
-        ],
-        [
-            "Emma V.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
-            ],
-            ""
-        ],
-        [
-            "Gahui B.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "37", 15, 16, "Klein"]
-            ],
-            ""
-        ],
-        [
-            "Noah M.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "37", 15, 16, "Klein"]
-            ],
-            ""
-        ],
-        [
-            "Cendrine N.",
-            [
-                ["Maths", "maths", "34", 8.5, 10, "Broizat"],
-                ["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
-                ["Info", "info", "34", 13, 15, "Camponovo"],
-                ["Khôlle Info", "info", "37", 15, 16, "Klein"]
-            ],
-            ""
-        ]
-    ]
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		]
+	],
+	"2/3": [
+		[
+			"Mayeul A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Artyom A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Bastien A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gahui B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Lucas B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alexis B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alban B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Yohan B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Victor B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Fernand C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gaël C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Thomas C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Evariste C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Pablo C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alexandre C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Maxence D.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Clement D.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Guillaume F.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Jules F.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Nolan G.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alessandro I.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Thomas L.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gauthier L.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Enzo M.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Noah M.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Cendrine N.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Arthur P.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alban Q.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Jérémy R.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Ethan S.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		]
+	],
+	"2/4": [
+		[
+			"Mayeul A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Artyom A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Bastien A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gahui B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Lucas B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alexis B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alban B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Yohan B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Victor B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Fernand C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gaël C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Thomas C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Evariste C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Pablo C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alexandre C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Maxence D.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Clement D.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Guillaume F.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Jules F.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Nolan G.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alessandro I.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Thomas L.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Gauthier L.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Enzo M.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Noah M.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Cendrine N.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Arthur P.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Alban Q.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Jérémy R.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		],
+		[
+			"Ethan S.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Boqueho"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			"Attention, béta ! j'ai fais les groupes d'info et de TP de physique en ordre alphabétique + je ne sais pas si les cours qui échange selon les semaines le font de cette façon"
+		]
+	],
+	"10/0": [
+		[
+			"Mayeul A.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Français", "français", "K26-27", 17, 18, "Barbet"]
+			],
+			""
+		],
+		[
+			"Yohan B.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Français", "français", "K26-27", 17.5, 18.5, "Barbet"]
+			],
+			""
+		],
+		[
+			"Nolan G.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Français", "français", "K26-27", 18, 19, "Barbet"]
+			],
+			""
+		],
+		[
+			"Maxence D.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Arthur P.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Jérémy R.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Evariste C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
+			],
+			""
+		],
+		[
+			"Thomas L.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
+			],
+			""
+		],
+		[
+			"Enzo M.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
+			],
+			""
+		],
+		[
+			"Alexis B.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Gaël C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alban Q.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Artyom A.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
+			],
+			""
+		],
+		[
+			"Bastien A.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
+			],
+			""
+		],
+		[
+			"Fernand C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
+			],
+			""
+		],
+		[
+			"Thomas C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alexandre C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Ethan S.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Lucas B.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
+			],
+			""
+		],
+		[
+			"Pablo C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
+			],
+			""
+		],
+		[
+			"Clement D.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
+			],
+			""
+		],
+		[
+			"Alessandro I.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Gauthier L.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Xavier T.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Guillaume F.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
+			],
+			""
+		],
+		[
+			"Jules F.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
+			],
+			""
+		],
+		[
+			"Emma V.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
+			],
+			""
+		],
+		[
+			"Gahui B.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Noah M.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Cendrine N.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
+			],
+			""
+		]
+	],
+	"10/3": [
+		[
+			"Mayeul A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Yohan B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Nolan G.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Maxence D.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
+			],
+			""
+		],
+		[
+			"Arthur P.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
+			],
+			""
+		],
+		[
+			"Jérémy R.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
+			],
+			""
+		],
+		[
+			"Evariste C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Thomas L.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Enzo M.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alexis B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Gaël C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alban Q.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Artyom A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Bastien A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Fernand C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Thomas C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alexandre C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Ethan S.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Lucas B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Pablo C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Clement D.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alessandro I.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Gauthier L.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Xavier T.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Guillaume F.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Jules F.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Emma V.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Gahui B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
+			],
+			""
+		],
+		[
+			"Noah M.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
+			],
+			""
+		],
+		[
+			"Cendrine N.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
+			],
+			""
+		]
+	],
+	"10/4": [
+		[
+			"Mayeul A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
+			],
+			""
+		],
+		[
+			"Yohan B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
+			],
+			""
+		],
+		[
+			"Nolan G.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
+			],
+			""
+		],
+		[
+			"Maxence D.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Arthur P.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Jérémy R.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Evariste C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "37", 16, 17, "Klein"]
+			],
+			""
+		],
+		[
+			"Thomas L.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "37", 16, 17, "Klein"]
+			],
+			""
+		],
+		[
+			"Enzo M.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "37", 16, 17, "Klein"]
+			],
+			""
+		],
+		[
+			"Alexis B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
+			],
+			""
+		],
+		[
+			"Gaël C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
+			],
+			""
+		],
+		[
+			"Alban Q.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
+			],
+			""
+		],
+		[
+			"Artyom A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
+			],
+			""
+		],
+		[
+			"Bastien A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
+			],
+			""
+		],
+		[
+			"Fernand C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
+			],
+			""
+		],
+		[
+			"Thomas C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "36", 15, 16, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Alexandre C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "36", 15, 16, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Ethan S.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "36", 15, 16, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Lucas B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
+			],
+			""
+		],
+		[
+			"Pablo C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
+			],
+			""
+		],
+		[
+			"Clement D.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
+			],
+			""
+		],
+		[
+			"Alessandro I.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Gauthier L.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Xavier T.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Guillaume F.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
+			],
+			""
+		],
+		[
+			"Jules F.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
+			],
+			""
+		],
+		[
+			"Emma V.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
+			],
+			""
+		],
+		[
+			"Gahui B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "37", 15, 16, "Klein"]
+			],
+			""
+		],
+		[
+			"Noah M.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "37", 15, 16, "Klein"]
+			],
+			""
+		],
+		[
+			"Cendrine N.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Info", "info", "37", 15, 16, "Klein"]
+			],
+			""
+		]
+	],
+	"12/0": [
+		[
+			"Mayeul A.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
+			],
+			""
+		],
+		[
+			"Yohan B.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
+			],
+			""
+		],
+		[
+			"Nolan G.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 17, 18, "Calvin"]
+			],
+			""
+		],
+		[
+			"Maxence D.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Arthur P.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Jérémy R.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 18, 19, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Evariste C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Français", "français", "K26-27", 17, 18, "Barbet"]
+			],
+			""
+		],
+		[
+			"Thomas L.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Français", "français", "K26-27", 17.5, 18.5, "Barbet"]
+			],
+			""
+		],
+		[
+			"Enzo M.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 16, 17, "Boqueho"],
+				["Khôlle Français", "français", "K26-27", 18, 19, "Barbet"]
+			],
+			""
+		],
+		[
+			"Alexis B.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Gaël C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alban Q.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Artyom A.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
+			],
+			""
+		],
+		[
+			"Bastien A.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
+			],
+			""
+		],
+		[
+			"Fernand C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "14", 16, 17, "Calvin"]
+			],
+			""
+		],
+		[
+			"Thomas C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alexandre C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Ethan S.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 18, 19, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Lucas B.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
+			],
+			""
+		],
+		[
+			"Pablo C.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
+			],
+			""
+		],
+		[
+			"Clement D.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 16, 17, "Charvet"]
+			],
+			""
+		],
+		[
+			"Alessandro I.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Gauthier L.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Xavier T.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "34", 17, 18, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Guillaume F.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
+			],
+			""
+		],
+		[
+			"Jules F.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
+			],
+			""
+		],
+		[
+			"Emma V.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Anglais", "anglais", "K25", 16, 17, "Pernelle"]
+			],
+			""
+		],
+		[
+			"Gahui B.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"]
+			],
+			""
+		],
+		[
+			"Noah M.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"],
+				["Khôlle Français", "français", "K26-27", 18.5, 19.5, "Barbet"]
+			],
+			""
+		],
+		[
+			"Cendrine N.",
+			[
+				["Maths", "maths", "34", 8.5, 9, "Broizat"],
+				["Physique", "physique", "34", 9, 11, "Boqueho"],
+				["Maths", "maths", "34", 11, 12, "Broizat"],
+				["Physique", "physique", "34", 13, 15, "Boqueho"],
+				["TD Physique", "physique", "34", 15, 16, "Boqueho"],
+				["Khôlle Physique", "physique", "K32", 17, 18, "Sarrazin"]
+			],
+			""
+		]
+	],
+
+	"12/3": [
+		[
+			"Mayeul A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Yohan B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Nolan G.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Maxence D.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
+			],
+			""
+		],
+		[
+			"Arthur P.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
+			],
+			""
+		],
+		[
+			"Jérémy R.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K24", 15, 16, "Aufranc"]
+			],
+			""
+		],
+		[
+			"Evariste C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Thomas L.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Enzo M.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 14, 15, "Chevillard"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alexis B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
+			],
+			""
+		],
+		[
+			"Gaël C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
+			],
+			""
+		],
+		[
+			"Alban Q.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"],
+				["Khôlle Maths", "maths", "K33", 15, 16, "Chevillard"]
+			],
+			""
+		],
+		[
+			"Artyom A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Bastien A.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Fernand C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Thomas C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alexandre C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Ethan S.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Lucas B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Pablo C.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Clement D.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Alessandro I.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Gauthier L.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Xavier T.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Guillaume F.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Jules F.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Emma V.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 15, 17, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Gahui B.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Noah M.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		],
+		[
+			"Cendrine N.",
+			[
+				["Anglais", "anglais", "34", 8, 9, "Calvin"],
+				["Physique", "physique", "34", 9, 12, "Boqueho"],
+				["TP Physique", "physique", "labo", 13, 15, "Boqueho"]
+			],
+			""
+		]
+	],
+	"12/4": [
+		[
+			"Mayeul A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
+			],
+			""
+		],
+		[
+			"Yohan B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
+			],
+			""
+		],
+		[
+			"Nolan G.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "K32", 16, 17, "De Coetlogon"]
+			],
+			""
+		],
+		[
+			"Maxence D.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Arthur P.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Jérémy R.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Evariste C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
+			],
+			""
+		],
+		[
+			"Thomas L.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
+			],
+			""
+		],
+		[
+			"Enzo M.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 16, 17, "Bost"]
+			],
+			""
+		],
+		[
+			"Alexis B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Gaël C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Alban Q.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Artyom A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Bastien A.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Fernand C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Thomas C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
+			],
+			""
+		],
+		[
+			"Alexandre C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
+			],
+			""
+		],
+		[
+			"Ethan S.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 15, 16, "Karra"]
+			],
+			""
+		],
+		[
+			"Lucas B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
+			],
+			""
+		],
+		[
+			"Pablo C.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
+			],
+			""
+		],
+		[
+			"Clement D.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Anglais", "anglais", "K22", 15, 16, "Bost"]
+			],
+			""
+		],
+		[
+			"Alessandro I.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Gauthier L.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Xavier T.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Guillaume F.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
+			],
+			""
+		],
+		[
+			"Jules F.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
+			],
+			""
+		],
+		[
+			"Emma V.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"],
+				["Khôlle Maths", "maths", "20", 16, 17, "Karra"]
+			],
+			""
+		],
+		[
+			"Gahui B.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Noah M.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		],
+		[
+			"Cendrine N.",
+			[
+				["Maths", "maths", "34", 8.5, 10, "Broizat"],
+				["TIPE Physique", "tipe", "Labo Physique", 10, 12, "Boqueho"],
+				["Info", "info", "34", 13, 15, "Camponovo"]
+			],
+			""
+		]
+	]
 }

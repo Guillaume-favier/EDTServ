@@ -1,6 +1,6 @@
 const { CallEdt } = require("../EDT/edt.js");
 const stringify = require("json-stringify-pretty-compact");
-s = 10;
+s = 12;
 j = 4; // lundi = 0 vendredi = 4
 classe = "MPI";
 res = CallEdt[classe][s];
