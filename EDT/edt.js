@@ -87,7 +87,7 @@ log(1, "All the weeks were loaded");
 
 
 const regroupeInfo = (classe, nom, s) => {
-    const k = CGroupe[classe][nom][s < 19 ? 0 : 1];
+    const k = CGroupe[classe][nom][0]; // théoriquement CGroupe[classe][nom][s < 19 ? 0 : 1];
     const days = CgetNumJours[classe](s);
     let res = {
         ok: true,

@@ -62,7 +62,6 @@ tableauKholle.split("\n").forEach(ligne => {
 });
 
 
-
 const getKholles = (k, s, pers) => {
 	let numeroDansLeGroupe = 0;
 	for (let i = (3 * (k - 1) < 0 ? 0 : 3 * (k - 1)); i < Object.keys(groupes).length; i++) {
@@ -74,26 +73,30 @@ const getKholles = (k, s, pers) => {
 		all.push([]);
 	}
 	const vs = vraiColloneSemaine(s)
-	// console.log(vs)
+	
 	if (vs == -1) return all
 	for (let ligneIndex = 0; ligneIndex < tabl.length; ligneIndex++) {
 		const ligne = tabl[ligneIndex];
-		// console.log(ligneIndex)
+		
+		if (!ligne[vs]) {
+			console.error("Erreur khôlle vide : ", ligne, vs);
+		}
+
 		const groupe = vraiNumeroGroupe(ligne[vs]);
-		// console.log(groupe, k, numeroDansLeGroupe, ligne[vs])
+
 		if (groupe[1] == k && (groupe[0] || ["a", "b", "c"][numeroDansLeGroupe - 1] == ligne[vs][ligne[vs].length - 1])) {
-			const kh = refKholle[ligneIndex];
+			const kh = clone(refKholle[ligneIndex]); // recherche de la signification depuis le tableau dans ./referenceKholle.json
+			// modification de la salle en fonction de la semaine et du "semestre"
+			kh[0][2] = (s <= 18) ? kh[0][2][0] : kh[0][2][1]; // [["Khôlle ..", "..", ["A","B"], .., .., ".."],..] => [["Khôlle ..", "..", A, .., .., ".."],..] ou [["Khôlle ..", "..", B, .., .., ".."],..]
+
 			all[kh[1] - 1].push(kh[0]);
 		}
+
 	}
-	// console.log(all, numeroDansLeGroupe, s)
-
-
-
+	//console.log(all, numeroDansLeGroupe, s)
 	return all;
 }
 
-// getKholles(9,4,1)
 
 const testparams = () => {
 	return groupeK != 0;

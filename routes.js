@@ -96,9 +96,12 @@ module.exports = function (app) {
         if (req.params.classe && Classes.includes(req.params.classe)){
             connection("/api/v2/classe/" + req.params.classe, req, 200);
             return res.status(200).json(base(req.params.classe));
+        } else if (req.params.classe && req.params.classe == "MP2I"){
+            connection("/api/v2/classe/" + req.params.classe, req, 302);
+            return res.status(302).json({ ok: false, redirect:true, url:"https://grahmindol.github.io/EDT/"});
         } else{
             connection("/api/v2/classe/" + req.params.classe, req, 400);
-            return res.status(400).json({ok: false, error: "valid \"pers\" parameter required"});
+            return res.status(400).json({ok: false, error: "valid \"classe\" parameter required"});
         }
     });
 

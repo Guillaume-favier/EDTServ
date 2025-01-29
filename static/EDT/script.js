@@ -93,7 +93,17 @@ const txt = document.getElementById("outTxt")
     const palette = await getJson("/palette/palettes.json")
     const base = await getJson("/api/v2/classe/"+classeNom)
     document.getElementsByClassName("loader")[0].style.display = "none"
-    // console.log(base)
+    if (base == null) {
+        alert("Erreur serveur")
+        return
+    }else if (Object.keys(base).includes("ok") && base["ok"] == false) {
+        // alert("err")
+        if (Object.keys(base).includes("redirect") && base["redirect"] == true) {
+            window.location.href = base["url"]
+        }else{
+            alert("Erreur serveur : "+base["error"])
+        }
+    }
     let semaine = base["currentWeek"]+1;
     const noms = base["noms"]
     let ok = true
