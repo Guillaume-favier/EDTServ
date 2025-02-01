@@ -157,7 +157,7 @@
 
         document.getElementsByClassName("loader")[0].style.display = "block";
         const all = await getJson(
-            "/api/v2/salle/?salle=" + salle + "&week=" + semaine,
+            "/api/v2/salle/?salle=" + encodeURIComponent(salle) + "&week=" + semaine,
         );
 
         document.getElementsByClassName("loader")[0].style.display = "none";

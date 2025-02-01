@@ -156,7 +156,7 @@
         
         if (testparams() == false) return
         document.getElementsByClassName("loader")[0].style.display = "block"
-        const all = await getJson("/api/v2/prof/?prof=" + salle+"&week="+semaine)
+        const all = await getJson("/api/v2/prof/?prof=" + encodeURIComponent(salle)+"&week="+semaine)
         document.getElementsByClassName("loader")[0].style.display = "none"
         if (!all["ok"]) {
             alert("Erreur server (" + all["error"]+")")

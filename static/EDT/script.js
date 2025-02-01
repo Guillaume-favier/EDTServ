@@ -202,7 +202,7 @@ const txt = document.getElementById("outTxt")
             document.getElementById("toShowAfterLoading").style.display = "block"
         }else{
             document.getElementsByClassName("loader")[0].style.display = "block"
-            all = await getJson("/api/v2/classe/"+classeNom+"/EDT?pers=" + currNom+"&week="+semaine)
+            all = await getJson("/api/v2/classe/" + encodeURIComponent(classeNom) + "/EDT?pers=" + encodeURIComponent(currNom)+"&week="+semaine)
             // console.log(all)
 
             document.getElementById("toShowAfterLoading").style.display = "block"
