@@ -2709,5 +2709,35 @@
 			],
 			""
 		]
+	],
+	"20/2": [
+		[
+			"e",
+			[
+				["CCB Maths 1", "maths", "#", 8, 12, "Broizat"],
+				["CCB français", "français", "#", 13.5, 17.5, "Capitani"]
+			],
+			""
+		]
+	],
+	"20/3": [
+        [
+            "e",
+            [
+                ["CCB Physique", "physique", "#", 8, 12, "Boqueho"],
+                ["CCB Anglais", "anglais", "#", 13.5, 17.5, "Calvin"]
+            ],
+            ""
+        ]
+	],
+	"20/4": [
+        [
+            "e",
+            [
+				["CCB Maths 2", "maths", "#", 8, 11, "Broizat"],
+				["CCB Info", "info", "#", 13.5, 17.5, "Camponovo"]
+			],
+            ""
+        ]
 	]
 }
