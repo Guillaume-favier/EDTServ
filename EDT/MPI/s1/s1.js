@@ -165,7 +165,7 @@ const makeEDT = (pers, semaine) => {
 	}
 
 	// tableau d'alternance des TP de physique 0 groupe pair en TPA, 1 groupe impair en TPA et inversement
-	const listPhys = [0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0/*CCB*/,1,0,1,0,1];
+	const listPhys = [0,1,0,1,0,0,1,0,1,0,1,0,0 /*15 */,1,0,1,0,0/*CCB*/,1,0,1,0,1];
 
 	if (semaine <= 2) { // ancien système de TP de physique avec alternance en fonction de l'ordre alphabetique
 		if (spe[1] == "TPA") {
